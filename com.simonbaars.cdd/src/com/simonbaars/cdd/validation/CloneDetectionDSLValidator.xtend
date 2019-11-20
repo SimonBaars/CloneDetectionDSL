@@ -5,6 +5,7 @@ package com.simonbaars.cdd.validation
 
 import com.simonbaars.cdd.cloneDetectionDSL.Compare
 import com.simonbaars.cdd.cloneDetectionDSL.Method
+import com.simonbaars.cdd.cloneDetectionDSL.Node
 import org.eclipse.xtext.validation.Check
 
 /**
@@ -13,6 +14,10 @@ import org.eclipse.xtext.validation.Check
  * See https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#validation
  */
 class CloneDetectionDSLValidator extends AbstractCloneDetectionDSLValidator {
+	
+	private static val root = "com.github.javaparser.ast."
+
+	private static val packages = #["body", "expr", "stmt", "type"]
 
 	@Check
 	def checkCompare(Compare compare){
@@ -36,6 +41,21 @@ class CloneDetectionDSLValidator extends AbstractCloneDetectionDSLValidator {
 				error("Similarity percentage must be specified for subtree comparison!", null)
 			}
 		}
+	}
+	
+	def checkNode(Node node){
+			try{
+				Class.forName(root+node.name);
+				return;
+			} catch( ClassNotFoundException e ) {
+				for(String pack : packages){
+					try{
+						Class.forName(root+pack+"."+node.name);
+						return;
+					} catch( ClassNotFoundException e2 ) {}
+				}
+			}
+			error("This is not a correct node type!", null)
 	}
 	
 }

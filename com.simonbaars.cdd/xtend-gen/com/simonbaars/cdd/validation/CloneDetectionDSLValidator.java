@@ -8,7 +8,11 @@ import com.simonbaars.cdd.cloneDetectionDSL.Compare;
 import com.simonbaars.cdd.cloneDetectionDSL.Method;
 import com.simonbaars.cdd.cloneDetectionDSL.Node;
 import com.simonbaars.cdd.validation.AbstractCloneDetectionDSLValidator;
+import java.util.Collections;
+import java.util.List;
 import org.eclipse.xtext.validation.Check;
+import org.eclipse.xtext.xbase.lib.CollectionLiterals;
+import org.eclipse.xtext.xbase.lib.Exceptions;
 
 /**
  * This class contains custom validation rules.
@@ -17,6 +21,10 @@ import org.eclipse.xtext.validation.Check;
  */
 @SuppressWarnings("all")
 public class CloneDetectionDSLValidator extends AbstractCloneDetectionDSLValidator {
+  private static final String root = "com.github.javaparser.ast.";
+  
+  private static final List<String> packages = Collections.<String>unmodifiableList(CollectionLiterals.<String>newArrayList("body", "expr", "stmt", "type"));
+  
   @Check
   public void checkCompare(final Compare compare) {
     if (((Objects.equal(compare.getComparisonMethod(), Method.FQI) || Objects.equal(compare.getComparisonMethod(), Method.COMPLETE_MATCH)) || Objects.equal(compare.getComparisonMethod(), Method.STRING_MATCH))) {
@@ -57,5 +65,33 @@ public class CloneDetectionDSLValidator extends AbstractCloneDetectionDSLValidat
         this.error("Similarity percentage must be specified for subtree comparison!", null);
       }
     }
+  }
+  
+  public void checkNode(final Node node) {
+    try {
+      String _name = node.getName();
+      String _plus = (CloneDetectionDSLValidator.root + _name);
+      Class.forName(_plus);
+      return;
+    } catch (final Throwable _t) {
+      if (_t instanceof ClassNotFoundException) {
+        for (final String pack : CloneDetectionDSLValidator.packages) {
+          try {
+            String _name_1 = node.getName();
+            String _plus_1 = (((CloneDetectionDSLValidator.root + pack) + ".") + _name_1);
+            Class.forName(_plus_1);
+            return;
+          } catch (final Throwable _t_1) {
+            if (_t_1 instanceof ClassNotFoundException) {
+            } else {
+              throw Exceptions.sneakyThrow(_t_1);
+            }
+          }
+        }
+      } else {
+        throw Exceptions.sneakyThrow(_t);
+      }
+    }
+    this.error("This is not a correct node type!", null);
   }
 }
