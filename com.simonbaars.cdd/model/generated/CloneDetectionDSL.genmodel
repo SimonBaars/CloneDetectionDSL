@@ -17,6 +17,7 @@
       <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//SizeMetric/statements"/>
       <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//SizeMetric/nodes"/>
       <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//SizeMetric/lines"/>
+      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//SizeMetric/cyclomatic_complexity"/>
     </genEnums>
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="CloneDetectionDSL.ecore#//BoolOperator">
       <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//BoolOperator/AND"/>
@@ -32,25 +33,6 @@
       <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//Under/OneLevel"/>
       <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//Under/AnyLevel"/>
     </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CloneDetectionDSL.ecore#//Metric">
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//Metric/CyclomaticComplexity"/>
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//Metric/LineVolume"/>
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//Metric/TokenVolume"/>
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//Metric/StatementVolume"/>
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//Metric/NumberOfParameters"/>
-    </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CloneDetectionDSL.ecore#//BinaryBooleanOperator">
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//BinaryBooleanOperator/AND"/>
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//BinaryBooleanOperator/OR"/>
-    </genEnums>
-    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CloneDetectionDSL.ecore#//CompareOperator">
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//CompareOperator/EQ"/>
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//CompareOperator/NEQ"/>
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//CompareOperator/GEQ"/>
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//CompareOperator/G"/>
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//CompareOperator/LEQ"/>
-      <genEnumLiterals ecoreEnumLiteral="CloneDetectionDSL.ecore#//CompareOperator/L"/>
-    </genEnums>
     <genClasses ecoreClass="CloneDetectionDSL.ecore#//CloneDetection">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//CloneDetection/project"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloneDetectionDSL.ecore#//CloneDetection/root"/>
@@ -65,7 +47,6 @@
     </genClasses>
     <genClasses ecoreClass="CloneDetectionDSL.ecore#//SearchRoot">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//SearchRoot/nodes"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//SearchRoot/condition"/>
     </genClasses>
     <genClasses ecoreClass="CloneDetectionDSL.ecore#//Match">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloneDetectionDSL.ecore#//Match/target"/>
@@ -96,73 +77,6 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloneDetectionDSL.ecore#//Compare/comparisonMethod"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//Compare/deepestNode"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloneDetectionDSL.ecore#//Compare/perc"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//BooleanExpression"/>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//NotExpression">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//NotExpression/sub"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//BooleanExpressionBracket">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//BooleanExpressionBracket/sub"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//BooleanExpressionConstant">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloneDetectionDSL.ecore#//BooleanExpressionConstant/value"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//IntExpression">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloneDetectionDSL.ecore#//IntExpression/metric"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionMinus">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionMinus/sub"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionPlus">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionPlus/sub"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionBracket">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionBracket/sub"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionConstantInt">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloneDetectionDSL.ecore#//ExpressionConstantInt/value"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionBinOp">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionBinOp/left"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloneDetectionDSL.ecore#//ExpressionBinOp/bop"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionBinOp/right"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionCompOp">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionCompOp/left"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CloneDetectionDSL.ecore#//ExpressionCompOp/op"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionCompOp/right"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionAddition">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionAddition/left"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionAddition/right"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionSubtraction">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionSubtraction/left"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionSubtraction/right"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionMultiply">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionMultiply/left"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionMultiply/right"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionDivision">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionDivision/left"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionDivision/right"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionMaximum">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionMaximum/left"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionMaximum/right"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionMinimum">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionMinimum/left"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionMinimum/right"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionModulo">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionModulo/left"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionModulo/right"/>
-    </genClasses>
-    <genClasses ecoreClass="CloneDetectionDSL.ecore#//ExpressionPower">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionPower/left"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//ExpressionPower/right"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -1,0 +1,3 @@
+Size 6 lines
+Match SLOC
+Exclude PackageDeclaration, ImportDeclaration

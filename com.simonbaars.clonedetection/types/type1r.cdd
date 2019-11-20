@@ -1,0 +1,4 @@
+Size 6 nodes
+Match LLOC
+Exclude PackageDeclaration, ImportDeclaration
+Compare ReferenceType FQI

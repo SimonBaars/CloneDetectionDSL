@@ -1,0 +1,5 @@
+Size 6 nodes
+Match LLOC
+Exclude PackageDeclaration, ImportDeclaration
+DoNotCompare SimpleName, LiteralExpr
+Compare * Subnodes Statement 10%

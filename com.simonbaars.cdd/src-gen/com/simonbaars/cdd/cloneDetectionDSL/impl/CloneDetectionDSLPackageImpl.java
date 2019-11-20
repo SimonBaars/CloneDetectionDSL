@@ -3,42 +3,20 @@
  */
 package com.simonbaars.cdd.cloneDetectionDSL.impl;
 
-import com.simonbaars.cdd.cloneDetectionDSL.BinaryBooleanOperator;
 import com.simonbaars.cdd.cloneDetectionDSL.BoolOperator;
-import com.simonbaars.cdd.cloneDetectionDSL.BooleanExpression;
-import com.simonbaars.cdd.cloneDetectionDSL.BooleanExpressionBracket;
-import com.simonbaars.cdd.cloneDetectionDSL.BooleanExpressionConstant;
 import com.simonbaars.cdd.cloneDetectionDSL.CloneDetection;
 import com.simonbaars.cdd.cloneDetectionDSL.CloneDetectionDSLFactory;
 import com.simonbaars.cdd.cloneDetectionDSL.CloneDetectionDSLPackage;
 import com.simonbaars.cdd.cloneDetectionDSL.Compare;
-import com.simonbaars.cdd.cloneDetectionDSL.CompareOperator;
 import com.simonbaars.cdd.cloneDetectionDSL.DoNotCompare;
 import com.simonbaars.cdd.cloneDetectionDSL.Exclude;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionAddition;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionBinOp;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionBracket;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionCompOp;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionConstantInt;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionDivision;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionMaximum;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionMinimum;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionMinus;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionModulo;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionMultiply;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionPlus;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionPower;
-import com.simonbaars.cdd.cloneDetectionDSL.ExpressionSubtraction;
-import com.simonbaars.cdd.cloneDetectionDSL.IntExpression;
 import com.simonbaars.cdd.cloneDetectionDSL.Match;
 import com.simonbaars.cdd.cloneDetectionDSL.MatchTarget;
 import com.simonbaars.cdd.cloneDetectionDSL.Method;
-import com.simonbaars.cdd.cloneDetectionDSL.Metric;
 import com.simonbaars.cdd.cloneDetectionDSL.MetricExpr;
 import com.simonbaars.cdd.cloneDetectionDSL.MinSize;
 import com.simonbaars.cdd.cloneDetectionDSL.Node;
 import com.simonbaars.cdd.cloneDetectionDSL.Nodes;
-import com.simonbaars.cdd.cloneDetectionDSL.NotExpression;
 import com.simonbaars.cdd.cloneDetectionDSL.Project;
 import com.simonbaars.cdd.cloneDetectionDSL.SearchRoot;
 import com.simonbaars.cdd.cloneDetectionDSL.SizeMetric;
@@ -142,139 +120,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass booleanExpressionEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass notExpressionEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass booleanExpressionBracketEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass booleanExpressionConstantEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass intExpressionEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionMinusEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionPlusEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionBracketEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionConstantIntEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionBinOpEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionCompOpEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionAdditionEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionSubtractionEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionMultiplyEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionDivisionEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionMaximumEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionMinimumEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionModuloEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass expressionPowerEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
   private EEnum matchTargetEEnum = null;
 
   /**
@@ -304,27 +149,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * @generated
    */
   private EEnum underEEnum = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EEnum metricEEnum = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EEnum binaryBooleanOperatorEEnum = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EEnum compareOperatorEEnum = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -519,17 +343,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
   public EReference getSearchRoot_Nodes()
   {
     return (EReference)searchRootEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getSearchRoot_Condition()
-  {
-    return (EReference)searchRootEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -802,545 +615,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * @generated
    */
   @Override
-  public EClass getBooleanExpression()
-  {
-    return booleanExpressionEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getNotExpression()
-  {
-    return notExpressionEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getNotExpression_Sub()
-  {
-    return (EReference)notExpressionEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getBooleanExpressionBracket()
-  {
-    return booleanExpressionBracketEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getBooleanExpressionBracket_Sub()
-  {
-    return (EReference)booleanExpressionBracketEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getBooleanExpressionConstant()
-  {
-    return booleanExpressionConstantEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getBooleanExpressionConstant_Value()
-  {
-    return (EAttribute)booleanExpressionConstantEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getIntExpression()
-  {
-    return intExpressionEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getIntExpression_Metric()
-  {
-    return (EAttribute)intExpressionEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionMinus()
-  {
-    return expressionMinusEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionMinus_Sub()
-  {
-    return (EReference)expressionMinusEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionPlus()
-  {
-    return expressionPlusEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionPlus_Sub()
-  {
-    return (EReference)expressionPlusEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionBracket()
-  {
-    return expressionBracketEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionBracket_Sub()
-  {
-    return (EReference)expressionBracketEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionConstantInt()
-  {
-    return expressionConstantIntEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getExpressionConstantInt_Value()
-  {
-    return (EAttribute)expressionConstantIntEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionBinOp()
-  {
-    return expressionBinOpEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionBinOp_Left()
-  {
-    return (EReference)expressionBinOpEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getExpressionBinOp_Bop()
-  {
-    return (EAttribute)expressionBinOpEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionBinOp_Right()
-  {
-    return (EReference)expressionBinOpEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionCompOp()
-  {
-    return expressionCompOpEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionCompOp_Left()
-  {
-    return (EReference)expressionCompOpEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EAttribute getExpressionCompOp_Op()
-  {
-    return (EAttribute)expressionCompOpEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionCompOp_Right()
-  {
-    return (EReference)expressionCompOpEClass.getEStructuralFeatures().get(2);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionAddition()
-  {
-    return expressionAdditionEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionAddition_Left()
-  {
-    return (EReference)expressionAdditionEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionAddition_Right()
-  {
-    return (EReference)expressionAdditionEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionSubtraction()
-  {
-    return expressionSubtractionEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionSubtraction_Left()
-  {
-    return (EReference)expressionSubtractionEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionSubtraction_Right()
-  {
-    return (EReference)expressionSubtractionEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionMultiply()
-  {
-    return expressionMultiplyEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionMultiply_Left()
-  {
-    return (EReference)expressionMultiplyEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionMultiply_Right()
-  {
-    return (EReference)expressionMultiplyEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionDivision()
-  {
-    return expressionDivisionEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionDivision_Left()
-  {
-    return (EReference)expressionDivisionEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionDivision_Right()
-  {
-    return (EReference)expressionDivisionEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionMaximum()
-  {
-    return expressionMaximumEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionMaximum_Left()
-  {
-    return (EReference)expressionMaximumEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionMaximum_Right()
-  {
-    return (EReference)expressionMaximumEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionMinimum()
-  {
-    return expressionMinimumEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionMinimum_Left()
-  {
-    return (EReference)expressionMinimumEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionMinimum_Right()
-  {
-    return (EReference)expressionMinimumEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionModulo()
-  {
-    return expressionModuloEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionModulo_Left()
-  {
-    return (EReference)expressionModuloEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionModulo_Right()
-  {
-    return (EReference)expressionModuloEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EClass getExpressionPower()
-  {
-    return expressionPowerEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionPower_Left()
-  {
-    return (EReference)expressionPowerEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EReference getExpressionPower_Right()
-  {
-    return (EReference)expressionPowerEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public EEnum getMatchTarget()
   {
     return matchTargetEEnum;
@@ -1396,39 +670,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * @generated
    */
   @Override
-  public EEnum getMetric()
-  {
-    return metricEEnum;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EEnum getBinaryBooleanOperator()
-  {
-    return binaryBooleanOperatorEEnum;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public EEnum getCompareOperator()
-  {
-    return compareOperatorEEnum;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public CloneDetectionDSLFactory getCloneDetectionDSLFactory()
   {
     return (CloneDetectionDSLFactory)getEFactoryInstance();
@@ -1468,7 +709,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
 
     searchRootEClass = createEClass(SEARCH_ROOT);
     createEReference(searchRootEClass, SEARCH_ROOT__NODES);
-    createEReference(searchRootEClass, SEARCH_ROOT__CONDITION);
 
     matchEClass = createEClass(MATCH);
     createEAttribute(matchEClass, MATCH__TARGET);
@@ -1502,83 +742,12 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
     createEReference(compareEClass, COMPARE__DEEPEST_NODE);
     createEAttribute(compareEClass, COMPARE__PERC);
 
-    booleanExpressionEClass = createEClass(BOOLEAN_EXPRESSION);
-
-    notExpressionEClass = createEClass(NOT_EXPRESSION);
-    createEReference(notExpressionEClass, NOT_EXPRESSION__SUB);
-
-    booleanExpressionBracketEClass = createEClass(BOOLEAN_EXPRESSION_BRACKET);
-    createEReference(booleanExpressionBracketEClass, BOOLEAN_EXPRESSION_BRACKET__SUB);
-
-    booleanExpressionConstantEClass = createEClass(BOOLEAN_EXPRESSION_CONSTANT);
-    createEAttribute(booleanExpressionConstantEClass, BOOLEAN_EXPRESSION_CONSTANT__VALUE);
-
-    intExpressionEClass = createEClass(INT_EXPRESSION);
-    createEAttribute(intExpressionEClass, INT_EXPRESSION__METRIC);
-
-    expressionMinusEClass = createEClass(EXPRESSION_MINUS);
-    createEReference(expressionMinusEClass, EXPRESSION_MINUS__SUB);
-
-    expressionPlusEClass = createEClass(EXPRESSION_PLUS);
-    createEReference(expressionPlusEClass, EXPRESSION_PLUS__SUB);
-
-    expressionBracketEClass = createEClass(EXPRESSION_BRACKET);
-    createEReference(expressionBracketEClass, EXPRESSION_BRACKET__SUB);
-
-    expressionConstantIntEClass = createEClass(EXPRESSION_CONSTANT_INT);
-    createEAttribute(expressionConstantIntEClass, EXPRESSION_CONSTANT_INT__VALUE);
-
-    expressionBinOpEClass = createEClass(EXPRESSION_BIN_OP);
-    createEReference(expressionBinOpEClass, EXPRESSION_BIN_OP__LEFT);
-    createEAttribute(expressionBinOpEClass, EXPRESSION_BIN_OP__BOP);
-    createEReference(expressionBinOpEClass, EXPRESSION_BIN_OP__RIGHT);
-
-    expressionCompOpEClass = createEClass(EXPRESSION_COMP_OP);
-    createEReference(expressionCompOpEClass, EXPRESSION_COMP_OP__LEFT);
-    createEAttribute(expressionCompOpEClass, EXPRESSION_COMP_OP__OP);
-    createEReference(expressionCompOpEClass, EXPRESSION_COMP_OP__RIGHT);
-
-    expressionAdditionEClass = createEClass(EXPRESSION_ADDITION);
-    createEReference(expressionAdditionEClass, EXPRESSION_ADDITION__LEFT);
-    createEReference(expressionAdditionEClass, EXPRESSION_ADDITION__RIGHT);
-
-    expressionSubtractionEClass = createEClass(EXPRESSION_SUBTRACTION);
-    createEReference(expressionSubtractionEClass, EXPRESSION_SUBTRACTION__LEFT);
-    createEReference(expressionSubtractionEClass, EXPRESSION_SUBTRACTION__RIGHT);
-
-    expressionMultiplyEClass = createEClass(EXPRESSION_MULTIPLY);
-    createEReference(expressionMultiplyEClass, EXPRESSION_MULTIPLY__LEFT);
-    createEReference(expressionMultiplyEClass, EXPRESSION_MULTIPLY__RIGHT);
-
-    expressionDivisionEClass = createEClass(EXPRESSION_DIVISION);
-    createEReference(expressionDivisionEClass, EXPRESSION_DIVISION__LEFT);
-    createEReference(expressionDivisionEClass, EXPRESSION_DIVISION__RIGHT);
-
-    expressionMaximumEClass = createEClass(EXPRESSION_MAXIMUM);
-    createEReference(expressionMaximumEClass, EXPRESSION_MAXIMUM__LEFT);
-    createEReference(expressionMaximumEClass, EXPRESSION_MAXIMUM__RIGHT);
-
-    expressionMinimumEClass = createEClass(EXPRESSION_MINIMUM);
-    createEReference(expressionMinimumEClass, EXPRESSION_MINIMUM__LEFT);
-    createEReference(expressionMinimumEClass, EXPRESSION_MINIMUM__RIGHT);
-
-    expressionModuloEClass = createEClass(EXPRESSION_MODULO);
-    createEReference(expressionModuloEClass, EXPRESSION_MODULO__LEFT);
-    createEReference(expressionModuloEClass, EXPRESSION_MODULO__RIGHT);
-
-    expressionPowerEClass = createEClass(EXPRESSION_POWER);
-    createEReference(expressionPowerEClass, EXPRESSION_POWER__LEFT);
-    createEReference(expressionPowerEClass, EXPRESSION_POWER__RIGHT);
-
     // Create enums
     matchTargetEEnum = createEEnum(MATCH_TARGET);
     sizeMetricEEnum = createEEnum(SIZE_METRIC);
     boolOperatorEEnum = createEEnum(BOOL_OPERATOR);
     methodEEnum = createEEnum(METHOD);
     underEEnum = createEEnum(UNDER);
-    metricEEnum = createEEnum(METRIC);
-    binaryBooleanOperatorEEnum = createEEnum(BINARY_BOOLEAN_OPERATOR);
-    compareOperatorEEnum = createEEnum(COMPARE_OPERATOR);
   }
 
   /**
@@ -1612,23 +781,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
     // Add supertypes to classes
     nodesEClass.getESuperTypes().add(this.getExclude());
     nodesEClass.getESuperTypes().add(this.getDoNotCompare());
-    notExpressionEClass.getESuperTypes().add(this.getBooleanExpression());
-    booleanExpressionBracketEClass.getESuperTypes().add(this.getBooleanExpression());
-    booleanExpressionConstantEClass.getESuperTypes().add(this.getBooleanExpression());
-    expressionMinusEClass.getESuperTypes().add(this.getIntExpression());
-    expressionPlusEClass.getESuperTypes().add(this.getIntExpression());
-    expressionBracketEClass.getESuperTypes().add(this.getIntExpression());
-    expressionConstantIntEClass.getESuperTypes().add(this.getIntExpression());
-    expressionBinOpEClass.getESuperTypes().add(this.getBooleanExpression());
-    expressionCompOpEClass.getESuperTypes().add(this.getBooleanExpression());
-    expressionAdditionEClass.getESuperTypes().add(this.getIntExpression());
-    expressionSubtractionEClass.getESuperTypes().add(this.getIntExpression());
-    expressionMultiplyEClass.getESuperTypes().add(this.getIntExpression());
-    expressionDivisionEClass.getESuperTypes().add(this.getIntExpression());
-    expressionMaximumEClass.getESuperTypes().add(this.getIntExpression());
-    expressionMinimumEClass.getESuperTypes().add(this.getIntExpression());
-    expressionModuloEClass.getESuperTypes().add(this.getIntExpression());
-    expressionPowerEClass.getESuperTypes().add(this.getIntExpression());
 
     // Initialize classes and features; add operations and parameters
     initEClass(cloneDetectionEClass, CloneDetection.class, "CloneDetection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1645,7 +797,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
 
     initEClass(searchRootEClass, SearchRoot.class, "SearchRoot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getSearchRoot_Nodes(), this.getNodes(), null, "nodes", null, 0, 1, SearchRoot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getSearchRoot_Condition(), this.getBooleanExpression(), null, "condition", null, 0, 1, SearchRoot.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(matchEClass, Match.class, "Match", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getMatch_Target(), this.getMatchTarget(), "target", null, 0, 1, Match.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1679,74 +830,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
     initEReference(getCompare_DeepestNode(), this.getNode(), null, "deepestNode", null, 0, 1, Compare.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getCompare_Perc(), ecorePackage.getEString(), "perc", null, 0, 1, Compare.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(booleanExpressionEClass, BooleanExpression.class, "BooleanExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-    initEClass(notExpressionEClass, NotExpression.class, "NotExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getNotExpression_Sub(), this.getBooleanExpression(), null, "sub", null, 0, 1, NotExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(booleanExpressionBracketEClass, BooleanExpressionBracket.class, "BooleanExpressionBracket", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getBooleanExpressionBracket_Sub(), this.getBooleanExpression(), null, "sub", null, 0, 1, BooleanExpressionBracket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(booleanExpressionConstantEClass, BooleanExpressionConstant.class, "BooleanExpressionConstant", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getBooleanExpressionConstant_Value(), ecorePackage.getEBoolean(), "value", null, 0, 1, BooleanExpressionConstant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(intExpressionEClass, IntExpression.class, "IntExpression", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getIntExpression_Metric(), this.getMetric(), "metric", null, 0, 1, IntExpression.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionMinusEClass, ExpressionMinus.class, "ExpressionMinus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionMinus_Sub(), this.getIntExpression(), null, "sub", null, 0, 1, ExpressionMinus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionPlusEClass, ExpressionPlus.class, "ExpressionPlus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionPlus_Sub(), this.getIntExpression(), null, "sub", null, 0, 1, ExpressionPlus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionBracketEClass, ExpressionBracket.class, "ExpressionBracket", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionBracket_Sub(), this.getIntExpression(), null, "sub", null, 0, 1, ExpressionBracket.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionConstantIntEClass, ExpressionConstantInt.class, "ExpressionConstantInt", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getExpressionConstantInt_Value(), ecorePackage.getEInt(), "value", null, 0, 1, ExpressionConstantInt.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionBinOpEClass, ExpressionBinOp.class, "ExpressionBinOp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionBinOp_Left(), this.getBooleanExpression(), null, "left", null, 0, 1, ExpressionBinOp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getExpressionBinOp_Bop(), this.getBinaryBooleanOperator(), "bop", null, 0, 1, ExpressionBinOp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getExpressionBinOp_Right(), this.getBooleanExpression(), null, "right", null, 0, 1, ExpressionBinOp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionCompOpEClass, ExpressionCompOp.class, "ExpressionCompOp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionCompOp_Left(), this.getIntExpression(), null, "left", null, 0, 1, ExpressionCompOp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getExpressionCompOp_Op(), this.getCompareOperator(), "op", null, 0, 1, ExpressionCompOp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getExpressionCompOp_Right(), this.getIntExpression(), null, "right", null, 0, 1, ExpressionCompOp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionAdditionEClass, ExpressionAddition.class, "ExpressionAddition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionAddition_Left(), this.getIntExpression(), null, "left", null, 0, 1, ExpressionAddition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getExpressionAddition_Right(), this.getIntExpression(), null, "right", null, 0, 1, ExpressionAddition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionSubtractionEClass, ExpressionSubtraction.class, "ExpressionSubtraction", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionSubtraction_Left(), this.getIntExpression(), null, "left", null, 0, 1, ExpressionSubtraction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getExpressionSubtraction_Right(), this.getIntExpression(), null, "right", null, 0, 1, ExpressionSubtraction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionMultiplyEClass, ExpressionMultiply.class, "ExpressionMultiply", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionMultiply_Left(), this.getIntExpression(), null, "left", null, 0, 1, ExpressionMultiply.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getExpressionMultiply_Right(), this.getIntExpression(), null, "right", null, 0, 1, ExpressionMultiply.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionDivisionEClass, ExpressionDivision.class, "ExpressionDivision", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionDivision_Left(), this.getIntExpression(), null, "left", null, 0, 1, ExpressionDivision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getExpressionDivision_Right(), this.getIntExpression(), null, "right", null, 0, 1, ExpressionDivision.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionMaximumEClass, ExpressionMaximum.class, "ExpressionMaximum", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionMaximum_Left(), this.getIntExpression(), null, "left", null, 0, 1, ExpressionMaximum.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getExpressionMaximum_Right(), this.getIntExpression(), null, "right", null, 0, 1, ExpressionMaximum.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionMinimumEClass, ExpressionMinimum.class, "ExpressionMinimum", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionMinimum_Left(), this.getIntExpression(), null, "left", null, 0, 1, ExpressionMinimum.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getExpressionMinimum_Right(), this.getIntExpression(), null, "right", null, 0, 1, ExpressionMinimum.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionModuloEClass, ExpressionModulo.class, "ExpressionModulo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionModulo_Left(), this.getIntExpression(), null, "left", null, 0, 1, ExpressionModulo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getExpressionModulo_Right(), this.getIntExpression(), null, "right", null, 0, 1, ExpressionModulo.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(expressionPowerEClass, ExpressionPower.class, "ExpressionPower", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getExpressionPower_Left(), this.getIntExpression(), null, "left", null, 0, 1, ExpressionPower.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getExpressionPower_Right(), this.getIntExpression(), null, "right", null, 0, 1, ExpressionPower.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
     // Initialize enums and add enum literals
     initEEnum(matchTargetEEnum, MatchTarget.class, "MatchTarget");
     addEEnumLiteral(matchTargetEEnum, MatchTarget.SUBTREE);
@@ -1759,6 +842,7 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
     addEEnumLiteral(sizeMetricEEnum, SizeMetric.STATEMENTS);
     addEEnumLiteral(sizeMetricEEnum, SizeMetric.NODES);
     addEEnumLiteral(sizeMetricEEnum, SizeMetric.LINES);
+    addEEnumLiteral(sizeMetricEEnum, SizeMetric.CYCLOMATIC_COMPLEXITY);
 
     initEEnum(boolOperatorEEnum, BoolOperator.class, "BoolOperator");
     addEEnumLiteral(boolOperatorEEnum, BoolOperator.AND);
@@ -1773,25 +857,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
     initEEnum(underEEnum, Under.class, "Under");
     addEEnumLiteral(underEEnum, Under.ONE_LEVEL);
     addEEnumLiteral(underEEnum, Under.ANY_LEVEL);
-
-    initEEnum(metricEEnum, Metric.class, "Metric");
-    addEEnumLiteral(metricEEnum, Metric.CYCLOMATIC_COMPLEXITY);
-    addEEnumLiteral(metricEEnum, Metric.LINE_VOLUME);
-    addEEnumLiteral(metricEEnum, Metric.TOKEN_VOLUME);
-    addEEnumLiteral(metricEEnum, Metric.STATEMENT_VOLUME);
-    addEEnumLiteral(metricEEnum, Metric.NUMBER_OF_PARAMETERS);
-
-    initEEnum(binaryBooleanOperatorEEnum, BinaryBooleanOperator.class, "BinaryBooleanOperator");
-    addEEnumLiteral(binaryBooleanOperatorEEnum, BinaryBooleanOperator.AND);
-    addEEnumLiteral(binaryBooleanOperatorEEnum, BinaryBooleanOperator.OR);
-
-    initEEnum(compareOperatorEEnum, CompareOperator.class, "CompareOperator");
-    addEEnumLiteral(compareOperatorEEnum, CompareOperator.EQ);
-    addEEnumLiteral(compareOperatorEEnum, CompareOperator.NEQ);
-    addEEnumLiteral(compareOperatorEEnum, CompareOperator.GEQ);
-    addEEnumLiteral(compareOperatorEEnum, CompareOperator.G);
-    addEEnumLiteral(compareOperatorEEnum, CompareOperator.LEQ);
-    addEEnumLiteral(compareOperatorEEnum, CompareOperator.L);
 
     // Create resource
     createResource(eNS_URI);

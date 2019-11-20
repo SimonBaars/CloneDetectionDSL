@@ -6,7 +6,7 @@ import "http://www.eclipse.org/emf/2002/Ecore" as ecore
 
 CloneDetection: project=Project & root?=SearchRoot? & match?=Match? & exclude?=Exclude? & size=MinSize & (notCompare += DoNotCompare)* & (compare += Compare)*;
 Project: 'Project' path = STRING;
-SearchRoot: 'SearchRoot' nodes=Nodes condition=ComparisonExpression?;
+SearchRoot: 'SearchRoot' nodes=Nodes;
 Match: 'Match' target=MatchTarget;
 enum MatchTarget: Subtree | LLOC | SLOC;
 Exclude: 'Exclude' Nodes;
@@ -21,90 +21,3 @@ Compare: 'Compare' nodes=Nodes comparisonMethod=Method deepestNode=Node? perc=Pe
 enum Method: Subnodes | StringMatch | CompleteMatch | FQI;
 Percentage: INT '%';
 enum Under: OneLevel = '->' | AnyLevel = '=>';
-enum Metric: CyclomaticComplexity | LineVolume | TokenVolume | StatementVolume | NumberOfParameters;
-BooleanExpression: BooleanExpressionLevel1
-;
-BooleanExpressionLevel1 returns BooleanExpression: // Left associativity
- BooleanExpressionLevel2
- ( {ExpressionBinOp.left=current} bop = BinaryBooleanOperator
-right=BooleanExpressionLevel2
- )*
-;
-enum BinaryBooleanOperator:
- AND = 'AND' |
- OR = 'OR'
-;
-BooleanExpressionLevel2 returns BooleanExpression:
- NotExpression |
- BooleanExpressionLevel3
-;
-NotExpression:
-"NOT" sub = BooleanExpressionLevel3
-;
-BooleanExpressionLevel3 returns BooleanExpression:
- (=> ComparisonExpression) |
- BooleanExpressionBracket |
- BooleanExpressionConstant
-;
-ComparisonExpression returns BooleanExpression: {ExpressionCompOp}
- left=IntExpression op = CompareOperator right = IntExpression
-;
-enum CompareOperator:
- EQ = '==' |
- NEQ = '!=' |
- GEQ = '>=' |
- G = '>' |
- LEQ = '<=' |
- L = '<'
-;
-BooleanExpressionBracket:
-"(" sub=BooleanExpression ")"
-;
-BooleanExpressionConstant:
- value=BOOL_LITERAL
-;
-terminal BOOL_LITERAL returns ecore::EBoolean: 'true' | 'false' | 'TRUE' | 'FALSE'
-;
-IntExpression: ExpressionLevel1
-;
-ExpressionLevel1 returns IntExpression: // Left associativity
- ExpressionLevel2
- ( ({ExpressionAddition.left =current} "+" right=ExpressionLevel2)
- | ({ExpressionSubtraction.left=current} "-" right=ExpressionLevel2)
- )*
-;
-ExpressionLevel2 returns IntExpression: // Left associativity
- ExpressionLevel3
- ( ({ExpressionMultiply.left=current} "*" right=ExpressionLevel3)
- | ({ExpressionDivision.left=current} "/" right=ExpressionLevel3)
- | ({ExpressionMaximum.left =current} "max" right=ExpressionLevel3)
- | ({ExpressionMinimum.left =current} "min" right=ExpressionLevel3)
- | ({ExpressionModulo.left =current} "mod" right=ExpressionLevel3)
- )*
-;
-ExpressionLevel3 returns IntExpression: // Right associativity
- ExpressionLevel4
- ( ({ExpressionPower.left=current} "^"
-right=ExpressionLevel3)
- )?
-;
-ExpressionLevel4 returns IntExpression:
- ExpressionMinus | ExpressionPlus | ExpressionLevel5
-;
-ExpressionMinus:
-"-" sub=ExpressionLevel5
-;
-ExpressionPlus:
-"+" sub=ExpressionLevel5
-;
-ExpressionLevel5 returns IntExpression:
- ExpressionBracket |
- ExpressionConstantInt |
- metric = Metric
-;
-ExpressionBracket:
-"(" sub=IntExpression ")"
-;
-ExpressionConstantInt:
- value=INT
-;

@@ -68,7 +68,17 @@ public enum SizeMetric implements Enumerator
    * @generated
    * @ordered
    */
-  LINES(4, "lines", "lines");
+  LINES(4, "lines", "lines"),
+
+  /**
+   * The '<em><b>Cyclomatic complexity</b></em>' literal object.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #CYCLOMATIC_COMPLEXITY_VALUE
+   * @generated
+   * @ordered
+   */
+  CYCLOMATIC_COMPLEXITY(5, "cyclomatic_complexity", "cyclomatic_complexity");
 
   /**
    * The '<em><b>Tokens</b></em>' literal value.
@@ -126,6 +136,17 @@ public enum SizeMetric implements Enumerator
   public static final int LINES_VALUE = 4;
 
   /**
+   * The '<em><b>Cyclomatic complexity</b></em>' literal value.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #CYCLOMATIC_COMPLEXITY
+   * @model name="cyclomatic_complexity"
+   * @generated
+   * @ordered
+   */
+  public static final int CYCLOMATIC_COMPLEXITY_VALUE = 5;
+
+  /**
    * An array of all the '<em><b>Size Metric</b></em>' enumerators.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -139,6 +160,7 @@ public enum SizeMetric implements Enumerator
       STATEMENTS,
       NODES,
       LINES,
+      CYCLOMATIC_COMPLEXITY,
     };
 
   /**
@@ -208,6 +230,7 @@ public enum SizeMetric implements Enumerator
       case STATEMENTS_VALUE: return STATEMENTS;
       case NODES_VALUE: return NODES;
       case LINES_VALUE: return LINES;
+      case CYCLOMATIC_COMPLEXITY_VALUE: return CYCLOMATIC_COMPLEXITY;
     }
     return null;
   }

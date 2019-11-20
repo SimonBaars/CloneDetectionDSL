@@ -3,7 +3,6 @@
  */
 package com.simonbaars.cdd.cloneDetectionDSL.impl;
 
-import com.simonbaars.cdd.cloneDetectionDSL.BooleanExpression;
 import com.simonbaars.cdd.cloneDetectionDSL.CloneDetectionDSLPackage;
 import com.simonbaars.cdd.cloneDetectionDSL.Nodes;
 import com.simonbaars.cdd.cloneDetectionDSL.SearchRoot;
@@ -26,7 +25,6 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * </p>
  * <ul>
  *   <li>{@link com.simonbaars.cdd.cloneDetectionDSL.impl.SearchRootImpl#getNodes <em>Nodes</em>}</li>
- *   <li>{@link com.simonbaars.cdd.cloneDetectionDSL.impl.SearchRootImpl#getCondition <em>Condition</em>}</li>
  * </ul>
  *
  * @generated
@@ -42,16 +40,6 @@ public class SearchRootImpl extends MinimalEObjectImpl.Container implements Sear
    * @ordered
    */
   protected Nodes nodes;
-
-  /**
-   * The cached value of the '{@link #getCondition() <em>Condition</em>}' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getCondition()
-   * @generated
-   * @ordered
-   */
-  protected BooleanExpression condition;
 
   /**
    * <!-- begin-user-doc -->
@@ -130,64 +118,12 @@ public class SearchRootImpl extends MinimalEObjectImpl.Container implements Sear
    * @generated
    */
   @Override
-  public BooleanExpression getCondition()
-  {
-    return condition;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public NotificationChain basicSetCondition(BooleanExpression newCondition, NotificationChain msgs)
-  {
-    BooleanExpression oldCondition = condition;
-    condition = newCondition;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, CloneDetectionDSLPackage.SEARCH_ROOT__CONDITION, oldCondition, newCondition);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public void setCondition(BooleanExpression newCondition)
-  {
-    if (newCondition != condition)
-    {
-      NotificationChain msgs = null;
-      if (condition != null)
-        msgs = ((InternalEObject)condition).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - CloneDetectionDSLPackage.SEARCH_ROOT__CONDITION, null, msgs);
-      if (newCondition != null)
-        msgs = ((InternalEObject)newCondition).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - CloneDetectionDSLPackage.SEARCH_ROOT__CONDITION, null, msgs);
-      msgs = basicSetCondition(newCondition, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, CloneDetectionDSLPackage.SEARCH_ROOT__CONDITION, newCondition, newCondition));
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
     switch (featureID)
     {
       case CloneDetectionDSLPackage.SEARCH_ROOT__NODES:
         return basicSetNodes(null, msgs);
-      case CloneDetectionDSLPackage.SEARCH_ROOT__CONDITION:
-        return basicSetCondition(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -204,8 +140,6 @@ public class SearchRootImpl extends MinimalEObjectImpl.Container implements Sear
     {
       case CloneDetectionDSLPackage.SEARCH_ROOT__NODES:
         return getNodes();
-      case CloneDetectionDSLPackage.SEARCH_ROOT__CONDITION:
-        return getCondition();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -222,9 +156,6 @@ public class SearchRootImpl extends MinimalEObjectImpl.Container implements Sear
     {
       case CloneDetectionDSLPackage.SEARCH_ROOT__NODES:
         setNodes((Nodes)newValue);
-        return;
-      case CloneDetectionDSLPackage.SEARCH_ROOT__CONDITION:
-        setCondition((BooleanExpression)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -243,9 +174,6 @@ public class SearchRootImpl extends MinimalEObjectImpl.Container implements Sear
       case CloneDetectionDSLPackage.SEARCH_ROOT__NODES:
         setNodes((Nodes)null);
         return;
-      case CloneDetectionDSLPackage.SEARCH_ROOT__CONDITION:
-        setCondition((BooleanExpression)null);
-        return;
     }
     super.eUnset(featureID);
   }
@@ -262,8 +190,6 @@ public class SearchRootImpl extends MinimalEObjectImpl.Container implements Sear
     {
       case CloneDetectionDSLPackage.SEARCH_ROOT__NODES:
         return nodes != null;
-      case CloneDetectionDSLPackage.SEARCH_ROOT__CONDITION:
-        return condition != null;
     }
     return super.eIsSet(featureID);
   }

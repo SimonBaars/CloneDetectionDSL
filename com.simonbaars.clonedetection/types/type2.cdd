@@ -1,0 +1,4 @@
+Size 6 lines
+Match SLOC
+Exclude PackageDeclaration, ImportDeclaration
+DoNotCompare SimpleName, LiteralExpr

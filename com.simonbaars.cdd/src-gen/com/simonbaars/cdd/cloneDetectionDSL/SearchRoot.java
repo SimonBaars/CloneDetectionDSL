@@ -15,7 +15,6 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link com.simonbaars.cdd.cloneDetectionDSL.SearchRoot#getNodes <em>Nodes</em>}</li>
- *   <li>{@link com.simonbaars.cdd.cloneDetectionDSL.SearchRoot#getCondition <em>Condition</em>}</li>
  * </ul>
  *
  * @see com.simonbaars.cdd.cloneDetectionDSL.CloneDetectionDSLPackage#getSearchRoot()
@@ -45,27 +44,5 @@ public interface SearchRoot extends EObject
    * @generated
    */
   void setNodes(Nodes value);
-
-  /**
-   * Returns the value of the '<em><b>Condition</b></em>' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the value of the '<em>Condition</em>' containment reference.
-   * @see #setCondition(BooleanExpression)
-   * @see com.simonbaars.cdd.cloneDetectionDSL.CloneDetectionDSLPackage#getSearchRoot_Condition()
-   * @model containment="true"
-   * @generated
-   */
-  BooleanExpression getCondition();
-
-  /**
-   * Sets the value of the '{@link com.simonbaars.cdd.cloneDetectionDSL.SearchRoot#getCondition <em>Condition</em>}' containment reference.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Condition</em>' containment reference.
-   * @see #getCondition()
-   * @generated
-   */
-  void setCondition(BooleanExpression value);
 
 } // SearchRoot
