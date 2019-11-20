@@ -3,3 +3,4 @@ Size (6 nodes & 20 tokens) | (5 nodes & 25 tokens) | (4 nodes & 30 tokens) | (3 
 Match LLOC
 Exclude PackageDeclaration, ImportDeclaration
 Compare ReferenceType FQI
+Compare 
