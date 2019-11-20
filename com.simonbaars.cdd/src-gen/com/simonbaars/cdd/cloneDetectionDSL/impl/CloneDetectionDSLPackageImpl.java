@@ -19,6 +19,7 @@ import com.simonbaars.cdd.cloneDetectionDSL.Node;
 import com.simonbaars.cdd.cloneDetectionDSL.Nodes;
 import com.simonbaars.cdd.cloneDetectionDSL.Project;
 import com.simonbaars.cdd.cloneDetectionDSL.SearchRoot;
+import com.simonbaars.cdd.cloneDetectionDSL.Size;
 import com.simonbaars.cdd.cloneDetectionDSL.SizeMetric;
 import com.simonbaars.cdd.cloneDetectionDSL.Under;
 
@@ -86,6 +87,13 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * @generated
    */
   private EClass nodesEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass sizeEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -461,6 +469,17 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * @generated
    */
   @Override
+  public EClass getSize()
+  {
+    return sizeEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
   public EClass getMinSize()
   {
     return minSizeEClass;
@@ -724,6 +743,8 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
     createEReference(nodesEClass, NODES__NODE);
     createEReference(nodesEClass, NODES__NODES);
 
+    sizeEClass = createEClass(SIZE);
+
     minSizeEClass = createEClass(MIN_SIZE);
     createEReference(minSizeEClass, MIN_SIZE__EXPR);
     createEReference(minSizeEClass, MIN_SIZE__BRACKETS);
@@ -781,6 +802,7 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
     // Add supertypes to classes
     nodesEClass.getESuperTypes().add(this.getExclude());
     nodesEClass.getESuperTypes().add(this.getDoNotCompare());
+    minSizeEClass.getESuperTypes().add(this.getSize());
 
     // Initialize classes and features; add operations and parameters
     initEClass(cloneDetectionEClass, CloneDetection.class, "CloneDetection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -788,7 +810,7 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
     initEAttribute(getCloneDetection_Root(), ecorePackage.getEBoolean(), "root", null, 0, 1, CloneDetection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getCloneDetection_Match(), ecorePackage.getEBoolean(), "match", null, 0, 1, CloneDetection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getCloneDetection_Exclude(), ecorePackage.getEBoolean(), "exclude", null, 0, 1, CloneDetection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getCloneDetection_Size(), this.getMinSize(), null, "size", null, 0, 1, CloneDetection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getCloneDetection_Size(), this.getSize(), null, "size", null, 0, 1, CloneDetection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getCloneDetection_NotCompare(), this.getDoNotCompare(), null, "notCompare", null, 0, -1, CloneDetection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getCloneDetection_Compare(), this.getCompare(), null, "compare", null, 0, -1, CloneDetection.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -811,6 +833,8 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
     initEClass(nodesEClass, Nodes.class, "Nodes", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getNodes_Node(), this.getNode(), null, "node", null, 0, 1, Nodes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getNodes_Nodes(), this.getNodes(), null, "nodes", null, 0, 1, Nodes.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(sizeEClass, Size.class, "Size", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
     initEClass(minSizeEClass, MinSize.class, "MinSize", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getMinSize_Expr(), this.getMetricExpr(), null, "expr", null, 0, 1, MinSize.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

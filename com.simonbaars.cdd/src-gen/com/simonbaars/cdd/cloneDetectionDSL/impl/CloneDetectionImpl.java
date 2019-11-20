@@ -7,8 +7,8 @@ import com.simonbaars.cdd.cloneDetectionDSL.CloneDetection;
 import com.simonbaars.cdd.cloneDetectionDSL.CloneDetectionDSLPackage;
 import com.simonbaars.cdd.cloneDetectionDSL.Compare;
 import com.simonbaars.cdd.cloneDetectionDSL.DoNotCompare;
-import com.simonbaars.cdd.cloneDetectionDSL.MinSize;
 import com.simonbaars.cdd.cloneDetectionDSL.Project;
+import com.simonbaars.cdd.cloneDetectionDSL.Size;
 
 import java.util.Collection;
 
@@ -125,7 +125,7 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * @generated
    * @ordered
    */
-  protected MinSize size;
+  protected Size size;
 
   /**
    * The cached value of the '{@link #getNotCompare() <em>Not Compare</em>}' containment reference list.
@@ -299,7 +299,7 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * @generated
    */
   @Override
-  public MinSize getSize()
+  public Size getSize()
   {
     return size;
   }
@@ -309,9 +309,9 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  public NotificationChain basicSetSize(MinSize newSize, NotificationChain msgs)
+  public NotificationChain basicSetSize(Size newSize, NotificationChain msgs)
   {
-    MinSize oldSize = size;
+    Size oldSize = size;
     size = newSize;
     if (eNotificationRequired())
     {
@@ -327,7 +327,7 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * @generated
    */
   @Override
-  public void setSize(MinSize newSize)
+  public void setSize(Size newSize)
   {
     if (newSize != size)
     {
@@ -447,7 +447,7 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
         setExclude((Boolean)newValue);
         return;
       case CloneDetectionDSLPackage.CLONE_DETECTION__SIZE:
-        setSize((MinSize)newValue);
+        setSize((Size)newValue);
         return;
       case CloneDetectionDSLPackage.CLONE_DETECTION__NOT_COMPARE:
         getNotCompare().clear();
@@ -484,7 +484,7 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
         setExclude(EXCLUDE_EDEFAULT);
         return;
       case CloneDetectionDSLPackage.CLONE_DETECTION__SIZE:
-        setSize((MinSize)null);
+        setSize((Size)null);
         return;
       case CloneDetectionDSLPackage.CLONE_DETECTION__NOT_COMPARE:
         getNotCompare().clear();

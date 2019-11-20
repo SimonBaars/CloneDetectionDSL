@@ -15,7 +15,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +32,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class MinSizeImpl extends MinimalEObjectImpl.Container implements MinSize
+public class MinSizeImpl extends SizeImpl implements MinSize
 {
   /**
    * The cached value of the '{@link #getExpr() <em>Expr</em>}' containment reference.

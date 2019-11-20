@@ -327,6 +327,25 @@ public interface CloneDetectionDSLPackage extends EPackage
   int NODES_FEATURE_COUNT = EXCLUDE_FEATURE_COUNT + 2;
 
   /**
+   * The meta object id for the '{@link com.simonbaars.cdd.cloneDetectionDSL.impl.SizeImpl <em>Size</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see com.simonbaars.cdd.cloneDetectionDSL.impl.SizeImpl
+   * @see com.simonbaars.cdd.cloneDetectionDSL.impl.CloneDetectionDSLPackageImpl#getSize()
+   * @generated
+   */
+  int SIZE = 7;
+
+  /**
+   * The number of structural features of the '<em>Size</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SIZE_FEATURE_COUNT = 0;
+
+  /**
    * The meta object id for the '{@link com.simonbaars.cdd.cloneDetectionDSL.impl.MinSizeImpl <em>Min Size</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -334,7 +353,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @see com.simonbaars.cdd.cloneDetectionDSL.impl.CloneDetectionDSLPackageImpl#getMinSize()
    * @generated
    */
-  int MIN_SIZE = 7;
+  int MIN_SIZE = 8;
 
   /**
    * The feature id for the '<em><b>Expr</b></em>' containment reference.
@@ -343,7 +362,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MIN_SIZE__EXPR = 0;
+  int MIN_SIZE__EXPR = SIZE_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Brackets</b></em>' containment reference.
@@ -352,7 +371,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MIN_SIZE__BRACKETS = 1;
+  int MIN_SIZE__BRACKETS = SIZE_FEATURE_COUNT + 1;
 
   /**
    * The feature id for the '<em><b>Operator</b></em>' attribute.
@@ -361,7 +380,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MIN_SIZE__OPERATOR = 2;
+  int MIN_SIZE__OPERATOR = SIZE_FEATURE_COUNT + 2;
 
   /**
    * The feature id for the '<em><b>Size</b></em>' containment reference.
@@ -370,7 +389,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MIN_SIZE__SIZE = 3;
+  int MIN_SIZE__SIZE = SIZE_FEATURE_COUNT + 3;
 
   /**
    * The number of structural features of the '<em>Min Size</em>' class.
@@ -379,7 +398,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MIN_SIZE_FEATURE_COUNT = 4;
+  int MIN_SIZE_FEATURE_COUNT = SIZE_FEATURE_COUNT + 4;
 
   /**
    * The meta object id for the '{@link com.simonbaars.cdd.cloneDetectionDSL.impl.MetricExprImpl <em>Metric Expr</em>}' class.
@@ -389,7 +408,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @see com.simonbaars.cdd.cloneDetectionDSL.impl.CloneDetectionDSLPackageImpl#getMetricExpr()
    * @generated
    */
-  int METRIC_EXPR = 8;
+  int METRIC_EXPR = 9;
 
   /**
    * The feature id for the '<em><b>Amount</b></em>' attribute.
@@ -426,7 +445,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @see com.simonbaars.cdd.cloneDetectionDSL.impl.CloneDetectionDSLPackageImpl#getDoNotCompare()
    * @generated
    */
-  int DO_NOT_COMPARE = 9;
+  int DO_NOT_COMPARE = 10;
 
   /**
    * The number of structural features of the '<em>Do Not Compare</em>' class.
@@ -445,7 +464,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @see com.simonbaars.cdd.cloneDetectionDSL.impl.CloneDetectionDSLPackageImpl#getCompare()
    * @generated
    */
-  int COMPARE = 10;
+  int COMPARE = 11;
 
   /**
    * The feature id for the '<em><b>Nodes</b></em>' containment reference.
@@ -500,7 +519,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @see com.simonbaars.cdd.cloneDetectionDSL.impl.CloneDetectionDSLPackageImpl#getMatchTarget()
    * @generated
    */
-  int MATCH_TARGET = 11;
+  int MATCH_TARGET = 12;
 
   /**
    * The meta object id for the '{@link com.simonbaars.cdd.cloneDetectionDSL.SizeMetric <em>Size Metric</em>}' enum.
@@ -510,7 +529,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @see com.simonbaars.cdd.cloneDetectionDSL.impl.CloneDetectionDSLPackageImpl#getSizeMetric()
    * @generated
    */
-  int SIZE_METRIC = 12;
+  int SIZE_METRIC = 13;
 
   /**
    * The meta object id for the '{@link com.simonbaars.cdd.cloneDetectionDSL.BoolOperator <em>Bool Operator</em>}' enum.
@@ -520,7 +539,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @see com.simonbaars.cdd.cloneDetectionDSL.impl.CloneDetectionDSLPackageImpl#getBoolOperator()
    * @generated
    */
-  int BOOL_OPERATOR = 13;
+  int BOOL_OPERATOR = 14;
 
   /**
    * The meta object id for the '{@link com.simonbaars.cdd.cloneDetectionDSL.Method <em>Method</em>}' enum.
@@ -530,7 +549,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @see com.simonbaars.cdd.cloneDetectionDSL.impl.CloneDetectionDSLPackageImpl#getMethod()
    * @generated
    */
-  int METHOD = 14;
+  int METHOD = 15;
 
   /**
    * The meta object id for the '{@link com.simonbaars.cdd.cloneDetectionDSL.Under <em>Under</em>}' enum.
@@ -540,7 +559,7 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @see com.simonbaars.cdd.cloneDetectionDSL.impl.CloneDetectionDSLPackageImpl#getUnder()
    * @generated
    */
-  int UNDER = 15;
+  int UNDER = 16;
 
 
   /**
@@ -777,6 +796,16 @@ public interface CloneDetectionDSLPackage extends EPackage
    * @generated
    */
   EReference getNodes_Nodes();
+
+  /**
+   * Returns the meta object for class '{@link com.simonbaars.cdd.cloneDetectionDSL.Size <em>Size</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Size</em>'.
+   * @see com.simonbaars.cdd.cloneDetectionDSL.Size
+   * @generated
+   */
+  EClass getSize();
 
   /**
    * Returns the meta object for class '{@link com.simonbaars.cdd.cloneDetectionDSL.MinSize <em>Min Size</em>}'.
@@ -1190,6 +1219,16 @@ public interface CloneDetectionDSLPackage extends EPackage
      * @generated
      */
     EReference NODES__NODES = eINSTANCE.getNodes_Nodes();
+
+    /**
+     * The meta object literal for the '{@link com.simonbaars.cdd.cloneDetectionDSL.impl.SizeImpl <em>Size</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see com.simonbaars.cdd.cloneDetectionDSL.impl.SizeImpl
+     * @see com.simonbaars.cdd.cloneDetectionDSL.impl.CloneDetectionDSLPackageImpl#getSize()
+     * @generated
+     */
+    EClass SIZE = eINSTANCE.getSize();
 
     /**
      * The meta object literal for the '{@link com.simonbaars.cdd.cloneDetectionDSL.impl.MinSizeImpl <em>Min Size</em>}' class.

@@ -670,10 +670,10 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCloneDetectionDSL.g:2173:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // InternalCloneDetectionDSL.g:2173:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // InternalCloneDetectionDSL.g:2225:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // InternalCloneDetectionDSL.g:2225:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // InternalCloneDetectionDSL.g:2173:11: ( '^' )?
+            // InternalCloneDetectionDSL.g:2225:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -682,7 +682,7 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:2173:11: '^'
+                    // InternalCloneDetectionDSL.g:2225:11: '^'
                     {
                     match('^'); 
 
@@ -700,7 +700,7 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // InternalCloneDetectionDSL.g:2173:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // InternalCloneDetectionDSL.g:2225:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -749,10 +749,10 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCloneDetectionDSL.g:2175:10: ( ( '0' .. '9' )+ )
-            // InternalCloneDetectionDSL.g:2175:12: ( '0' .. '9' )+
+            // InternalCloneDetectionDSL.g:2227:10: ( ( '0' .. '9' )+ )
+            // InternalCloneDetectionDSL.g:2227:12: ( '0' .. '9' )+
             {
-            // InternalCloneDetectionDSL.g:2175:12: ( '0' .. '9' )+
+            // InternalCloneDetectionDSL.g:2227:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -766,7 +766,7 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // InternalCloneDetectionDSL.g:2175:13: '0' .. '9'
+            	    // InternalCloneDetectionDSL.g:2227:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -798,10 +798,10 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCloneDetectionDSL.g:2177:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // InternalCloneDetectionDSL.g:2177:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // InternalCloneDetectionDSL.g:2229:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // InternalCloneDetectionDSL.g:2229:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // InternalCloneDetectionDSL.g:2177:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // InternalCloneDetectionDSL.g:2229:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -819,10 +819,10 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:2177:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // InternalCloneDetectionDSL.g:2229:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // InternalCloneDetectionDSL.g:2177:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // InternalCloneDetectionDSL.g:2229:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -838,7 +838,7 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // InternalCloneDetectionDSL.g:2177:21: '\\\\' .
+                    	    // InternalCloneDetectionDSL.g:2229:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -846,7 +846,7 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalCloneDetectionDSL.g:2177:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // InternalCloneDetectionDSL.g:2229:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -871,10 +871,10 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:2177:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // InternalCloneDetectionDSL.g:2229:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // InternalCloneDetectionDSL.g:2177:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // InternalCloneDetectionDSL.g:2229:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -890,7 +890,7 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // InternalCloneDetectionDSL.g:2177:54: '\\\\' .
+                    	    // InternalCloneDetectionDSL.g:2229:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -898,7 +898,7 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // InternalCloneDetectionDSL.g:2177:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // InternalCloneDetectionDSL.g:2229:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -941,12 +941,12 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCloneDetectionDSL.g:2179:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // InternalCloneDetectionDSL.g:2179:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // InternalCloneDetectionDSL.g:2231:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // InternalCloneDetectionDSL.g:2231:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // InternalCloneDetectionDSL.g:2179:24: ( options {greedy=false; } : . )*
+            // InternalCloneDetectionDSL.g:2231:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -971,7 +971,7 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // InternalCloneDetectionDSL.g:2179:52: .
+            	    // InternalCloneDetectionDSL.g:2231:52: .
             	    {
             	    matchAny(); 
 
@@ -1001,12 +1001,12 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCloneDetectionDSL.g:2181:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // InternalCloneDetectionDSL.g:2181:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // InternalCloneDetectionDSL.g:2233:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // InternalCloneDetectionDSL.g:2233:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // InternalCloneDetectionDSL.g:2181:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // InternalCloneDetectionDSL.g:2233:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -1019,7 +1019,7 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // InternalCloneDetectionDSL.g:2181:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // InternalCloneDetectionDSL.g:2233:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1039,7 +1039,7 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
                 }
             } while (true);
 
-            // InternalCloneDetectionDSL.g:2181:40: ( ( '\\r' )? '\\n' )?
+            // InternalCloneDetectionDSL.g:2233:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -1048,9 +1048,9 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:2181:41: ( '\\r' )? '\\n'
+                    // InternalCloneDetectionDSL.g:2233:41: ( '\\r' )? '\\n'
                     {
-                    // InternalCloneDetectionDSL.g:2181:41: ( '\\r' )?
+                    // InternalCloneDetectionDSL.g:2233:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -1059,7 +1059,7 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // InternalCloneDetectionDSL.g:2181:41: '\\r'
+                            // InternalCloneDetectionDSL.g:2233:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1091,10 +1091,10 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCloneDetectionDSL.g:2183:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // InternalCloneDetectionDSL.g:2183:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalCloneDetectionDSL.g:2235:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // InternalCloneDetectionDSL.g:2235:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // InternalCloneDetectionDSL.g:2183:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // InternalCloneDetectionDSL.g:2235:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1148,8 +1148,8 @@ public class InternalCloneDetectionDSLLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // InternalCloneDetectionDSL.g:2185:16: ( . )
-            // InternalCloneDetectionDSL.g:2185:18: .
+            // InternalCloneDetectionDSL.g:2237:16: ( . )
+            // InternalCloneDetectionDSL.g:2237:18: .
             {
             matchAny(); 
 

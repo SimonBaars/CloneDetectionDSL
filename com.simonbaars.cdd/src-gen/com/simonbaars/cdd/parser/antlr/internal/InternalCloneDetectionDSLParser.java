@@ -138,7 +138,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "ruleCloneDetection"
-    // InternalCloneDetectionDSL.g:72:1: ruleCloneDetection returns [EObject current=null] : ( ( ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?) ) ) ;
+    // InternalCloneDetectionDSL.g:72:1: ruleCloneDetection returns [EObject current=null] : ( ( ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?) ) ) ;
     public final EObject ruleCloneDetection() throws RecognitionException {
         EObject current = null;
 
@@ -161,22 +161,22 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
         	enterRule();
 
         try {
-            // InternalCloneDetectionDSL.g:78:2: ( ( ( ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?) ) ) )
-            // InternalCloneDetectionDSL.g:79:2: ( ( ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?) ) )
+            // InternalCloneDetectionDSL.g:78:2: ( ( ( ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?) ) ) )
+            // InternalCloneDetectionDSL.g:79:2: ( ( ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?) ) )
             {
-            // InternalCloneDetectionDSL.g:79:2: ( ( ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?) ) )
-            // InternalCloneDetectionDSL.g:80:3: ( ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?) )
+            // InternalCloneDetectionDSL.g:79:2: ( ( ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?) ) )
+            // InternalCloneDetectionDSL.g:80:3: ( ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?) )
             {
-            // InternalCloneDetectionDSL.g:80:3: ( ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?) )
-            // InternalCloneDetectionDSL.g:81:4: ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?)
+            // InternalCloneDetectionDSL.g:80:3: ( ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?) )
+            // InternalCloneDetectionDSL.g:81:4: ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?)
             {
              
             			  getUnorderedGroupHelper().enter(grammarAccess.getCloneDetectionAccess().getUnorderedGroup());
             			
-            // InternalCloneDetectionDSL.g:84:4: ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?)
-            // InternalCloneDetectionDSL.g:85:5: ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?
+            // InternalCloneDetectionDSL.g:84:4: ( ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?)
+            // InternalCloneDetectionDSL.g:85:5: ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+ {...}?
             {
-            // InternalCloneDetectionDSL.g:85:5: ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+
+            // InternalCloneDetectionDSL.g:85:5: ( ({...}? => ( ({...}? => ( (lv_project_1_0= ruleProject ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_root_2_0= ruleSearchRoot ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_match_3_0= ruleMatch ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_exclude_4_0= ruleExclude ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) ) ) | ({...}? => ( ({...}? => ( (lv_notCompare_6_0= ruleDoNotCompare ) ) )+ ) ) | ({...}? => ( ({...}? => ( (lv_compare_7_0= ruleCompare ) ) )+ ) ) )+
             int cnt3=0;
             loop3:
             do {
@@ -476,37 +476,37 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
             	    }
             	    break;
             	case 5 :
-            	    // InternalCloneDetectionDSL.g:198:3: ({...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) ) )
+            	    // InternalCloneDetectionDSL.g:198:3: ({...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) ) )
             	    {
-            	    // InternalCloneDetectionDSL.g:198:3: ({...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) ) )
-            	    // InternalCloneDetectionDSL.g:199:4: {...}? => ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) )
+            	    // InternalCloneDetectionDSL.g:198:3: ({...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) ) )
+            	    // InternalCloneDetectionDSL.g:199:4: {...}? => ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) )
             	    {
             	    if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 4) ) {
             	        throw new FailedPredicateException(input, "ruleCloneDetection", "getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 4)");
             	    }
-            	    // InternalCloneDetectionDSL.g:199:108: ( ({...}? => ( (lv_size_5_0= ruleMinSize ) ) ) )
-            	    // InternalCloneDetectionDSL.g:200:5: ({...}? => ( (lv_size_5_0= ruleMinSize ) ) )
+            	    // InternalCloneDetectionDSL.g:199:108: ( ({...}? => ( (lv_size_5_0= ruleSize ) ) ) )
+            	    // InternalCloneDetectionDSL.g:200:5: ({...}? => ( (lv_size_5_0= ruleSize ) ) )
             	    {
 
             	    					getUnorderedGroupHelper().select(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 4);
             	    				
-            	    // InternalCloneDetectionDSL.g:203:8: ({...}? => ( (lv_size_5_0= ruleMinSize ) ) )
-            	    // InternalCloneDetectionDSL.g:203:9: {...}? => ( (lv_size_5_0= ruleMinSize ) )
+            	    // InternalCloneDetectionDSL.g:203:8: ({...}? => ( (lv_size_5_0= ruleSize ) ) )
+            	    // InternalCloneDetectionDSL.g:203:9: {...}? => ( (lv_size_5_0= ruleSize ) )
             	    {
             	    if ( !((true)) ) {
             	        throw new FailedPredicateException(input, "ruleCloneDetection", "true");
             	    }
-            	    // InternalCloneDetectionDSL.g:203:18: ( (lv_size_5_0= ruleMinSize ) )
-            	    // InternalCloneDetectionDSL.g:203:19: (lv_size_5_0= ruleMinSize )
+            	    // InternalCloneDetectionDSL.g:203:18: ( (lv_size_5_0= ruleSize ) )
+            	    // InternalCloneDetectionDSL.g:203:19: (lv_size_5_0= ruleSize )
             	    {
-            	    // InternalCloneDetectionDSL.g:203:19: (lv_size_5_0= ruleMinSize )
-            	    // InternalCloneDetectionDSL.g:204:9: lv_size_5_0= ruleMinSize
+            	    // InternalCloneDetectionDSL.g:203:19: (lv_size_5_0= ruleSize )
+            	    // InternalCloneDetectionDSL.g:204:9: lv_size_5_0= ruleSize
             	    {
 
-            	    									newCompositeNode(grammarAccess.getCloneDetectionAccess().getSizeMinSizeParserRuleCall_4_0());
+            	    									newCompositeNode(grammarAccess.getCloneDetectionAccess().getSizeSizeParserRuleCall_4_0());
             	    								
             	    pushFollow(FOLLOW_3);
-            	    lv_size_5_0=ruleMinSize();
+            	    lv_size_5_0=ruleSize();
 
             	    state._fsp--;
 
@@ -518,7 +518,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
             	    										current,
             	    										"size",
             	    										lv_size_5_0,
-            	    										"com.simonbaars.cdd.CloneDetectionDSL.MinSize");
+            	    										"com.simonbaars.cdd.CloneDetectionDSL.Size");
             	    									afterParserOrEnumRuleCall();
             	    								
 
@@ -1584,8 +1584,101 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
     // $ANTLR end "ruleNodes"
 
 
+    // $ANTLR start "entryRuleSize"
+    // InternalCloneDetectionDSL.g:596:1: entryRuleSize returns [EObject current=null] : iv_ruleSize= ruleSize EOF ;
+    public final EObject entryRuleSize() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleSize = null;
+
+
+        try {
+            // InternalCloneDetectionDSL.g:596:45: (iv_ruleSize= ruleSize EOF )
+            // InternalCloneDetectionDSL.g:597:2: iv_ruleSize= ruleSize EOF
+            {
+             newCompositeNode(grammarAccess.getSizeRule()); 
+            pushFollow(FOLLOW_1);
+            iv_ruleSize=ruleSize();
+
+            state._fsp--;
+
+             current =iv_ruleSize; 
+            match(input,EOF,FOLLOW_2); 
+
+            }
+
+        }
+
+            catch (RecognitionException re) {
+                recover(input,re);
+                appendSkippedTokens();
+            }
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleSize"
+
+
+    // $ANTLR start "ruleSize"
+    // InternalCloneDetectionDSL.g:603:1: ruleSize returns [EObject current=null] : (otherlv_0= 'Size' this_MinSize_1= ruleMinSize ) ;
+    public final EObject ruleSize() throws RecognitionException {
+        EObject current = null;
+
+        Token otherlv_0=null;
+        EObject this_MinSize_1 = null;
+
+
+
+        	enterRule();
+
+        try {
+            // InternalCloneDetectionDSL.g:609:2: ( (otherlv_0= 'Size' this_MinSize_1= ruleMinSize ) )
+            // InternalCloneDetectionDSL.g:610:2: (otherlv_0= 'Size' this_MinSize_1= ruleMinSize )
+            {
+            // InternalCloneDetectionDSL.g:610:2: (otherlv_0= 'Size' this_MinSize_1= ruleMinSize )
+            // InternalCloneDetectionDSL.g:611:3: otherlv_0= 'Size' this_MinSize_1= ruleMinSize
+            {
+            otherlv_0=(Token)match(input,17,FOLLOW_9); 
+
+            			newLeafNode(otherlv_0, grammarAccess.getSizeAccess().getSizeKeyword_0());
+            		
+
+            			newCompositeNode(grammarAccess.getSizeAccess().getMinSizeParserRuleCall_1());
+            		
+            pushFollow(FOLLOW_2);
+            this_MinSize_1=ruleMinSize();
+
+            state._fsp--;
+
+
+            			current = this_MinSize_1;
+            			afterParserOrEnumRuleCall();
+            		
+
+            }
+
+
+            }
+
+
+            	leaveRule();
+
+        }
+
+            catch (RecognitionException re) {
+                recover(input,re);
+                appendSkippedTokens();
+            }
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleSize"
+
+
     // $ANTLR start "entryRuleMinSize"
-    // InternalCloneDetectionDSL.g:596:1: entryRuleMinSize returns [EObject current=null] : iv_ruleMinSize= ruleMinSize EOF ;
+    // InternalCloneDetectionDSL.g:627:1: entryRuleMinSize returns [EObject current=null] : iv_ruleMinSize= ruleMinSize EOF ;
     public final EObject entryRuleMinSize() throws RecognitionException {
         EObject current = null;
 
@@ -1593,8 +1686,8 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
         try {
-            // InternalCloneDetectionDSL.g:596:48: (iv_ruleMinSize= ruleMinSize EOF )
-            // InternalCloneDetectionDSL.g:597:2: iv_ruleMinSize= ruleMinSize EOF
+            // InternalCloneDetectionDSL.g:627:48: (iv_ruleMinSize= ruleMinSize EOF )
+            // InternalCloneDetectionDSL.g:628:2: iv_ruleMinSize= ruleMinSize EOF
             {
              newCompositeNode(grammarAccess.getMinSizeRule()); 
             pushFollow(FOLLOW_1);
@@ -1621,37 +1714,32 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "ruleMinSize"
-    // InternalCloneDetectionDSL.g:603:1: ruleMinSize returns [EObject current=null] : (otherlv_0= 'Size' ( ( (lv_expr_1_0= ruleMetricExpr ) ) | (otherlv_2= '(' ( (lv_brackets_3_0= ruleMinSize ) ) otherlv_4= ')' ) ) ( ( (lv_operator_5_0= ruleBoolOperator ) ) ( (lv_size_6_0= ruleMinSize ) ) )? ) ;
+    // InternalCloneDetectionDSL.g:634:1: ruleMinSize returns [EObject current=null] : ( ( ( (lv_expr_0_0= ruleMetricExpr ) ) | (otherlv_1= '(' ( (lv_brackets_2_0= ruleMinSize ) ) otherlv_3= ')' ) ) ( ( (lv_operator_4_0= ruleBoolOperator ) ) ( (lv_size_5_0= ruleMinSize ) ) )? ) ;
     public final EObject ruleMinSize() throws RecognitionException {
         EObject current = null;
 
-        Token otherlv_0=null;
-        Token otherlv_2=null;
-        Token otherlv_4=null;
-        EObject lv_expr_1_0 = null;
+        Token otherlv_1=null;
+        Token otherlv_3=null;
+        EObject lv_expr_0_0 = null;
 
-        EObject lv_brackets_3_0 = null;
+        EObject lv_brackets_2_0 = null;
 
-        Enumerator lv_operator_5_0 = null;
+        Enumerator lv_operator_4_0 = null;
 
-        EObject lv_size_6_0 = null;
+        EObject lv_size_5_0 = null;
 
 
 
         	enterRule();
 
         try {
-            // InternalCloneDetectionDSL.g:609:2: ( (otherlv_0= 'Size' ( ( (lv_expr_1_0= ruleMetricExpr ) ) | (otherlv_2= '(' ( (lv_brackets_3_0= ruleMinSize ) ) otherlv_4= ')' ) ) ( ( (lv_operator_5_0= ruleBoolOperator ) ) ( (lv_size_6_0= ruleMinSize ) ) )? ) )
-            // InternalCloneDetectionDSL.g:610:2: (otherlv_0= 'Size' ( ( (lv_expr_1_0= ruleMetricExpr ) ) | (otherlv_2= '(' ( (lv_brackets_3_0= ruleMinSize ) ) otherlv_4= ')' ) ) ( ( (lv_operator_5_0= ruleBoolOperator ) ) ( (lv_size_6_0= ruleMinSize ) ) )? )
+            // InternalCloneDetectionDSL.g:640:2: ( ( ( ( (lv_expr_0_0= ruleMetricExpr ) ) | (otherlv_1= '(' ( (lv_brackets_2_0= ruleMinSize ) ) otherlv_3= ')' ) ) ( ( (lv_operator_4_0= ruleBoolOperator ) ) ( (lv_size_5_0= ruleMinSize ) ) )? ) )
+            // InternalCloneDetectionDSL.g:641:2: ( ( ( (lv_expr_0_0= ruleMetricExpr ) ) | (otherlv_1= '(' ( (lv_brackets_2_0= ruleMinSize ) ) otherlv_3= ')' ) ) ( ( (lv_operator_4_0= ruleBoolOperator ) ) ( (lv_size_5_0= ruleMinSize ) ) )? )
             {
-            // InternalCloneDetectionDSL.g:610:2: (otherlv_0= 'Size' ( ( (lv_expr_1_0= ruleMetricExpr ) ) | (otherlv_2= '(' ( (lv_brackets_3_0= ruleMinSize ) ) otherlv_4= ')' ) ) ( ( (lv_operator_5_0= ruleBoolOperator ) ) ( (lv_size_6_0= ruleMinSize ) ) )? )
-            // InternalCloneDetectionDSL.g:611:3: otherlv_0= 'Size' ( ( (lv_expr_1_0= ruleMetricExpr ) ) | (otherlv_2= '(' ( (lv_brackets_3_0= ruleMinSize ) ) otherlv_4= ')' ) ) ( ( (lv_operator_5_0= ruleBoolOperator ) ) ( (lv_size_6_0= ruleMinSize ) ) )?
+            // InternalCloneDetectionDSL.g:641:2: ( ( ( (lv_expr_0_0= ruleMetricExpr ) ) | (otherlv_1= '(' ( (lv_brackets_2_0= ruleMinSize ) ) otherlv_3= ')' ) ) ( ( (lv_operator_4_0= ruleBoolOperator ) ) ( (lv_size_5_0= ruleMinSize ) ) )? )
+            // InternalCloneDetectionDSL.g:642:3: ( ( (lv_expr_0_0= ruleMetricExpr ) ) | (otherlv_1= '(' ( (lv_brackets_2_0= ruleMinSize ) ) otherlv_3= ')' ) ) ( ( (lv_operator_4_0= ruleBoolOperator ) ) ( (lv_size_5_0= ruleMinSize ) ) )?
             {
-            otherlv_0=(Token)match(input,17,FOLLOW_9); 
-
-            			newLeafNode(otherlv_0, grammarAccess.getMinSizeAccess().getSizeKeyword_0());
-            		
-            // InternalCloneDetectionDSL.g:615:3: ( ( (lv_expr_1_0= ruleMetricExpr ) ) | (otherlv_2= '(' ( (lv_brackets_3_0= ruleMinSize ) ) otherlv_4= ')' ) )
+            // InternalCloneDetectionDSL.g:642:3: ( ( (lv_expr_0_0= ruleMetricExpr ) ) | (otherlv_1= '(' ( (lv_brackets_2_0= ruleMinSize ) ) otherlv_3= ')' ) )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1669,19 +1757,19 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
             }
             switch (alt7) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:616:4: ( (lv_expr_1_0= ruleMetricExpr ) )
+                    // InternalCloneDetectionDSL.g:643:4: ( (lv_expr_0_0= ruleMetricExpr ) )
                     {
-                    // InternalCloneDetectionDSL.g:616:4: ( (lv_expr_1_0= ruleMetricExpr ) )
-                    // InternalCloneDetectionDSL.g:617:5: (lv_expr_1_0= ruleMetricExpr )
+                    // InternalCloneDetectionDSL.g:643:4: ( (lv_expr_0_0= ruleMetricExpr ) )
+                    // InternalCloneDetectionDSL.g:644:5: (lv_expr_0_0= ruleMetricExpr )
                     {
-                    // InternalCloneDetectionDSL.g:617:5: (lv_expr_1_0= ruleMetricExpr )
-                    // InternalCloneDetectionDSL.g:618:6: lv_expr_1_0= ruleMetricExpr
+                    // InternalCloneDetectionDSL.g:644:5: (lv_expr_0_0= ruleMetricExpr )
+                    // InternalCloneDetectionDSL.g:645:6: lv_expr_0_0= ruleMetricExpr
                     {
 
-                    						newCompositeNode(grammarAccess.getMinSizeAccess().getExprMetricExprParserRuleCall_1_0_0());
+                    						newCompositeNode(grammarAccess.getMinSizeAccess().getExprMetricExprParserRuleCall_0_0_0());
                     					
                     pushFollow(FOLLOW_10);
-                    lv_expr_1_0=ruleMetricExpr();
+                    lv_expr_0_0=ruleMetricExpr();
 
                     state._fsp--;
 
@@ -1692,7 +1780,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     						set(
                     							current,
                     							"expr",
-                    							lv_expr_1_0,
+                    							lv_expr_0_0,
                     							"com.simonbaars.cdd.CloneDetectionDSL.MetricExpr");
                     						afterParserOrEnumRuleCall();
                     					
@@ -1706,26 +1794,26 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:636:4: (otherlv_2= '(' ( (lv_brackets_3_0= ruleMinSize ) ) otherlv_4= ')' )
+                    // InternalCloneDetectionDSL.g:663:4: (otherlv_1= '(' ( (lv_brackets_2_0= ruleMinSize ) ) otherlv_3= ')' )
                     {
-                    // InternalCloneDetectionDSL.g:636:4: (otherlv_2= '(' ( (lv_brackets_3_0= ruleMinSize ) ) otherlv_4= ')' )
-                    // InternalCloneDetectionDSL.g:637:5: otherlv_2= '(' ( (lv_brackets_3_0= ruleMinSize ) ) otherlv_4= ')'
+                    // InternalCloneDetectionDSL.g:663:4: (otherlv_1= '(' ( (lv_brackets_2_0= ruleMinSize ) ) otherlv_3= ')' )
+                    // InternalCloneDetectionDSL.g:664:5: otherlv_1= '(' ( (lv_brackets_2_0= ruleMinSize ) ) otherlv_3= ')'
                     {
-                    otherlv_2=(Token)match(input,18,FOLLOW_11); 
+                    otherlv_1=(Token)match(input,18,FOLLOW_9); 
 
-                    					newLeafNode(otherlv_2, grammarAccess.getMinSizeAccess().getLeftParenthesisKeyword_1_1_0());
+                    					newLeafNode(otherlv_1, grammarAccess.getMinSizeAccess().getLeftParenthesisKeyword_0_1_0());
                     				
-                    // InternalCloneDetectionDSL.g:641:5: ( (lv_brackets_3_0= ruleMinSize ) )
-                    // InternalCloneDetectionDSL.g:642:6: (lv_brackets_3_0= ruleMinSize )
+                    // InternalCloneDetectionDSL.g:668:5: ( (lv_brackets_2_0= ruleMinSize ) )
+                    // InternalCloneDetectionDSL.g:669:6: (lv_brackets_2_0= ruleMinSize )
                     {
-                    // InternalCloneDetectionDSL.g:642:6: (lv_brackets_3_0= ruleMinSize )
-                    // InternalCloneDetectionDSL.g:643:7: lv_brackets_3_0= ruleMinSize
+                    // InternalCloneDetectionDSL.g:669:6: (lv_brackets_2_0= ruleMinSize )
+                    // InternalCloneDetectionDSL.g:670:7: lv_brackets_2_0= ruleMinSize
                     {
 
-                    							newCompositeNode(grammarAccess.getMinSizeAccess().getBracketsMinSizeParserRuleCall_1_1_1_0());
+                    							newCompositeNode(grammarAccess.getMinSizeAccess().getBracketsMinSizeParserRuleCall_0_1_1_0());
                     						
-                    pushFollow(FOLLOW_12);
-                    lv_brackets_3_0=ruleMinSize();
+                    pushFollow(FOLLOW_11);
+                    lv_brackets_2_0=ruleMinSize();
 
                     state._fsp--;
 
@@ -1736,7 +1824,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     							set(
                     								current,
                     								"brackets",
-                    								lv_brackets_3_0,
+                    								lv_brackets_2_0,
                     								"com.simonbaars.cdd.CloneDetectionDSL.MinSize");
                     							afterParserOrEnumRuleCall();
                     						
@@ -1746,9 +1834,9 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
                     }
 
-                    otherlv_4=(Token)match(input,19,FOLLOW_10); 
+                    otherlv_3=(Token)match(input,19,FOLLOW_10); 
 
-                    					newLeafNode(otherlv_4, grammarAccess.getMinSizeAccess().getRightParenthesisKeyword_1_1_2());
+                    					newLeafNode(otherlv_3, grammarAccess.getMinSizeAccess().getRightParenthesisKeyword_0_1_2());
                     				
 
                     }
@@ -1759,7 +1847,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
             }
 
-            // InternalCloneDetectionDSL.g:666:3: ( ( (lv_operator_5_0= ruleBoolOperator ) ) ( (lv_size_6_0= ruleMinSize ) ) )?
+            // InternalCloneDetectionDSL.g:693:3: ( ( (lv_operator_4_0= ruleBoolOperator ) ) ( (lv_size_5_0= ruleMinSize ) ) )?
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -1768,19 +1856,19 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
             }
             switch (alt8) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:667:4: ( (lv_operator_5_0= ruleBoolOperator ) ) ( (lv_size_6_0= ruleMinSize ) )
+                    // InternalCloneDetectionDSL.g:694:4: ( (lv_operator_4_0= ruleBoolOperator ) ) ( (lv_size_5_0= ruleMinSize ) )
                     {
-                    // InternalCloneDetectionDSL.g:667:4: ( (lv_operator_5_0= ruleBoolOperator ) )
-                    // InternalCloneDetectionDSL.g:668:5: (lv_operator_5_0= ruleBoolOperator )
+                    // InternalCloneDetectionDSL.g:694:4: ( (lv_operator_4_0= ruleBoolOperator ) )
+                    // InternalCloneDetectionDSL.g:695:5: (lv_operator_4_0= ruleBoolOperator )
                     {
-                    // InternalCloneDetectionDSL.g:668:5: (lv_operator_5_0= ruleBoolOperator )
-                    // InternalCloneDetectionDSL.g:669:6: lv_operator_5_0= ruleBoolOperator
+                    // InternalCloneDetectionDSL.g:695:5: (lv_operator_4_0= ruleBoolOperator )
+                    // InternalCloneDetectionDSL.g:696:6: lv_operator_4_0= ruleBoolOperator
                     {
 
-                    						newCompositeNode(grammarAccess.getMinSizeAccess().getOperatorBoolOperatorEnumRuleCall_2_0_0());
+                    						newCompositeNode(grammarAccess.getMinSizeAccess().getOperatorBoolOperatorEnumRuleCall_1_0_0());
                     					
-                    pushFollow(FOLLOW_11);
-                    lv_operator_5_0=ruleBoolOperator();
+                    pushFollow(FOLLOW_9);
+                    lv_operator_4_0=ruleBoolOperator();
 
                     state._fsp--;
 
@@ -1791,7 +1879,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     						set(
                     							current,
                     							"operator",
-                    							lv_operator_5_0,
+                    							lv_operator_4_0,
                     							"com.simonbaars.cdd.CloneDetectionDSL.BoolOperator");
                     						afterParserOrEnumRuleCall();
                     					
@@ -1801,17 +1889,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
                     }
 
-                    // InternalCloneDetectionDSL.g:686:4: ( (lv_size_6_0= ruleMinSize ) )
-                    // InternalCloneDetectionDSL.g:687:5: (lv_size_6_0= ruleMinSize )
+                    // InternalCloneDetectionDSL.g:713:4: ( (lv_size_5_0= ruleMinSize ) )
+                    // InternalCloneDetectionDSL.g:714:5: (lv_size_5_0= ruleMinSize )
                     {
-                    // InternalCloneDetectionDSL.g:687:5: (lv_size_6_0= ruleMinSize )
-                    // InternalCloneDetectionDSL.g:688:6: lv_size_6_0= ruleMinSize
+                    // InternalCloneDetectionDSL.g:714:5: (lv_size_5_0= ruleMinSize )
+                    // InternalCloneDetectionDSL.g:715:6: lv_size_5_0= ruleMinSize
                     {
 
-                    						newCompositeNode(grammarAccess.getMinSizeAccess().getSizeMinSizeParserRuleCall_2_1_0());
+                    						newCompositeNode(grammarAccess.getMinSizeAccess().getSizeMinSizeParserRuleCall_1_1_0());
                     					
                     pushFollow(FOLLOW_2);
-                    lv_size_6_0=ruleMinSize();
+                    lv_size_5_0=ruleMinSize();
 
                     state._fsp--;
 
@@ -1822,7 +1910,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     						set(
                     							current,
                     							"size",
-                    							lv_size_6_0,
+                    							lv_size_5_0,
                     							"com.simonbaars.cdd.CloneDetectionDSL.MinSize");
                     						afterParserOrEnumRuleCall();
                     					
@@ -1861,7 +1949,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "entryRuleMetricExpr"
-    // InternalCloneDetectionDSL.g:710:1: entryRuleMetricExpr returns [EObject current=null] : iv_ruleMetricExpr= ruleMetricExpr EOF ;
+    // InternalCloneDetectionDSL.g:737:1: entryRuleMetricExpr returns [EObject current=null] : iv_ruleMetricExpr= ruleMetricExpr EOF ;
     public final EObject entryRuleMetricExpr() throws RecognitionException {
         EObject current = null;
 
@@ -1869,8 +1957,8 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
         try {
-            // InternalCloneDetectionDSL.g:710:51: (iv_ruleMetricExpr= ruleMetricExpr EOF )
-            // InternalCloneDetectionDSL.g:711:2: iv_ruleMetricExpr= ruleMetricExpr EOF
+            // InternalCloneDetectionDSL.g:737:51: (iv_ruleMetricExpr= ruleMetricExpr EOF )
+            // InternalCloneDetectionDSL.g:738:2: iv_ruleMetricExpr= ruleMetricExpr EOF
             {
              newCompositeNode(grammarAccess.getMetricExprRule()); 
             pushFollow(FOLLOW_1);
@@ -1897,7 +1985,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "ruleMetricExpr"
-    // InternalCloneDetectionDSL.g:717:1: ruleMetricExpr returns [EObject current=null] : ( ( (lv_amount_0_0= RULE_INT ) ) ( (lv_metric_1_0= ruleSizeMetric ) ) ) ;
+    // InternalCloneDetectionDSL.g:744:1: ruleMetricExpr returns [EObject current=null] : ( ( (lv_amount_0_0= RULE_INT ) ) ( (lv_metric_1_0= ruleSizeMetric ) ) ) ;
     public final EObject ruleMetricExpr() throws RecognitionException {
         EObject current = null;
 
@@ -1909,19 +1997,19 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
         	enterRule();
 
         try {
-            // InternalCloneDetectionDSL.g:723:2: ( ( ( (lv_amount_0_0= RULE_INT ) ) ( (lv_metric_1_0= ruleSizeMetric ) ) ) )
-            // InternalCloneDetectionDSL.g:724:2: ( ( (lv_amount_0_0= RULE_INT ) ) ( (lv_metric_1_0= ruleSizeMetric ) ) )
+            // InternalCloneDetectionDSL.g:750:2: ( ( ( (lv_amount_0_0= RULE_INT ) ) ( (lv_metric_1_0= ruleSizeMetric ) ) ) )
+            // InternalCloneDetectionDSL.g:751:2: ( ( (lv_amount_0_0= RULE_INT ) ) ( (lv_metric_1_0= ruleSizeMetric ) ) )
             {
-            // InternalCloneDetectionDSL.g:724:2: ( ( (lv_amount_0_0= RULE_INT ) ) ( (lv_metric_1_0= ruleSizeMetric ) ) )
-            // InternalCloneDetectionDSL.g:725:3: ( (lv_amount_0_0= RULE_INT ) ) ( (lv_metric_1_0= ruleSizeMetric ) )
+            // InternalCloneDetectionDSL.g:751:2: ( ( (lv_amount_0_0= RULE_INT ) ) ( (lv_metric_1_0= ruleSizeMetric ) ) )
+            // InternalCloneDetectionDSL.g:752:3: ( (lv_amount_0_0= RULE_INT ) ) ( (lv_metric_1_0= ruleSizeMetric ) )
             {
-            // InternalCloneDetectionDSL.g:725:3: ( (lv_amount_0_0= RULE_INT ) )
-            // InternalCloneDetectionDSL.g:726:4: (lv_amount_0_0= RULE_INT )
+            // InternalCloneDetectionDSL.g:752:3: ( (lv_amount_0_0= RULE_INT ) )
+            // InternalCloneDetectionDSL.g:753:4: (lv_amount_0_0= RULE_INT )
             {
-            // InternalCloneDetectionDSL.g:726:4: (lv_amount_0_0= RULE_INT )
-            // InternalCloneDetectionDSL.g:727:5: lv_amount_0_0= RULE_INT
+            // InternalCloneDetectionDSL.g:753:4: (lv_amount_0_0= RULE_INT )
+            // InternalCloneDetectionDSL.g:754:5: lv_amount_0_0= RULE_INT
             {
-            lv_amount_0_0=(Token)match(input,RULE_INT,FOLLOW_13); 
+            lv_amount_0_0=(Token)match(input,RULE_INT,FOLLOW_12); 
 
             					newLeafNode(lv_amount_0_0, grammarAccess.getMetricExprAccess().getAmountINTTerminalRuleCall_0_0());
             				
@@ -1941,11 +2029,11 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
             }
 
-            // InternalCloneDetectionDSL.g:743:3: ( (lv_metric_1_0= ruleSizeMetric ) )
-            // InternalCloneDetectionDSL.g:744:4: (lv_metric_1_0= ruleSizeMetric )
+            // InternalCloneDetectionDSL.g:770:3: ( (lv_metric_1_0= ruleSizeMetric ) )
+            // InternalCloneDetectionDSL.g:771:4: (lv_metric_1_0= ruleSizeMetric )
             {
-            // InternalCloneDetectionDSL.g:744:4: (lv_metric_1_0= ruleSizeMetric )
-            // InternalCloneDetectionDSL.g:745:5: lv_metric_1_0= ruleSizeMetric
+            // InternalCloneDetectionDSL.g:771:4: (lv_metric_1_0= ruleSizeMetric )
+            // InternalCloneDetectionDSL.g:772:5: lv_metric_1_0= ruleSizeMetric
             {
 
             					newCompositeNode(grammarAccess.getMetricExprAccess().getMetricSizeMetricEnumRuleCall_1_0());
@@ -1995,7 +2083,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "entryRuleDoNotCompare"
-    // InternalCloneDetectionDSL.g:766:1: entryRuleDoNotCompare returns [EObject current=null] : iv_ruleDoNotCompare= ruleDoNotCompare EOF ;
+    // InternalCloneDetectionDSL.g:793:1: entryRuleDoNotCompare returns [EObject current=null] : iv_ruleDoNotCompare= ruleDoNotCompare EOF ;
     public final EObject entryRuleDoNotCompare() throws RecognitionException {
         EObject current = null;
 
@@ -2003,8 +2091,8 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
         try {
-            // InternalCloneDetectionDSL.g:766:53: (iv_ruleDoNotCompare= ruleDoNotCompare EOF )
-            // InternalCloneDetectionDSL.g:767:2: iv_ruleDoNotCompare= ruleDoNotCompare EOF
+            // InternalCloneDetectionDSL.g:793:53: (iv_ruleDoNotCompare= ruleDoNotCompare EOF )
+            // InternalCloneDetectionDSL.g:794:2: iv_ruleDoNotCompare= ruleDoNotCompare EOF
             {
              newCompositeNode(grammarAccess.getDoNotCompareRule()); 
             pushFollow(FOLLOW_1);
@@ -2031,7 +2119,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "ruleDoNotCompare"
-    // InternalCloneDetectionDSL.g:773:1: ruleDoNotCompare returns [EObject current=null] : (otherlv_0= 'DoNotCompare' this_Nodes_1= ruleNodes ) ;
+    // InternalCloneDetectionDSL.g:800:1: ruleDoNotCompare returns [EObject current=null] : (otherlv_0= 'DoNotCompare' this_Nodes_1= ruleNodes ) ;
     public final EObject ruleDoNotCompare() throws RecognitionException {
         EObject current = null;
 
@@ -2043,11 +2131,11 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
         	enterRule();
 
         try {
-            // InternalCloneDetectionDSL.g:779:2: ( (otherlv_0= 'DoNotCompare' this_Nodes_1= ruleNodes ) )
-            // InternalCloneDetectionDSL.g:780:2: (otherlv_0= 'DoNotCompare' this_Nodes_1= ruleNodes )
+            // InternalCloneDetectionDSL.g:806:2: ( (otherlv_0= 'DoNotCompare' this_Nodes_1= ruleNodes ) )
+            // InternalCloneDetectionDSL.g:807:2: (otherlv_0= 'DoNotCompare' this_Nodes_1= ruleNodes )
             {
-            // InternalCloneDetectionDSL.g:780:2: (otherlv_0= 'DoNotCompare' this_Nodes_1= ruleNodes )
-            // InternalCloneDetectionDSL.g:781:3: otherlv_0= 'DoNotCompare' this_Nodes_1= ruleNodes
+            // InternalCloneDetectionDSL.g:807:2: (otherlv_0= 'DoNotCompare' this_Nodes_1= ruleNodes )
+            // InternalCloneDetectionDSL.g:808:3: otherlv_0= 'DoNotCompare' this_Nodes_1= ruleNodes
             {
             otherlv_0=(Token)match(input,20,FOLLOW_5); 
 
@@ -2088,7 +2176,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "entryRuleCompare"
-    // InternalCloneDetectionDSL.g:797:1: entryRuleCompare returns [EObject current=null] : iv_ruleCompare= ruleCompare EOF ;
+    // InternalCloneDetectionDSL.g:824:1: entryRuleCompare returns [EObject current=null] : iv_ruleCompare= ruleCompare EOF ;
     public final EObject entryRuleCompare() throws RecognitionException {
         EObject current = null;
 
@@ -2096,8 +2184,8 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
         try {
-            // InternalCloneDetectionDSL.g:797:48: (iv_ruleCompare= ruleCompare EOF )
-            // InternalCloneDetectionDSL.g:798:2: iv_ruleCompare= ruleCompare EOF
+            // InternalCloneDetectionDSL.g:824:48: (iv_ruleCompare= ruleCompare EOF )
+            // InternalCloneDetectionDSL.g:825:2: iv_ruleCompare= ruleCompare EOF
             {
              newCompositeNode(grammarAccess.getCompareRule()); 
             pushFollow(FOLLOW_1);
@@ -2124,7 +2212,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "ruleCompare"
-    // InternalCloneDetectionDSL.g:804:1: ruleCompare returns [EObject current=null] : (otherlv_0= 'Compare' ( (lv_nodes_1_0= ruleNodes ) ) ( (lv_comparisonMethod_2_0= ruleMethod ) ) ( (lv_deepestNode_3_0= ruleNode ) )? ( (lv_perc_4_0= rulePercentage ) )? ) ;
+    // InternalCloneDetectionDSL.g:831:1: ruleCompare returns [EObject current=null] : (otherlv_0= 'Compare' ( (lv_nodes_1_0= ruleNodes ) ) ( (lv_comparisonMethod_2_0= ruleMethod ) ) ( (lv_deepestNode_3_0= ruleNode ) )? ( (lv_perc_4_0= rulePercentage ) )? ) ;
     public final EObject ruleCompare() throws RecognitionException {
         EObject current = null;
 
@@ -2142,26 +2230,26 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
         	enterRule();
 
         try {
-            // InternalCloneDetectionDSL.g:810:2: ( (otherlv_0= 'Compare' ( (lv_nodes_1_0= ruleNodes ) ) ( (lv_comparisonMethod_2_0= ruleMethod ) ) ( (lv_deepestNode_3_0= ruleNode ) )? ( (lv_perc_4_0= rulePercentage ) )? ) )
-            // InternalCloneDetectionDSL.g:811:2: (otherlv_0= 'Compare' ( (lv_nodes_1_0= ruleNodes ) ) ( (lv_comparisonMethod_2_0= ruleMethod ) ) ( (lv_deepestNode_3_0= ruleNode ) )? ( (lv_perc_4_0= rulePercentage ) )? )
+            // InternalCloneDetectionDSL.g:837:2: ( (otherlv_0= 'Compare' ( (lv_nodes_1_0= ruleNodes ) ) ( (lv_comparisonMethod_2_0= ruleMethod ) ) ( (lv_deepestNode_3_0= ruleNode ) )? ( (lv_perc_4_0= rulePercentage ) )? ) )
+            // InternalCloneDetectionDSL.g:838:2: (otherlv_0= 'Compare' ( (lv_nodes_1_0= ruleNodes ) ) ( (lv_comparisonMethod_2_0= ruleMethod ) ) ( (lv_deepestNode_3_0= ruleNode ) )? ( (lv_perc_4_0= rulePercentage ) )? )
             {
-            // InternalCloneDetectionDSL.g:811:2: (otherlv_0= 'Compare' ( (lv_nodes_1_0= ruleNodes ) ) ( (lv_comparisonMethod_2_0= ruleMethod ) ) ( (lv_deepestNode_3_0= ruleNode ) )? ( (lv_perc_4_0= rulePercentage ) )? )
-            // InternalCloneDetectionDSL.g:812:3: otherlv_0= 'Compare' ( (lv_nodes_1_0= ruleNodes ) ) ( (lv_comparisonMethod_2_0= ruleMethod ) ) ( (lv_deepestNode_3_0= ruleNode ) )? ( (lv_perc_4_0= rulePercentage ) )?
+            // InternalCloneDetectionDSL.g:838:2: (otherlv_0= 'Compare' ( (lv_nodes_1_0= ruleNodes ) ) ( (lv_comparisonMethod_2_0= ruleMethod ) ) ( (lv_deepestNode_3_0= ruleNode ) )? ( (lv_perc_4_0= rulePercentage ) )? )
+            // InternalCloneDetectionDSL.g:839:3: otherlv_0= 'Compare' ( (lv_nodes_1_0= ruleNodes ) ) ( (lv_comparisonMethod_2_0= ruleMethod ) ) ( (lv_deepestNode_3_0= ruleNode ) )? ( (lv_perc_4_0= rulePercentage ) )?
             {
             otherlv_0=(Token)match(input,21,FOLLOW_5); 
 
             			newLeafNode(otherlv_0, grammarAccess.getCompareAccess().getCompareKeyword_0());
             		
-            // InternalCloneDetectionDSL.g:816:3: ( (lv_nodes_1_0= ruleNodes ) )
-            // InternalCloneDetectionDSL.g:817:4: (lv_nodes_1_0= ruleNodes )
+            // InternalCloneDetectionDSL.g:843:3: ( (lv_nodes_1_0= ruleNodes ) )
+            // InternalCloneDetectionDSL.g:844:4: (lv_nodes_1_0= ruleNodes )
             {
-            // InternalCloneDetectionDSL.g:817:4: (lv_nodes_1_0= ruleNodes )
-            // InternalCloneDetectionDSL.g:818:5: lv_nodes_1_0= ruleNodes
+            // InternalCloneDetectionDSL.g:844:4: (lv_nodes_1_0= ruleNodes )
+            // InternalCloneDetectionDSL.g:845:5: lv_nodes_1_0= ruleNodes
             {
 
             					newCompositeNode(grammarAccess.getCompareAccess().getNodesNodesParserRuleCall_1_0());
             				
-            pushFollow(FOLLOW_14);
+            pushFollow(FOLLOW_13);
             lv_nodes_1_0=ruleNodes();
 
             state._fsp--;
@@ -2183,16 +2271,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
             }
 
-            // InternalCloneDetectionDSL.g:835:3: ( (lv_comparisonMethod_2_0= ruleMethod ) )
-            // InternalCloneDetectionDSL.g:836:4: (lv_comparisonMethod_2_0= ruleMethod )
+            // InternalCloneDetectionDSL.g:862:3: ( (lv_comparisonMethod_2_0= ruleMethod ) )
+            // InternalCloneDetectionDSL.g:863:4: (lv_comparisonMethod_2_0= ruleMethod )
             {
-            // InternalCloneDetectionDSL.g:836:4: (lv_comparisonMethod_2_0= ruleMethod )
-            // InternalCloneDetectionDSL.g:837:5: lv_comparisonMethod_2_0= ruleMethod
+            // InternalCloneDetectionDSL.g:863:4: (lv_comparisonMethod_2_0= ruleMethod )
+            // InternalCloneDetectionDSL.g:864:5: lv_comparisonMethod_2_0= ruleMethod
             {
 
             					newCompositeNode(grammarAccess.getCompareAccess().getComparisonMethodMethodEnumRuleCall_2_0());
             				
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_14);
             lv_comparisonMethod_2_0=ruleMethod();
 
             state._fsp--;
@@ -2214,7 +2302,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
             }
 
-            // InternalCloneDetectionDSL.g:854:3: ( (lv_deepestNode_3_0= ruleNode ) )?
+            // InternalCloneDetectionDSL.g:881:3: ( (lv_deepestNode_3_0= ruleNode ) )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -2223,15 +2311,15 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
             }
             switch (alt9) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:855:4: (lv_deepestNode_3_0= ruleNode )
+                    // InternalCloneDetectionDSL.g:882:4: (lv_deepestNode_3_0= ruleNode )
                     {
-                    // InternalCloneDetectionDSL.g:855:4: (lv_deepestNode_3_0= ruleNode )
-                    // InternalCloneDetectionDSL.g:856:5: lv_deepestNode_3_0= ruleNode
+                    // InternalCloneDetectionDSL.g:882:4: (lv_deepestNode_3_0= ruleNode )
+                    // InternalCloneDetectionDSL.g:883:5: lv_deepestNode_3_0= ruleNode
                     {
 
                     					newCompositeNode(grammarAccess.getCompareAccess().getDeepestNodeNodeParserRuleCall_3_0());
                     				
-                    pushFollow(FOLLOW_16);
+                    pushFollow(FOLLOW_15);
                     lv_deepestNode_3_0=ruleNode();
 
                     state._fsp--;
@@ -2256,7 +2344,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
             }
 
-            // InternalCloneDetectionDSL.g:873:3: ( (lv_perc_4_0= rulePercentage ) )?
+            // InternalCloneDetectionDSL.g:900:3: ( (lv_perc_4_0= rulePercentage ) )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -2265,10 +2353,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
             }
             switch (alt10) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:874:4: (lv_perc_4_0= rulePercentage )
+                    // InternalCloneDetectionDSL.g:901:4: (lv_perc_4_0= rulePercentage )
                     {
-                    // InternalCloneDetectionDSL.g:874:4: (lv_perc_4_0= rulePercentage )
-                    // InternalCloneDetectionDSL.g:875:5: lv_perc_4_0= rulePercentage
+                    // InternalCloneDetectionDSL.g:901:4: (lv_perc_4_0= rulePercentage )
+                    // InternalCloneDetectionDSL.g:902:5: lv_perc_4_0= rulePercentage
                     {
 
                     					newCompositeNode(grammarAccess.getCompareAccess().getPercPercentageParserRuleCall_4_0());
@@ -2321,7 +2409,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "entryRulePercentage"
-    // InternalCloneDetectionDSL.g:896:1: entryRulePercentage returns [String current=null] : iv_rulePercentage= rulePercentage EOF ;
+    // InternalCloneDetectionDSL.g:923:1: entryRulePercentage returns [String current=null] : iv_rulePercentage= rulePercentage EOF ;
     public final String entryRulePercentage() throws RecognitionException {
         String current = null;
 
@@ -2329,8 +2417,8 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
         try {
-            // InternalCloneDetectionDSL.g:896:50: (iv_rulePercentage= rulePercentage EOF )
-            // InternalCloneDetectionDSL.g:897:2: iv_rulePercentage= rulePercentage EOF
+            // InternalCloneDetectionDSL.g:923:50: (iv_rulePercentage= rulePercentage EOF )
+            // InternalCloneDetectionDSL.g:924:2: iv_rulePercentage= rulePercentage EOF
             {
              newCompositeNode(grammarAccess.getPercentageRule()); 
             pushFollow(FOLLOW_1);
@@ -2357,7 +2445,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "rulePercentage"
-    // InternalCloneDetectionDSL.g:903:1: rulePercentage returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_INT_0= RULE_INT kw= '%' ) ;
+    // InternalCloneDetectionDSL.g:930:1: rulePercentage returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_INT_0= RULE_INT kw= '%' ) ;
     public final AntlrDatatypeRuleToken rulePercentage() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -2368,13 +2456,13 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
         	enterRule();
 
         try {
-            // InternalCloneDetectionDSL.g:909:2: ( (this_INT_0= RULE_INT kw= '%' ) )
-            // InternalCloneDetectionDSL.g:910:2: (this_INT_0= RULE_INT kw= '%' )
+            // InternalCloneDetectionDSL.g:936:2: ( (this_INT_0= RULE_INT kw= '%' ) )
+            // InternalCloneDetectionDSL.g:937:2: (this_INT_0= RULE_INT kw= '%' )
             {
-            // InternalCloneDetectionDSL.g:910:2: (this_INT_0= RULE_INT kw= '%' )
-            // InternalCloneDetectionDSL.g:911:3: this_INT_0= RULE_INT kw= '%'
+            // InternalCloneDetectionDSL.g:937:2: (this_INT_0= RULE_INT kw= '%' )
+            // InternalCloneDetectionDSL.g:938:3: this_INT_0= RULE_INT kw= '%'
             {
-            this_INT_0=(Token)match(input,RULE_INT,FOLLOW_17); 
+            this_INT_0=(Token)match(input,RULE_INT,FOLLOW_16); 
 
             			current.merge(this_INT_0);
             		
@@ -2409,7 +2497,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "ruleMatchTarget"
-    // InternalCloneDetectionDSL.g:927:1: ruleMatchTarget returns [Enumerator current=null] : ( (enumLiteral_0= 'Subtree' ) | (enumLiteral_1= 'LLOC' ) | (enumLiteral_2= 'SLOC' ) ) ;
+    // InternalCloneDetectionDSL.g:954:1: ruleMatchTarget returns [Enumerator current=null] : ( (enumLiteral_0= 'Subtree' ) | (enumLiteral_1= 'LLOC' ) | (enumLiteral_2= 'SLOC' ) ) ;
     public final Enumerator ruleMatchTarget() throws RecognitionException {
         Enumerator current = null;
 
@@ -2421,10 +2509,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
         	enterRule();
 
         try {
-            // InternalCloneDetectionDSL.g:933:2: ( ( (enumLiteral_0= 'Subtree' ) | (enumLiteral_1= 'LLOC' ) | (enumLiteral_2= 'SLOC' ) ) )
-            // InternalCloneDetectionDSL.g:934:2: ( (enumLiteral_0= 'Subtree' ) | (enumLiteral_1= 'LLOC' ) | (enumLiteral_2= 'SLOC' ) )
+            // InternalCloneDetectionDSL.g:960:2: ( ( (enumLiteral_0= 'Subtree' ) | (enumLiteral_1= 'LLOC' ) | (enumLiteral_2= 'SLOC' ) ) )
+            // InternalCloneDetectionDSL.g:961:2: ( (enumLiteral_0= 'Subtree' ) | (enumLiteral_1= 'LLOC' ) | (enumLiteral_2= 'SLOC' ) )
             {
-            // InternalCloneDetectionDSL.g:934:2: ( (enumLiteral_0= 'Subtree' ) | (enumLiteral_1= 'LLOC' ) | (enumLiteral_2= 'SLOC' ) )
+            // InternalCloneDetectionDSL.g:961:2: ( (enumLiteral_0= 'Subtree' ) | (enumLiteral_1= 'LLOC' ) | (enumLiteral_2= 'SLOC' ) )
             int alt11=3;
             switch ( input.LA(1) ) {
             case 23:
@@ -2451,10 +2539,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
             switch (alt11) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:935:3: (enumLiteral_0= 'Subtree' )
+                    // InternalCloneDetectionDSL.g:962:3: (enumLiteral_0= 'Subtree' )
                     {
-                    // InternalCloneDetectionDSL.g:935:3: (enumLiteral_0= 'Subtree' )
-                    // InternalCloneDetectionDSL.g:936:4: enumLiteral_0= 'Subtree'
+                    // InternalCloneDetectionDSL.g:962:3: (enumLiteral_0= 'Subtree' )
+                    // InternalCloneDetectionDSL.g:963:4: enumLiteral_0= 'Subtree'
                     {
                     enumLiteral_0=(Token)match(input,23,FOLLOW_2); 
 
@@ -2468,10 +2556,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:943:3: (enumLiteral_1= 'LLOC' )
+                    // InternalCloneDetectionDSL.g:970:3: (enumLiteral_1= 'LLOC' )
                     {
-                    // InternalCloneDetectionDSL.g:943:3: (enumLiteral_1= 'LLOC' )
-                    // InternalCloneDetectionDSL.g:944:4: enumLiteral_1= 'LLOC'
+                    // InternalCloneDetectionDSL.g:970:3: (enumLiteral_1= 'LLOC' )
+                    // InternalCloneDetectionDSL.g:971:4: enumLiteral_1= 'LLOC'
                     {
                     enumLiteral_1=(Token)match(input,24,FOLLOW_2); 
 
@@ -2485,10 +2573,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 3 :
-                    // InternalCloneDetectionDSL.g:951:3: (enumLiteral_2= 'SLOC' )
+                    // InternalCloneDetectionDSL.g:978:3: (enumLiteral_2= 'SLOC' )
                     {
-                    // InternalCloneDetectionDSL.g:951:3: (enumLiteral_2= 'SLOC' )
-                    // InternalCloneDetectionDSL.g:952:4: enumLiteral_2= 'SLOC'
+                    // InternalCloneDetectionDSL.g:978:3: (enumLiteral_2= 'SLOC' )
+                    // InternalCloneDetectionDSL.g:979:4: enumLiteral_2= 'SLOC'
                     {
                     enumLiteral_2=(Token)match(input,25,FOLLOW_2); 
 
@@ -2524,7 +2612,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "ruleSizeMetric"
-    // InternalCloneDetectionDSL.g:962:1: ruleSizeMetric returns [Enumerator current=null] : ( (enumLiteral_0= 'tokens' ) | (enumLiteral_1= 'declarations' ) | (enumLiteral_2= 'statements' ) | (enumLiteral_3= 'nodes' ) | (enumLiteral_4= 'lines' ) | (enumLiteral_5= 'cyclomatic_complexity' ) ) ;
+    // InternalCloneDetectionDSL.g:989:1: ruleSizeMetric returns [Enumerator current=null] : ( (enumLiteral_0= 'tokens' ) | (enumLiteral_1= 'declarations' ) | (enumLiteral_2= 'statements' ) | (enumLiteral_3= 'nodes' ) | (enumLiteral_4= 'lines' ) | (enumLiteral_5= 'cyclomatic_complexity' ) ) ;
     public final Enumerator ruleSizeMetric() throws RecognitionException {
         Enumerator current = null;
 
@@ -2539,10 +2627,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
         	enterRule();
 
         try {
-            // InternalCloneDetectionDSL.g:968:2: ( ( (enumLiteral_0= 'tokens' ) | (enumLiteral_1= 'declarations' ) | (enumLiteral_2= 'statements' ) | (enumLiteral_3= 'nodes' ) | (enumLiteral_4= 'lines' ) | (enumLiteral_5= 'cyclomatic_complexity' ) ) )
-            // InternalCloneDetectionDSL.g:969:2: ( (enumLiteral_0= 'tokens' ) | (enumLiteral_1= 'declarations' ) | (enumLiteral_2= 'statements' ) | (enumLiteral_3= 'nodes' ) | (enumLiteral_4= 'lines' ) | (enumLiteral_5= 'cyclomatic_complexity' ) )
+            // InternalCloneDetectionDSL.g:995:2: ( ( (enumLiteral_0= 'tokens' ) | (enumLiteral_1= 'declarations' ) | (enumLiteral_2= 'statements' ) | (enumLiteral_3= 'nodes' ) | (enumLiteral_4= 'lines' ) | (enumLiteral_5= 'cyclomatic_complexity' ) ) )
+            // InternalCloneDetectionDSL.g:996:2: ( (enumLiteral_0= 'tokens' ) | (enumLiteral_1= 'declarations' ) | (enumLiteral_2= 'statements' ) | (enumLiteral_3= 'nodes' ) | (enumLiteral_4= 'lines' ) | (enumLiteral_5= 'cyclomatic_complexity' ) )
             {
-            // InternalCloneDetectionDSL.g:969:2: ( (enumLiteral_0= 'tokens' ) | (enumLiteral_1= 'declarations' ) | (enumLiteral_2= 'statements' ) | (enumLiteral_3= 'nodes' ) | (enumLiteral_4= 'lines' ) | (enumLiteral_5= 'cyclomatic_complexity' ) )
+            // InternalCloneDetectionDSL.g:996:2: ( (enumLiteral_0= 'tokens' ) | (enumLiteral_1= 'declarations' ) | (enumLiteral_2= 'statements' ) | (enumLiteral_3= 'nodes' ) | (enumLiteral_4= 'lines' ) | (enumLiteral_5= 'cyclomatic_complexity' ) )
             int alt12=6;
             switch ( input.LA(1) ) {
             case 26:
@@ -2584,10 +2672,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
             switch (alt12) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:970:3: (enumLiteral_0= 'tokens' )
+                    // InternalCloneDetectionDSL.g:997:3: (enumLiteral_0= 'tokens' )
                     {
-                    // InternalCloneDetectionDSL.g:970:3: (enumLiteral_0= 'tokens' )
-                    // InternalCloneDetectionDSL.g:971:4: enumLiteral_0= 'tokens'
+                    // InternalCloneDetectionDSL.g:997:3: (enumLiteral_0= 'tokens' )
+                    // InternalCloneDetectionDSL.g:998:4: enumLiteral_0= 'tokens'
                     {
                     enumLiteral_0=(Token)match(input,26,FOLLOW_2); 
 
@@ -2601,10 +2689,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:978:3: (enumLiteral_1= 'declarations' )
+                    // InternalCloneDetectionDSL.g:1005:3: (enumLiteral_1= 'declarations' )
                     {
-                    // InternalCloneDetectionDSL.g:978:3: (enumLiteral_1= 'declarations' )
-                    // InternalCloneDetectionDSL.g:979:4: enumLiteral_1= 'declarations'
+                    // InternalCloneDetectionDSL.g:1005:3: (enumLiteral_1= 'declarations' )
+                    // InternalCloneDetectionDSL.g:1006:4: enumLiteral_1= 'declarations'
                     {
                     enumLiteral_1=(Token)match(input,27,FOLLOW_2); 
 
@@ -2618,10 +2706,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 3 :
-                    // InternalCloneDetectionDSL.g:986:3: (enumLiteral_2= 'statements' )
+                    // InternalCloneDetectionDSL.g:1013:3: (enumLiteral_2= 'statements' )
                     {
-                    // InternalCloneDetectionDSL.g:986:3: (enumLiteral_2= 'statements' )
-                    // InternalCloneDetectionDSL.g:987:4: enumLiteral_2= 'statements'
+                    // InternalCloneDetectionDSL.g:1013:3: (enumLiteral_2= 'statements' )
+                    // InternalCloneDetectionDSL.g:1014:4: enumLiteral_2= 'statements'
                     {
                     enumLiteral_2=(Token)match(input,28,FOLLOW_2); 
 
@@ -2635,10 +2723,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 4 :
-                    // InternalCloneDetectionDSL.g:994:3: (enumLiteral_3= 'nodes' )
+                    // InternalCloneDetectionDSL.g:1021:3: (enumLiteral_3= 'nodes' )
                     {
-                    // InternalCloneDetectionDSL.g:994:3: (enumLiteral_3= 'nodes' )
-                    // InternalCloneDetectionDSL.g:995:4: enumLiteral_3= 'nodes'
+                    // InternalCloneDetectionDSL.g:1021:3: (enumLiteral_3= 'nodes' )
+                    // InternalCloneDetectionDSL.g:1022:4: enumLiteral_3= 'nodes'
                     {
                     enumLiteral_3=(Token)match(input,29,FOLLOW_2); 
 
@@ -2652,10 +2740,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 5 :
-                    // InternalCloneDetectionDSL.g:1002:3: (enumLiteral_4= 'lines' )
+                    // InternalCloneDetectionDSL.g:1029:3: (enumLiteral_4= 'lines' )
                     {
-                    // InternalCloneDetectionDSL.g:1002:3: (enumLiteral_4= 'lines' )
-                    // InternalCloneDetectionDSL.g:1003:4: enumLiteral_4= 'lines'
+                    // InternalCloneDetectionDSL.g:1029:3: (enumLiteral_4= 'lines' )
+                    // InternalCloneDetectionDSL.g:1030:4: enumLiteral_4= 'lines'
                     {
                     enumLiteral_4=(Token)match(input,30,FOLLOW_2); 
 
@@ -2669,10 +2757,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 6 :
-                    // InternalCloneDetectionDSL.g:1010:3: (enumLiteral_5= 'cyclomatic_complexity' )
+                    // InternalCloneDetectionDSL.g:1037:3: (enumLiteral_5= 'cyclomatic_complexity' )
                     {
-                    // InternalCloneDetectionDSL.g:1010:3: (enumLiteral_5= 'cyclomatic_complexity' )
-                    // InternalCloneDetectionDSL.g:1011:4: enumLiteral_5= 'cyclomatic_complexity'
+                    // InternalCloneDetectionDSL.g:1037:3: (enumLiteral_5= 'cyclomatic_complexity' )
+                    // InternalCloneDetectionDSL.g:1038:4: enumLiteral_5= 'cyclomatic_complexity'
                     {
                     enumLiteral_5=(Token)match(input,31,FOLLOW_2); 
 
@@ -2708,7 +2796,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "ruleBoolOperator"
-    // InternalCloneDetectionDSL.g:1021:1: ruleBoolOperator returns [Enumerator current=null] : ( (enumLiteral_0= '&' ) | (enumLiteral_1= '|' ) ) ;
+    // InternalCloneDetectionDSL.g:1048:1: ruleBoolOperator returns [Enumerator current=null] : ( (enumLiteral_0= '&' ) | (enumLiteral_1= '|' ) ) ;
     public final Enumerator ruleBoolOperator() throws RecognitionException {
         Enumerator current = null;
 
@@ -2719,10 +2807,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
         	enterRule();
 
         try {
-            // InternalCloneDetectionDSL.g:1027:2: ( ( (enumLiteral_0= '&' ) | (enumLiteral_1= '|' ) ) )
-            // InternalCloneDetectionDSL.g:1028:2: ( (enumLiteral_0= '&' ) | (enumLiteral_1= '|' ) )
+            // InternalCloneDetectionDSL.g:1054:2: ( ( (enumLiteral_0= '&' ) | (enumLiteral_1= '|' ) ) )
+            // InternalCloneDetectionDSL.g:1055:2: ( (enumLiteral_0= '&' ) | (enumLiteral_1= '|' ) )
             {
-            // InternalCloneDetectionDSL.g:1028:2: ( (enumLiteral_0= '&' ) | (enumLiteral_1= '|' ) )
+            // InternalCloneDetectionDSL.g:1055:2: ( (enumLiteral_0= '&' ) | (enumLiteral_1= '|' ) )
             int alt13=2;
             int LA13_0 = input.LA(1);
 
@@ -2740,10 +2828,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
             }
             switch (alt13) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:1029:3: (enumLiteral_0= '&' )
+                    // InternalCloneDetectionDSL.g:1056:3: (enumLiteral_0= '&' )
                     {
-                    // InternalCloneDetectionDSL.g:1029:3: (enumLiteral_0= '&' )
-                    // InternalCloneDetectionDSL.g:1030:4: enumLiteral_0= '&'
+                    // InternalCloneDetectionDSL.g:1056:3: (enumLiteral_0= '&' )
+                    // InternalCloneDetectionDSL.g:1057:4: enumLiteral_0= '&'
                     {
                     enumLiteral_0=(Token)match(input,32,FOLLOW_2); 
 
@@ -2757,10 +2845,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:1037:3: (enumLiteral_1= '|' )
+                    // InternalCloneDetectionDSL.g:1064:3: (enumLiteral_1= '|' )
                     {
-                    // InternalCloneDetectionDSL.g:1037:3: (enumLiteral_1= '|' )
-                    // InternalCloneDetectionDSL.g:1038:4: enumLiteral_1= '|'
+                    // InternalCloneDetectionDSL.g:1064:3: (enumLiteral_1= '|' )
+                    // InternalCloneDetectionDSL.g:1065:4: enumLiteral_1= '|'
                     {
                     enumLiteral_1=(Token)match(input,33,FOLLOW_2); 
 
@@ -2796,7 +2884,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "ruleMethod"
-    // InternalCloneDetectionDSL.g:1048:1: ruleMethod returns [Enumerator current=null] : ( (enumLiteral_0= 'Subnodes' ) | (enumLiteral_1= 'StringMatch' ) | (enumLiteral_2= 'CompleteMatch' ) | (enumLiteral_3= 'FQI' ) ) ;
+    // InternalCloneDetectionDSL.g:1075:1: ruleMethod returns [Enumerator current=null] : ( (enumLiteral_0= 'Subnodes' ) | (enumLiteral_1= 'StringMatch' ) | (enumLiteral_2= 'CompleteMatch' ) | (enumLiteral_3= 'FQI' ) ) ;
     public final Enumerator ruleMethod() throws RecognitionException {
         Enumerator current = null;
 
@@ -2809,10 +2897,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
         	enterRule();
 
         try {
-            // InternalCloneDetectionDSL.g:1054:2: ( ( (enumLiteral_0= 'Subnodes' ) | (enumLiteral_1= 'StringMatch' ) | (enumLiteral_2= 'CompleteMatch' ) | (enumLiteral_3= 'FQI' ) ) )
-            // InternalCloneDetectionDSL.g:1055:2: ( (enumLiteral_0= 'Subnodes' ) | (enumLiteral_1= 'StringMatch' ) | (enumLiteral_2= 'CompleteMatch' ) | (enumLiteral_3= 'FQI' ) )
+            // InternalCloneDetectionDSL.g:1081:2: ( ( (enumLiteral_0= 'Subnodes' ) | (enumLiteral_1= 'StringMatch' ) | (enumLiteral_2= 'CompleteMatch' ) | (enumLiteral_3= 'FQI' ) ) )
+            // InternalCloneDetectionDSL.g:1082:2: ( (enumLiteral_0= 'Subnodes' ) | (enumLiteral_1= 'StringMatch' ) | (enumLiteral_2= 'CompleteMatch' ) | (enumLiteral_3= 'FQI' ) )
             {
-            // InternalCloneDetectionDSL.g:1055:2: ( (enumLiteral_0= 'Subnodes' ) | (enumLiteral_1= 'StringMatch' ) | (enumLiteral_2= 'CompleteMatch' ) | (enumLiteral_3= 'FQI' ) )
+            // InternalCloneDetectionDSL.g:1082:2: ( (enumLiteral_0= 'Subnodes' ) | (enumLiteral_1= 'StringMatch' ) | (enumLiteral_2= 'CompleteMatch' ) | (enumLiteral_3= 'FQI' ) )
             int alt14=4;
             switch ( input.LA(1) ) {
             case 34:
@@ -2844,10 +2932,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
             switch (alt14) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:1056:3: (enumLiteral_0= 'Subnodes' )
+                    // InternalCloneDetectionDSL.g:1083:3: (enumLiteral_0= 'Subnodes' )
                     {
-                    // InternalCloneDetectionDSL.g:1056:3: (enumLiteral_0= 'Subnodes' )
-                    // InternalCloneDetectionDSL.g:1057:4: enumLiteral_0= 'Subnodes'
+                    // InternalCloneDetectionDSL.g:1083:3: (enumLiteral_0= 'Subnodes' )
+                    // InternalCloneDetectionDSL.g:1084:4: enumLiteral_0= 'Subnodes'
                     {
                     enumLiteral_0=(Token)match(input,34,FOLLOW_2); 
 
@@ -2861,10 +2949,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:1064:3: (enumLiteral_1= 'StringMatch' )
+                    // InternalCloneDetectionDSL.g:1091:3: (enumLiteral_1= 'StringMatch' )
                     {
-                    // InternalCloneDetectionDSL.g:1064:3: (enumLiteral_1= 'StringMatch' )
-                    // InternalCloneDetectionDSL.g:1065:4: enumLiteral_1= 'StringMatch'
+                    // InternalCloneDetectionDSL.g:1091:3: (enumLiteral_1= 'StringMatch' )
+                    // InternalCloneDetectionDSL.g:1092:4: enumLiteral_1= 'StringMatch'
                     {
                     enumLiteral_1=(Token)match(input,35,FOLLOW_2); 
 
@@ -2878,10 +2966,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 3 :
-                    // InternalCloneDetectionDSL.g:1072:3: (enumLiteral_2= 'CompleteMatch' )
+                    // InternalCloneDetectionDSL.g:1099:3: (enumLiteral_2= 'CompleteMatch' )
                     {
-                    // InternalCloneDetectionDSL.g:1072:3: (enumLiteral_2= 'CompleteMatch' )
-                    // InternalCloneDetectionDSL.g:1073:4: enumLiteral_2= 'CompleteMatch'
+                    // InternalCloneDetectionDSL.g:1099:3: (enumLiteral_2= 'CompleteMatch' )
+                    // InternalCloneDetectionDSL.g:1100:4: enumLiteral_2= 'CompleteMatch'
                     {
                     enumLiteral_2=(Token)match(input,36,FOLLOW_2); 
 
@@ -2895,10 +2983,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 4 :
-                    // InternalCloneDetectionDSL.g:1080:3: (enumLiteral_3= 'FQI' )
+                    // InternalCloneDetectionDSL.g:1107:3: (enumLiteral_3= 'FQI' )
                     {
-                    // InternalCloneDetectionDSL.g:1080:3: (enumLiteral_3= 'FQI' )
-                    // InternalCloneDetectionDSL.g:1081:4: enumLiteral_3= 'FQI'
+                    // InternalCloneDetectionDSL.g:1107:3: (enumLiteral_3= 'FQI' )
+                    // InternalCloneDetectionDSL.g:1108:4: enumLiteral_3= 'FQI'
                     {
                     enumLiteral_3=(Token)match(input,37,FOLLOW_2); 
 
@@ -2934,7 +3022,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
 
 
     // $ANTLR start "ruleUnder"
-    // InternalCloneDetectionDSL.g:1091:1: ruleUnder returns [Enumerator current=null] : ( (enumLiteral_0= '->' ) | (enumLiteral_1= '=>' ) ) ;
+    // InternalCloneDetectionDSL.g:1118:1: ruleUnder returns [Enumerator current=null] : ( (enumLiteral_0= '->' ) | (enumLiteral_1= '=>' ) ) ;
     public final Enumerator ruleUnder() throws RecognitionException {
         Enumerator current = null;
 
@@ -2945,10 +3033,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
         	enterRule();
 
         try {
-            // InternalCloneDetectionDSL.g:1097:2: ( ( (enumLiteral_0= '->' ) | (enumLiteral_1= '=>' ) ) )
-            // InternalCloneDetectionDSL.g:1098:2: ( (enumLiteral_0= '->' ) | (enumLiteral_1= '=>' ) )
+            // InternalCloneDetectionDSL.g:1124:2: ( ( (enumLiteral_0= '->' ) | (enumLiteral_1= '=>' ) ) )
+            // InternalCloneDetectionDSL.g:1125:2: ( (enumLiteral_0= '->' ) | (enumLiteral_1= '=>' ) )
             {
-            // InternalCloneDetectionDSL.g:1098:2: ( (enumLiteral_0= '->' ) | (enumLiteral_1= '=>' ) )
+            // InternalCloneDetectionDSL.g:1125:2: ( (enumLiteral_0= '->' ) | (enumLiteral_1= '=>' ) )
             int alt15=2;
             int LA15_0 = input.LA(1);
 
@@ -2966,10 +3054,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
             }
             switch (alt15) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:1099:3: (enumLiteral_0= '->' )
+                    // InternalCloneDetectionDSL.g:1126:3: (enumLiteral_0= '->' )
                     {
-                    // InternalCloneDetectionDSL.g:1099:3: (enumLiteral_0= '->' )
-                    // InternalCloneDetectionDSL.g:1100:4: enumLiteral_0= '->'
+                    // InternalCloneDetectionDSL.g:1126:3: (enumLiteral_0= '->' )
+                    // InternalCloneDetectionDSL.g:1127:4: enumLiteral_0= '->'
                     {
                     enumLiteral_0=(Token)match(input,38,FOLLOW_2); 
 
@@ -2983,10 +3071,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:1107:3: (enumLiteral_1= '=>' )
+                    // InternalCloneDetectionDSL.g:1134:3: (enumLiteral_1= '=>' )
                     {
-                    // InternalCloneDetectionDSL.g:1107:3: (enumLiteral_1= '=>' )
-                    // InternalCloneDetectionDSL.g:1108:4: enumLiteral_1= '=>'
+                    // InternalCloneDetectionDSL.g:1134:3: (enumLiteral_1= '=>' )
+                    // InternalCloneDetectionDSL.g:1135:4: enumLiteral_1= '=>'
                     {
                     enumLiteral_1=(Token)match(input,39,FOLLOW_2); 
 
@@ -3035,12 +3123,11 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalAntlrParser
     public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000000010002L});
     public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000040040L});
     public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000300000002L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x00000000FC000000L});
-    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000003C00000000L});
-    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000000008062L});
-    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000000000000042L});
-    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x00000000FC000000L});
+    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000003C00000000L});
+    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000008062L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000000000042L});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000000000400000L});
 
 }

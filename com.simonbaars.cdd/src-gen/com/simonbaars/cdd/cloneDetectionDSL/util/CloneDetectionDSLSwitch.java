@@ -124,10 +124,18 @@ public class CloneDetectionDSLSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case CloneDetectionDSLPackage.SIZE:
+      {
+        Size size = (Size)theEObject;
+        T result = caseSize(size);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case CloneDetectionDSLPackage.MIN_SIZE:
       {
         MinSize minSize = (MinSize)theEObject;
         T result = caseMinSize(minSize);
+        if (result == null) result = caseSize(minSize);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -264,6 +272,22 @@ public class CloneDetectionDSLSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseNodes(Nodes object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Size</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Size</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseSize(Size object)
   {
     return null;
   }

@@ -124,12 +124,12 @@ public interface CloneDetection extends EObject
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @return the value of the '<em>Size</em>' containment reference.
-   * @see #setSize(MinSize)
+   * @see #setSize(Size)
    * @see com.simonbaars.cdd.cloneDetectionDSL.CloneDetectionDSLPackage#getCloneDetection_Size()
    * @model containment="true"
    * @generated
    */
-  MinSize getSize();
+  Size getSize();
 
   /**
    * Sets the value of the '{@link com.simonbaars.cdd.cloneDetectionDSL.CloneDetection#getSize <em>Size</em>}' containment reference.
@@ -139,7 +139,7 @@ public interface CloneDetection extends EObject
    * @see #getSize()
    * @generated
    */
-  void setSize(MinSize value);
+  void setSize(Size value);
 
   /**
    * Returns the value of the '<em><b>Not Compare</b></em>' containment reference list.

@@ -111,6 +111,11 @@ public class CloneDetectionDSLAdapterFactory extends AdapterFactoryImpl
         return createNodesAdapter();
       }
       @Override
+      public Adapter caseSize(Size object)
+      {
+        return createSizeAdapter();
+      }
+      @Override
       public Adapter caseMinSize(MinSize object)
       {
         return createMinSizeAdapter();
@@ -253,6 +258,21 @@ public class CloneDetectionDSLAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createNodesAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link com.simonbaars.cdd.cloneDetectionDSL.Size <em>Size</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see com.simonbaars.cdd.cloneDetectionDSL.Size
+   * @generated
+   */
+  public Adapter createSizeAdapter()
   {
     return null;
   }

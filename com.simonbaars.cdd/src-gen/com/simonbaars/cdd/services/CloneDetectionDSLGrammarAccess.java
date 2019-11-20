@@ -38,18 +38,18 @@ public class CloneDetectionDSLGrammarAccess extends AbstractGrammarElementFinder
 		private final Assignment cExcludeAssignment_3 = (Assignment)cUnorderedGroup.eContents().get(3);
 		private final RuleCall cExcludeExcludeParserRuleCall_3_0 = (RuleCall)cExcludeAssignment_3.eContents().get(0);
 		private final Assignment cSizeAssignment_4 = (Assignment)cUnorderedGroup.eContents().get(4);
-		private final RuleCall cSizeMinSizeParserRuleCall_4_0 = (RuleCall)cSizeAssignment_4.eContents().get(0);
+		private final RuleCall cSizeSizeParserRuleCall_4_0 = (RuleCall)cSizeAssignment_4.eContents().get(0);
 		private final Assignment cNotCompareAssignment_5 = (Assignment)cUnorderedGroup.eContents().get(5);
 		private final RuleCall cNotCompareDoNotCompareParserRuleCall_5_0 = (RuleCall)cNotCompareAssignment_5.eContents().get(0);
 		private final Assignment cCompareAssignment_6 = (Assignment)cUnorderedGroup.eContents().get(6);
 		private final RuleCall cCompareCompareParserRuleCall_6_0 = (RuleCall)cCompareAssignment_6.eContents().get(0);
 		
 		//CloneDetection:
-		//	project=Project & root?=SearchRoot? & match?=Match? & exclude?=Exclude? & size=MinSize & notCompare+=DoNotCompare* &
+		//	project=Project & root?=SearchRoot? & match?=Match? & exclude?=Exclude? & size=Size & notCompare+=DoNotCompare* &
 		//	compare+=Compare*;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//project=Project & root?=SearchRoot? & match?=Match? & exclude?=Exclude? & size=MinSize & notCompare+=DoNotCompare* &
+		//project=Project & root?=SearchRoot? & match?=Match? & exclude?=Exclude? & size=Size & notCompare+=DoNotCompare* &
 		//compare+=Compare*
 		public UnorderedGroup getUnorderedGroup() { return cUnorderedGroup; }
 		
@@ -77,11 +77,11 @@ public class CloneDetectionDSLGrammarAccess extends AbstractGrammarElementFinder
 		//Exclude
 		public RuleCall getExcludeExcludeParserRuleCall_3_0() { return cExcludeExcludeParserRuleCall_3_0; }
 		
-		//size=MinSize
+		//size=Size
 		public Assignment getSizeAssignment_4() { return cSizeAssignment_4; }
 		
-		//MinSize
-		public RuleCall getSizeMinSizeParserRuleCall_4_0() { return cSizeMinSizeParserRuleCall_4_0; }
+		//Size
+		public RuleCall getSizeSizeParserRuleCall_4_0() { return cSizeSizeParserRuleCall_4_0; }
 		
 		//notCompare+=DoNotCompare*
 		public Assignment getNotCompareAssignment_5() { return cNotCompareAssignment_5; }
@@ -265,72 +265,87 @@ public class CloneDetectionDSLGrammarAccess extends AbstractGrammarElementFinder
 		//Nodes
 		public RuleCall getNodesNodesParserRuleCall_1_1_0() { return cNodesNodesParserRuleCall_1_1_0; }
 	}
-	public class MinSizeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "com.simonbaars.cdd.CloneDetectionDSL.MinSize");
+	public class SizeElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "com.simonbaars.cdd.CloneDetectionDSL.Size");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cSizeKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Alternatives cAlternatives_1 = (Alternatives)cGroup.eContents().get(1);
-		private final Assignment cExprAssignment_1_0 = (Assignment)cAlternatives_1.eContents().get(0);
-		private final RuleCall cExprMetricExprParserRuleCall_1_0_0 = (RuleCall)cExprAssignment_1_0.eContents().get(0);
-		private final Group cGroup_1_1 = (Group)cAlternatives_1.eContents().get(1);
-		private final Keyword cLeftParenthesisKeyword_1_1_0 = (Keyword)cGroup_1_1.eContents().get(0);
-		private final Assignment cBracketsAssignment_1_1_1 = (Assignment)cGroup_1_1.eContents().get(1);
-		private final RuleCall cBracketsMinSizeParserRuleCall_1_1_1_0 = (RuleCall)cBracketsAssignment_1_1_1.eContents().get(0);
-		private final Keyword cRightParenthesisKeyword_1_1_2 = (Keyword)cGroup_1_1.eContents().get(2);
-		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
-		private final Assignment cOperatorAssignment_2_0 = (Assignment)cGroup_2.eContents().get(0);
-		private final RuleCall cOperatorBoolOperatorEnumRuleCall_2_0_0 = (RuleCall)cOperatorAssignment_2_0.eContents().get(0);
-		private final Assignment cSizeAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
-		private final RuleCall cSizeMinSizeParserRuleCall_2_1_0 = (RuleCall)cSizeAssignment_2_1.eContents().get(0);
+		private final RuleCall cMinSizeParserRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
 		
-		//MinSize:
-		//	'Size' (expr=MetricExpr | '(' brackets=MinSize ')') (operator=BoolOperator size=MinSize)?;
+		//Size:
+		//	'Size' MinSize;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'Size' (expr=MetricExpr | '(' brackets=MinSize ')') (operator=BoolOperator size=MinSize)?
+		//'Size' MinSize
 		public Group getGroup() { return cGroup; }
 		
 		//'Size'
 		public Keyword getSizeKeyword_0() { return cSizeKeyword_0; }
 		
+		//MinSize
+		public RuleCall getMinSizeParserRuleCall_1() { return cMinSizeParserRuleCall_1; }
+	}
+	public class MinSizeElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "com.simonbaars.cdd.CloneDetectionDSL.MinSize");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Alternatives cAlternatives_0 = (Alternatives)cGroup.eContents().get(0);
+		private final Assignment cExprAssignment_0_0 = (Assignment)cAlternatives_0.eContents().get(0);
+		private final RuleCall cExprMetricExprParserRuleCall_0_0_0 = (RuleCall)cExprAssignment_0_0.eContents().get(0);
+		private final Group cGroup_0_1 = (Group)cAlternatives_0.eContents().get(1);
+		private final Keyword cLeftParenthesisKeyword_0_1_0 = (Keyword)cGroup_0_1.eContents().get(0);
+		private final Assignment cBracketsAssignment_0_1_1 = (Assignment)cGroup_0_1.eContents().get(1);
+		private final RuleCall cBracketsMinSizeParserRuleCall_0_1_1_0 = (RuleCall)cBracketsAssignment_0_1_1.eContents().get(0);
+		private final Keyword cRightParenthesisKeyword_0_1_2 = (Keyword)cGroup_0_1.eContents().get(2);
+		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
+		private final Assignment cOperatorAssignment_1_0 = (Assignment)cGroup_1.eContents().get(0);
+		private final RuleCall cOperatorBoolOperatorEnumRuleCall_1_0_0 = (RuleCall)cOperatorAssignment_1_0.eContents().get(0);
+		private final Assignment cSizeAssignment_1_1 = (Assignment)cGroup_1.eContents().get(1);
+		private final RuleCall cSizeMinSizeParserRuleCall_1_1_0 = (RuleCall)cSizeAssignment_1_1.eContents().get(0);
+		
+		//MinSize:
+		//	(expr=MetricExpr | '(' brackets=MinSize ')') (operator=BoolOperator size=MinSize)?;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//(expr=MetricExpr | '(' brackets=MinSize ')') (operator=BoolOperator size=MinSize)?
+		public Group getGroup() { return cGroup; }
+		
 		//(expr=MetricExpr | '(' brackets=MinSize ')')
-		public Alternatives getAlternatives_1() { return cAlternatives_1; }
+		public Alternatives getAlternatives_0() { return cAlternatives_0; }
 		
 		//expr=MetricExpr
-		public Assignment getExprAssignment_1_0() { return cExprAssignment_1_0; }
+		public Assignment getExprAssignment_0_0() { return cExprAssignment_0_0; }
 		
 		//MetricExpr
-		public RuleCall getExprMetricExprParserRuleCall_1_0_0() { return cExprMetricExprParserRuleCall_1_0_0; }
+		public RuleCall getExprMetricExprParserRuleCall_0_0_0() { return cExprMetricExprParserRuleCall_0_0_0; }
 		
 		//'(' brackets=MinSize ')'
-		public Group getGroup_1_1() { return cGroup_1_1; }
+		public Group getGroup_0_1() { return cGroup_0_1; }
 		
 		//'('
-		public Keyword getLeftParenthesisKeyword_1_1_0() { return cLeftParenthesisKeyword_1_1_0; }
+		public Keyword getLeftParenthesisKeyword_0_1_0() { return cLeftParenthesisKeyword_0_1_0; }
 		
 		//brackets=MinSize
-		public Assignment getBracketsAssignment_1_1_1() { return cBracketsAssignment_1_1_1; }
+		public Assignment getBracketsAssignment_0_1_1() { return cBracketsAssignment_0_1_1; }
 		
 		//MinSize
-		public RuleCall getBracketsMinSizeParserRuleCall_1_1_1_0() { return cBracketsMinSizeParserRuleCall_1_1_1_0; }
+		public RuleCall getBracketsMinSizeParserRuleCall_0_1_1_0() { return cBracketsMinSizeParserRuleCall_0_1_1_0; }
 		
 		//')'
-		public Keyword getRightParenthesisKeyword_1_1_2() { return cRightParenthesisKeyword_1_1_2; }
+		public Keyword getRightParenthesisKeyword_0_1_2() { return cRightParenthesisKeyword_0_1_2; }
 		
 		//(operator=BoolOperator size=MinSize)?
-		public Group getGroup_2() { return cGroup_2; }
+		public Group getGroup_1() { return cGroup_1; }
 		
 		//operator=BoolOperator
-		public Assignment getOperatorAssignment_2_0() { return cOperatorAssignment_2_0; }
+		public Assignment getOperatorAssignment_1_0() { return cOperatorAssignment_1_0; }
 		
 		//BoolOperator
-		public RuleCall getOperatorBoolOperatorEnumRuleCall_2_0_0() { return cOperatorBoolOperatorEnumRuleCall_2_0_0; }
+		public RuleCall getOperatorBoolOperatorEnumRuleCall_1_0_0() { return cOperatorBoolOperatorEnumRuleCall_1_0_0; }
 		
 		//size=MinSize
-		public Assignment getSizeAssignment_2_1() { return cSizeAssignment_2_1; }
+		public Assignment getSizeAssignment_1_1() { return cSizeAssignment_1_1; }
 		
 		//MinSize
-		public RuleCall getSizeMinSizeParserRuleCall_2_1_0() { return cSizeMinSizeParserRuleCall_2_1_0; }
+		public RuleCall getSizeMinSizeParserRuleCall_1_1_0() { return cSizeMinSizeParserRuleCall_1_1_0; }
 	}
 	public class MetricExprElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "com.simonbaars.cdd.CloneDetectionDSL.MetricExpr");
@@ -645,6 +660,7 @@ public class CloneDetectionDSLGrammarAccess extends AbstractGrammarElementFinder
 	private final ExcludeElements pExclude;
 	private final NodeElements pNode;
 	private final NodesElements pNodes;
+	private final SizeElements pSize;
 	private final MinSizeElements pMinSize;
 	private final MetricExprElements pMetricExpr;
 	private final SizeMetricElements eSizeMetric;
@@ -672,6 +688,7 @@ public class CloneDetectionDSLGrammarAccess extends AbstractGrammarElementFinder
 		this.pExclude = new ExcludeElements();
 		this.pNode = new NodeElements();
 		this.pNodes = new NodesElements();
+		this.pSize = new SizeElements();
 		this.pMinSize = new MinSizeElements();
 		this.pMetricExpr = new MetricExprElements();
 		this.eSizeMetric = new SizeMetricElements();
@@ -711,7 +728,7 @@ public class CloneDetectionDSLGrammarAccess extends AbstractGrammarElementFinder
 
 	
 	//CloneDetection:
-	//	project=Project & root?=SearchRoot? & match?=Match? & exclude?=Exclude? & size=MinSize & notCompare+=DoNotCompare* &
+	//	project=Project & root?=SearchRoot? & match?=Match? & exclude?=Exclude? & size=Size & notCompare+=DoNotCompare* &
 	//	compare+=Compare*;
 	public CloneDetectionElements getCloneDetectionAccess() {
 		return pCloneDetection;
@@ -791,8 +808,18 @@ public class CloneDetectionDSLGrammarAccess extends AbstractGrammarElementFinder
 		return getNodesAccess().getRule();
 	}
 	
+	//Size:
+	//	'Size' MinSize;
+	public SizeElements getSizeAccess() {
+		return pSize;
+	}
+	
+	public ParserRule getSizeRule() {
+		return getSizeAccess().getRule();
+	}
+	
 	//MinSize:
-	//	'Size' (expr=MetricExpr | '(' brackets=MinSize ')') (operator=BoolOperator size=MinSize)?;
+	//	(expr=MetricExpr | '(' brackets=MinSize ')') (operator=BoolOperator size=MinSize)?;
 	public MinSizeElements getMinSizeAccess() {
 		return pMinSize;
 	}

@@ -693,12 +693,97 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
     // $ANTLR end "ruleNodes"
 
 
+    // $ANTLR start "entryRuleSize"
+    // InternalCloneDetectionDSL.g:228:1: entryRuleSize : ruleSize EOF ;
+    public final void entryRuleSize() throws RecognitionException {
+        try {
+            // InternalCloneDetectionDSL.g:229:1: ( ruleSize EOF )
+            // InternalCloneDetectionDSL.g:230:1: ruleSize EOF
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getSizeRule()); 
+            }
+            pushFollow(FOLLOW_1);
+            ruleSize();
+
+            state._fsp--;
+            if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getSizeRule()); 
+            }
+            match(input,EOF,FOLLOW_2); if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "entryRuleSize"
+
+
+    // $ANTLR start "ruleSize"
+    // InternalCloneDetectionDSL.g:237:1: ruleSize : ( ( rule__Size__Group__0 ) ) ;
+    public final void ruleSize() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalCloneDetectionDSL.g:241:2: ( ( ( rule__Size__Group__0 ) ) )
+            // InternalCloneDetectionDSL.g:242:2: ( ( rule__Size__Group__0 ) )
+            {
+            // InternalCloneDetectionDSL.g:242:2: ( ( rule__Size__Group__0 ) )
+            // InternalCloneDetectionDSL.g:243:3: ( rule__Size__Group__0 )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getSizeAccess().getGroup()); 
+            }
+            // InternalCloneDetectionDSL.g:244:3: ( rule__Size__Group__0 )
+            // InternalCloneDetectionDSL.g:244:4: rule__Size__Group__0
+            {
+            pushFollow(FOLLOW_2);
+            rule__Size__Group__0();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getSizeAccess().getGroup()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "ruleSize"
+
+
     // $ANTLR start "entryRuleMinSize"
-    // InternalCloneDetectionDSL.g:228:1: entryRuleMinSize : ruleMinSize EOF ;
+    // InternalCloneDetectionDSL.g:253:1: entryRuleMinSize : ruleMinSize EOF ;
     public final void entryRuleMinSize() throws RecognitionException {
         try {
-            // InternalCloneDetectionDSL.g:229:1: ( ruleMinSize EOF )
-            // InternalCloneDetectionDSL.g:230:1: ruleMinSize EOF
+            // InternalCloneDetectionDSL.g:254:1: ( ruleMinSize EOF )
+            // InternalCloneDetectionDSL.g:255:1: ruleMinSize EOF
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMinSizeRule()); 
@@ -728,23 +813,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "ruleMinSize"
-    // InternalCloneDetectionDSL.g:237:1: ruleMinSize : ( ( rule__MinSize__Group__0 ) ) ;
+    // InternalCloneDetectionDSL.g:262:1: ruleMinSize : ( ( rule__MinSize__Group__0 ) ) ;
     public final void ruleMinSize() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:241:2: ( ( ( rule__MinSize__Group__0 ) ) )
-            // InternalCloneDetectionDSL.g:242:2: ( ( rule__MinSize__Group__0 ) )
+            // InternalCloneDetectionDSL.g:266:2: ( ( ( rule__MinSize__Group__0 ) ) )
+            // InternalCloneDetectionDSL.g:267:2: ( ( rule__MinSize__Group__0 ) )
             {
-            // InternalCloneDetectionDSL.g:242:2: ( ( rule__MinSize__Group__0 ) )
-            // InternalCloneDetectionDSL.g:243:3: ( rule__MinSize__Group__0 )
+            // InternalCloneDetectionDSL.g:267:2: ( ( rule__MinSize__Group__0 ) )
+            // InternalCloneDetectionDSL.g:268:3: ( rule__MinSize__Group__0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMinSizeAccess().getGroup()); 
             }
-            // InternalCloneDetectionDSL.g:244:3: ( rule__MinSize__Group__0 )
-            // InternalCloneDetectionDSL.g:244:4: rule__MinSize__Group__0
+            // InternalCloneDetectionDSL.g:269:3: ( rule__MinSize__Group__0 )
+            // InternalCloneDetectionDSL.g:269:4: rule__MinSize__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__MinSize__Group__0();
@@ -779,11 +864,11 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "entryRuleMetricExpr"
-    // InternalCloneDetectionDSL.g:253:1: entryRuleMetricExpr : ruleMetricExpr EOF ;
+    // InternalCloneDetectionDSL.g:278:1: entryRuleMetricExpr : ruleMetricExpr EOF ;
     public final void entryRuleMetricExpr() throws RecognitionException {
         try {
-            // InternalCloneDetectionDSL.g:254:1: ( ruleMetricExpr EOF )
-            // InternalCloneDetectionDSL.g:255:1: ruleMetricExpr EOF
+            // InternalCloneDetectionDSL.g:279:1: ( ruleMetricExpr EOF )
+            // InternalCloneDetectionDSL.g:280:1: ruleMetricExpr EOF
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMetricExprRule()); 
@@ -813,23 +898,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "ruleMetricExpr"
-    // InternalCloneDetectionDSL.g:262:1: ruleMetricExpr : ( ( rule__MetricExpr__Group__0 ) ) ;
+    // InternalCloneDetectionDSL.g:287:1: ruleMetricExpr : ( ( rule__MetricExpr__Group__0 ) ) ;
     public final void ruleMetricExpr() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:266:2: ( ( ( rule__MetricExpr__Group__0 ) ) )
-            // InternalCloneDetectionDSL.g:267:2: ( ( rule__MetricExpr__Group__0 ) )
+            // InternalCloneDetectionDSL.g:291:2: ( ( ( rule__MetricExpr__Group__0 ) ) )
+            // InternalCloneDetectionDSL.g:292:2: ( ( rule__MetricExpr__Group__0 ) )
             {
-            // InternalCloneDetectionDSL.g:267:2: ( ( rule__MetricExpr__Group__0 ) )
-            // InternalCloneDetectionDSL.g:268:3: ( rule__MetricExpr__Group__0 )
+            // InternalCloneDetectionDSL.g:292:2: ( ( rule__MetricExpr__Group__0 ) )
+            // InternalCloneDetectionDSL.g:293:3: ( rule__MetricExpr__Group__0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMetricExprAccess().getGroup()); 
             }
-            // InternalCloneDetectionDSL.g:269:3: ( rule__MetricExpr__Group__0 )
-            // InternalCloneDetectionDSL.g:269:4: rule__MetricExpr__Group__0
+            // InternalCloneDetectionDSL.g:294:3: ( rule__MetricExpr__Group__0 )
+            // InternalCloneDetectionDSL.g:294:4: rule__MetricExpr__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__MetricExpr__Group__0();
@@ -864,11 +949,11 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "entryRuleDoNotCompare"
-    // InternalCloneDetectionDSL.g:278:1: entryRuleDoNotCompare : ruleDoNotCompare EOF ;
+    // InternalCloneDetectionDSL.g:303:1: entryRuleDoNotCompare : ruleDoNotCompare EOF ;
     public final void entryRuleDoNotCompare() throws RecognitionException {
         try {
-            // InternalCloneDetectionDSL.g:279:1: ( ruleDoNotCompare EOF )
-            // InternalCloneDetectionDSL.g:280:1: ruleDoNotCompare EOF
+            // InternalCloneDetectionDSL.g:304:1: ( ruleDoNotCompare EOF )
+            // InternalCloneDetectionDSL.g:305:1: ruleDoNotCompare EOF
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDoNotCompareRule()); 
@@ -898,23 +983,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "ruleDoNotCompare"
-    // InternalCloneDetectionDSL.g:287:1: ruleDoNotCompare : ( ( rule__DoNotCompare__Group__0 ) ) ;
+    // InternalCloneDetectionDSL.g:312:1: ruleDoNotCompare : ( ( rule__DoNotCompare__Group__0 ) ) ;
     public final void ruleDoNotCompare() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:291:2: ( ( ( rule__DoNotCompare__Group__0 ) ) )
-            // InternalCloneDetectionDSL.g:292:2: ( ( rule__DoNotCompare__Group__0 ) )
+            // InternalCloneDetectionDSL.g:316:2: ( ( ( rule__DoNotCompare__Group__0 ) ) )
+            // InternalCloneDetectionDSL.g:317:2: ( ( rule__DoNotCompare__Group__0 ) )
             {
-            // InternalCloneDetectionDSL.g:292:2: ( ( rule__DoNotCompare__Group__0 ) )
-            // InternalCloneDetectionDSL.g:293:3: ( rule__DoNotCompare__Group__0 )
+            // InternalCloneDetectionDSL.g:317:2: ( ( rule__DoNotCompare__Group__0 ) )
+            // InternalCloneDetectionDSL.g:318:3: ( rule__DoNotCompare__Group__0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDoNotCompareAccess().getGroup()); 
             }
-            // InternalCloneDetectionDSL.g:294:3: ( rule__DoNotCompare__Group__0 )
-            // InternalCloneDetectionDSL.g:294:4: rule__DoNotCompare__Group__0
+            // InternalCloneDetectionDSL.g:319:3: ( rule__DoNotCompare__Group__0 )
+            // InternalCloneDetectionDSL.g:319:4: rule__DoNotCompare__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__DoNotCompare__Group__0();
@@ -949,11 +1034,11 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "entryRuleCompare"
-    // InternalCloneDetectionDSL.g:303:1: entryRuleCompare : ruleCompare EOF ;
+    // InternalCloneDetectionDSL.g:328:1: entryRuleCompare : ruleCompare EOF ;
     public final void entryRuleCompare() throws RecognitionException {
         try {
-            // InternalCloneDetectionDSL.g:304:1: ( ruleCompare EOF )
-            // InternalCloneDetectionDSL.g:305:1: ruleCompare EOF
+            // InternalCloneDetectionDSL.g:329:1: ( ruleCompare EOF )
+            // InternalCloneDetectionDSL.g:330:1: ruleCompare EOF
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCompareRule()); 
@@ -983,23 +1068,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "ruleCompare"
-    // InternalCloneDetectionDSL.g:312:1: ruleCompare : ( ( rule__Compare__Group__0 ) ) ;
+    // InternalCloneDetectionDSL.g:337:1: ruleCompare : ( ( rule__Compare__Group__0 ) ) ;
     public final void ruleCompare() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:316:2: ( ( ( rule__Compare__Group__0 ) ) )
-            // InternalCloneDetectionDSL.g:317:2: ( ( rule__Compare__Group__0 ) )
+            // InternalCloneDetectionDSL.g:341:2: ( ( ( rule__Compare__Group__0 ) ) )
+            // InternalCloneDetectionDSL.g:342:2: ( ( rule__Compare__Group__0 ) )
             {
-            // InternalCloneDetectionDSL.g:317:2: ( ( rule__Compare__Group__0 ) )
-            // InternalCloneDetectionDSL.g:318:3: ( rule__Compare__Group__0 )
+            // InternalCloneDetectionDSL.g:342:2: ( ( rule__Compare__Group__0 ) )
+            // InternalCloneDetectionDSL.g:343:3: ( rule__Compare__Group__0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCompareAccess().getGroup()); 
             }
-            // InternalCloneDetectionDSL.g:319:3: ( rule__Compare__Group__0 )
-            // InternalCloneDetectionDSL.g:319:4: rule__Compare__Group__0
+            // InternalCloneDetectionDSL.g:344:3: ( rule__Compare__Group__0 )
+            // InternalCloneDetectionDSL.g:344:4: rule__Compare__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__Compare__Group__0();
@@ -1034,11 +1119,11 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "entryRulePercentage"
-    // InternalCloneDetectionDSL.g:328:1: entryRulePercentage : rulePercentage EOF ;
+    // InternalCloneDetectionDSL.g:353:1: entryRulePercentage : rulePercentage EOF ;
     public final void entryRulePercentage() throws RecognitionException {
         try {
-            // InternalCloneDetectionDSL.g:329:1: ( rulePercentage EOF )
-            // InternalCloneDetectionDSL.g:330:1: rulePercentage EOF
+            // InternalCloneDetectionDSL.g:354:1: ( rulePercentage EOF )
+            // InternalCloneDetectionDSL.g:355:1: rulePercentage EOF
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getPercentageRule()); 
@@ -1068,23 +1153,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rulePercentage"
-    // InternalCloneDetectionDSL.g:337:1: rulePercentage : ( ( rule__Percentage__Group__0 ) ) ;
+    // InternalCloneDetectionDSL.g:362:1: rulePercentage : ( ( rule__Percentage__Group__0 ) ) ;
     public final void rulePercentage() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:341:2: ( ( ( rule__Percentage__Group__0 ) ) )
-            // InternalCloneDetectionDSL.g:342:2: ( ( rule__Percentage__Group__0 ) )
+            // InternalCloneDetectionDSL.g:366:2: ( ( ( rule__Percentage__Group__0 ) ) )
+            // InternalCloneDetectionDSL.g:367:2: ( ( rule__Percentage__Group__0 ) )
             {
-            // InternalCloneDetectionDSL.g:342:2: ( ( rule__Percentage__Group__0 ) )
-            // InternalCloneDetectionDSL.g:343:3: ( rule__Percentage__Group__0 )
+            // InternalCloneDetectionDSL.g:367:2: ( ( rule__Percentage__Group__0 ) )
+            // InternalCloneDetectionDSL.g:368:3: ( rule__Percentage__Group__0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getPercentageAccess().getGroup()); 
             }
-            // InternalCloneDetectionDSL.g:344:3: ( rule__Percentage__Group__0 )
-            // InternalCloneDetectionDSL.g:344:4: rule__Percentage__Group__0
+            // InternalCloneDetectionDSL.g:369:3: ( rule__Percentage__Group__0 )
+            // InternalCloneDetectionDSL.g:369:4: rule__Percentage__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__Percentage__Group__0();
@@ -1119,23 +1204,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "ruleMatchTarget"
-    // InternalCloneDetectionDSL.g:353:1: ruleMatchTarget : ( ( rule__MatchTarget__Alternatives ) ) ;
+    // InternalCloneDetectionDSL.g:378:1: ruleMatchTarget : ( ( rule__MatchTarget__Alternatives ) ) ;
     public final void ruleMatchTarget() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:357:1: ( ( ( rule__MatchTarget__Alternatives ) ) )
-            // InternalCloneDetectionDSL.g:358:2: ( ( rule__MatchTarget__Alternatives ) )
+            // InternalCloneDetectionDSL.g:382:1: ( ( ( rule__MatchTarget__Alternatives ) ) )
+            // InternalCloneDetectionDSL.g:383:2: ( ( rule__MatchTarget__Alternatives ) )
             {
-            // InternalCloneDetectionDSL.g:358:2: ( ( rule__MatchTarget__Alternatives ) )
-            // InternalCloneDetectionDSL.g:359:3: ( rule__MatchTarget__Alternatives )
+            // InternalCloneDetectionDSL.g:383:2: ( ( rule__MatchTarget__Alternatives ) )
+            // InternalCloneDetectionDSL.g:384:3: ( rule__MatchTarget__Alternatives )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMatchTargetAccess().getAlternatives()); 
             }
-            // InternalCloneDetectionDSL.g:360:3: ( rule__MatchTarget__Alternatives )
-            // InternalCloneDetectionDSL.g:360:4: rule__MatchTarget__Alternatives
+            // InternalCloneDetectionDSL.g:385:3: ( rule__MatchTarget__Alternatives )
+            // InternalCloneDetectionDSL.g:385:4: rule__MatchTarget__Alternatives
             {
             pushFollow(FOLLOW_2);
             rule__MatchTarget__Alternatives();
@@ -1170,23 +1255,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "ruleSizeMetric"
-    // InternalCloneDetectionDSL.g:369:1: ruleSizeMetric : ( ( rule__SizeMetric__Alternatives ) ) ;
+    // InternalCloneDetectionDSL.g:394:1: ruleSizeMetric : ( ( rule__SizeMetric__Alternatives ) ) ;
     public final void ruleSizeMetric() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:373:1: ( ( ( rule__SizeMetric__Alternatives ) ) )
-            // InternalCloneDetectionDSL.g:374:2: ( ( rule__SizeMetric__Alternatives ) )
+            // InternalCloneDetectionDSL.g:398:1: ( ( ( rule__SizeMetric__Alternatives ) ) )
+            // InternalCloneDetectionDSL.g:399:2: ( ( rule__SizeMetric__Alternatives ) )
             {
-            // InternalCloneDetectionDSL.g:374:2: ( ( rule__SizeMetric__Alternatives ) )
-            // InternalCloneDetectionDSL.g:375:3: ( rule__SizeMetric__Alternatives )
+            // InternalCloneDetectionDSL.g:399:2: ( ( rule__SizeMetric__Alternatives ) )
+            // InternalCloneDetectionDSL.g:400:3: ( rule__SizeMetric__Alternatives )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSizeMetricAccess().getAlternatives()); 
             }
-            // InternalCloneDetectionDSL.g:376:3: ( rule__SizeMetric__Alternatives )
-            // InternalCloneDetectionDSL.g:376:4: rule__SizeMetric__Alternatives
+            // InternalCloneDetectionDSL.g:401:3: ( rule__SizeMetric__Alternatives )
+            // InternalCloneDetectionDSL.g:401:4: rule__SizeMetric__Alternatives
             {
             pushFollow(FOLLOW_2);
             rule__SizeMetric__Alternatives();
@@ -1221,23 +1306,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "ruleBoolOperator"
-    // InternalCloneDetectionDSL.g:385:1: ruleBoolOperator : ( ( rule__BoolOperator__Alternatives ) ) ;
+    // InternalCloneDetectionDSL.g:410:1: ruleBoolOperator : ( ( rule__BoolOperator__Alternatives ) ) ;
     public final void ruleBoolOperator() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:389:1: ( ( ( rule__BoolOperator__Alternatives ) ) )
-            // InternalCloneDetectionDSL.g:390:2: ( ( rule__BoolOperator__Alternatives ) )
+            // InternalCloneDetectionDSL.g:414:1: ( ( ( rule__BoolOperator__Alternatives ) ) )
+            // InternalCloneDetectionDSL.g:415:2: ( ( rule__BoolOperator__Alternatives ) )
             {
-            // InternalCloneDetectionDSL.g:390:2: ( ( rule__BoolOperator__Alternatives ) )
-            // InternalCloneDetectionDSL.g:391:3: ( rule__BoolOperator__Alternatives )
+            // InternalCloneDetectionDSL.g:415:2: ( ( rule__BoolOperator__Alternatives ) )
+            // InternalCloneDetectionDSL.g:416:3: ( rule__BoolOperator__Alternatives )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getBoolOperatorAccess().getAlternatives()); 
             }
-            // InternalCloneDetectionDSL.g:392:3: ( rule__BoolOperator__Alternatives )
-            // InternalCloneDetectionDSL.g:392:4: rule__BoolOperator__Alternatives
+            // InternalCloneDetectionDSL.g:417:3: ( rule__BoolOperator__Alternatives )
+            // InternalCloneDetectionDSL.g:417:4: rule__BoolOperator__Alternatives
             {
             pushFollow(FOLLOW_2);
             rule__BoolOperator__Alternatives();
@@ -1272,23 +1357,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "ruleMethod"
-    // InternalCloneDetectionDSL.g:401:1: ruleMethod : ( ( rule__Method__Alternatives ) ) ;
+    // InternalCloneDetectionDSL.g:426:1: ruleMethod : ( ( rule__Method__Alternatives ) ) ;
     public final void ruleMethod() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:405:1: ( ( ( rule__Method__Alternatives ) ) )
-            // InternalCloneDetectionDSL.g:406:2: ( ( rule__Method__Alternatives ) )
+            // InternalCloneDetectionDSL.g:430:1: ( ( ( rule__Method__Alternatives ) ) )
+            // InternalCloneDetectionDSL.g:431:2: ( ( rule__Method__Alternatives ) )
             {
-            // InternalCloneDetectionDSL.g:406:2: ( ( rule__Method__Alternatives ) )
-            // InternalCloneDetectionDSL.g:407:3: ( rule__Method__Alternatives )
+            // InternalCloneDetectionDSL.g:431:2: ( ( rule__Method__Alternatives ) )
+            // InternalCloneDetectionDSL.g:432:3: ( rule__Method__Alternatives )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMethodAccess().getAlternatives()); 
             }
-            // InternalCloneDetectionDSL.g:408:3: ( rule__Method__Alternatives )
-            // InternalCloneDetectionDSL.g:408:4: rule__Method__Alternatives
+            // InternalCloneDetectionDSL.g:433:3: ( rule__Method__Alternatives )
+            // InternalCloneDetectionDSL.g:433:4: rule__Method__Alternatives
             {
             pushFollow(FOLLOW_2);
             rule__Method__Alternatives();
@@ -1323,23 +1408,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "ruleUnder"
-    // InternalCloneDetectionDSL.g:417:1: ruleUnder : ( ( rule__Under__Alternatives ) ) ;
+    // InternalCloneDetectionDSL.g:442:1: ruleUnder : ( ( rule__Under__Alternatives ) ) ;
     public final void ruleUnder() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:421:1: ( ( ( rule__Under__Alternatives ) ) )
-            // InternalCloneDetectionDSL.g:422:2: ( ( rule__Under__Alternatives ) )
+            // InternalCloneDetectionDSL.g:446:1: ( ( ( rule__Under__Alternatives ) ) )
+            // InternalCloneDetectionDSL.g:447:2: ( ( rule__Under__Alternatives ) )
             {
-            // InternalCloneDetectionDSL.g:422:2: ( ( rule__Under__Alternatives ) )
-            // InternalCloneDetectionDSL.g:423:3: ( rule__Under__Alternatives )
+            // InternalCloneDetectionDSL.g:447:2: ( ( rule__Under__Alternatives ) )
+            // InternalCloneDetectionDSL.g:448:3: ( rule__Under__Alternatives )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getUnderAccess().getAlternatives()); 
             }
-            // InternalCloneDetectionDSL.g:424:3: ( rule__Under__Alternatives )
-            // InternalCloneDetectionDSL.g:424:4: rule__Under__Alternatives
+            // InternalCloneDetectionDSL.g:449:3: ( rule__Under__Alternatives )
+            // InternalCloneDetectionDSL.g:449:4: rule__Under__Alternatives
             {
             pushFollow(FOLLOW_2);
             rule__Under__Alternatives();
@@ -1374,13 +1459,13 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Node__Alternatives_0"
-    // InternalCloneDetectionDSL.g:432:1: rule__Node__Alternatives_0 : ( ( ( rule__Node__NameAssignment_0_0 ) ) | ( '*' ) );
+    // InternalCloneDetectionDSL.g:457:1: rule__Node__Alternatives_0 : ( ( ( rule__Node__NameAssignment_0_0 ) ) | ( '*' ) );
     public final void rule__Node__Alternatives_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:436:1: ( ( ( rule__Node__NameAssignment_0_0 ) ) | ( '*' ) )
+            // InternalCloneDetectionDSL.g:461:1: ( ( ( rule__Node__NameAssignment_0_0 ) ) | ( '*' ) )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -1399,16 +1484,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt1) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:437:2: ( ( rule__Node__NameAssignment_0_0 ) )
+                    // InternalCloneDetectionDSL.g:462:2: ( ( rule__Node__NameAssignment_0_0 ) )
                     {
-                    // InternalCloneDetectionDSL.g:437:2: ( ( rule__Node__NameAssignment_0_0 ) )
-                    // InternalCloneDetectionDSL.g:438:3: ( rule__Node__NameAssignment_0_0 )
+                    // InternalCloneDetectionDSL.g:462:2: ( ( rule__Node__NameAssignment_0_0 ) )
+                    // InternalCloneDetectionDSL.g:463:3: ( rule__Node__NameAssignment_0_0 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getNodeAccess().getNameAssignment_0_0()); 
                     }
-                    // InternalCloneDetectionDSL.g:439:3: ( rule__Node__NameAssignment_0_0 )
-                    // InternalCloneDetectionDSL.g:439:4: rule__Node__NameAssignment_0_0
+                    // InternalCloneDetectionDSL.g:464:3: ( rule__Node__NameAssignment_0_0 )
+                    // InternalCloneDetectionDSL.g:464:4: rule__Node__NameAssignment_0_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Node__NameAssignment_0_0();
@@ -1428,10 +1513,10 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:443:2: ( '*' )
+                    // InternalCloneDetectionDSL.g:468:2: ( '*' )
                     {
-                    // InternalCloneDetectionDSL.g:443:2: ( '*' )
-                    // InternalCloneDetectionDSL.g:444:3: '*'
+                    // InternalCloneDetectionDSL.g:468:2: ( '*' )
+                    // InternalCloneDetectionDSL.g:469:3: '*'
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getNodeAccess().getAsteriskKeyword_0_1()); 
@@ -1463,14 +1548,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
     // $ANTLR end "rule__Node__Alternatives_0"
 
 
-    // $ANTLR start "rule__MinSize__Alternatives_1"
-    // InternalCloneDetectionDSL.g:453:1: rule__MinSize__Alternatives_1 : ( ( ( rule__MinSize__ExprAssignment_1_0 ) ) | ( ( rule__MinSize__Group_1_1__0 ) ) );
-    public final void rule__MinSize__Alternatives_1() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__Alternatives_0"
+    // InternalCloneDetectionDSL.g:478:1: rule__MinSize__Alternatives_0 : ( ( ( rule__MinSize__ExprAssignment_0_0 ) ) | ( ( rule__MinSize__Group_0_1__0 ) ) );
+    public final void rule__MinSize__Alternatives_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:457:1: ( ( ( rule__MinSize__ExprAssignment_1_0 ) ) | ( ( rule__MinSize__Group_1_1__0 ) ) )
+            // InternalCloneDetectionDSL.g:482:1: ( ( ( rule__MinSize__ExprAssignment_0_0 ) ) | ( ( rule__MinSize__Group_0_1__0 ) ) )
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -1489,19 +1574,19 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt2) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:458:2: ( ( rule__MinSize__ExprAssignment_1_0 ) )
+                    // InternalCloneDetectionDSL.g:483:2: ( ( rule__MinSize__ExprAssignment_0_0 ) )
                     {
-                    // InternalCloneDetectionDSL.g:458:2: ( ( rule__MinSize__ExprAssignment_1_0 ) )
-                    // InternalCloneDetectionDSL.g:459:3: ( rule__MinSize__ExprAssignment_1_0 )
+                    // InternalCloneDetectionDSL.g:483:2: ( ( rule__MinSize__ExprAssignment_0_0 ) )
+                    // InternalCloneDetectionDSL.g:484:3: ( rule__MinSize__ExprAssignment_0_0 )
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getMinSizeAccess().getExprAssignment_1_0()); 
+                       before(grammarAccess.getMinSizeAccess().getExprAssignment_0_0()); 
                     }
-                    // InternalCloneDetectionDSL.g:460:3: ( rule__MinSize__ExprAssignment_1_0 )
-                    // InternalCloneDetectionDSL.g:460:4: rule__MinSize__ExprAssignment_1_0
+                    // InternalCloneDetectionDSL.g:485:3: ( rule__MinSize__ExprAssignment_0_0 )
+                    // InternalCloneDetectionDSL.g:485:4: rule__MinSize__ExprAssignment_0_0
                     {
                     pushFollow(FOLLOW_2);
-                    rule__MinSize__ExprAssignment_1_0();
+                    rule__MinSize__ExprAssignment_0_0();
 
                     state._fsp--;
                     if (state.failed) return ;
@@ -1509,7 +1594,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
 
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getMinSizeAccess().getExprAssignment_1_0()); 
+                       after(grammarAccess.getMinSizeAccess().getExprAssignment_0_0()); 
                     }
 
                     }
@@ -1518,19 +1603,19 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:464:2: ( ( rule__MinSize__Group_1_1__0 ) )
+                    // InternalCloneDetectionDSL.g:489:2: ( ( rule__MinSize__Group_0_1__0 ) )
                     {
-                    // InternalCloneDetectionDSL.g:464:2: ( ( rule__MinSize__Group_1_1__0 ) )
-                    // InternalCloneDetectionDSL.g:465:3: ( rule__MinSize__Group_1_1__0 )
+                    // InternalCloneDetectionDSL.g:489:2: ( ( rule__MinSize__Group_0_1__0 ) )
+                    // InternalCloneDetectionDSL.g:490:3: ( rule__MinSize__Group_0_1__0 )
                     {
                     if ( state.backtracking==0 ) {
-                       before(grammarAccess.getMinSizeAccess().getGroup_1_1()); 
+                       before(grammarAccess.getMinSizeAccess().getGroup_0_1()); 
                     }
-                    // InternalCloneDetectionDSL.g:466:3: ( rule__MinSize__Group_1_1__0 )
-                    // InternalCloneDetectionDSL.g:466:4: rule__MinSize__Group_1_1__0
+                    // InternalCloneDetectionDSL.g:491:3: ( rule__MinSize__Group_0_1__0 )
+                    // InternalCloneDetectionDSL.g:491:4: rule__MinSize__Group_0_1__0
                     {
                     pushFollow(FOLLOW_2);
-                    rule__MinSize__Group_1_1__0();
+                    rule__MinSize__Group_0_1__0();
 
                     state._fsp--;
                     if (state.failed) return ;
@@ -1538,7 +1623,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
 
                     if ( state.backtracking==0 ) {
-                       after(grammarAccess.getMinSizeAccess().getGroup_1_1()); 
+                       after(grammarAccess.getMinSizeAccess().getGroup_0_1()); 
                     }
 
                     }
@@ -1560,17 +1645,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__Alternatives_1"
+    // $ANTLR end "rule__MinSize__Alternatives_0"
 
 
     // $ANTLR start "rule__MatchTarget__Alternatives"
-    // InternalCloneDetectionDSL.g:474:1: rule__MatchTarget__Alternatives : ( ( ( 'Subtree' ) ) | ( ( 'LLOC' ) ) | ( ( 'SLOC' ) ) );
+    // InternalCloneDetectionDSL.g:499:1: rule__MatchTarget__Alternatives : ( ( ( 'Subtree' ) ) | ( ( 'LLOC' ) ) | ( ( 'SLOC' ) ) );
     public final void rule__MatchTarget__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:478:1: ( ( ( 'Subtree' ) ) | ( ( 'LLOC' ) ) | ( ( 'SLOC' ) ) )
+            // InternalCloneDetectionDSL.g:503:1: ( ( ( 'Subtree' ) ) | ( ( 'LLOC' ) ) | ( ( 'SLOC' ) ) )
             int alt3=3;
             switch ( input.LA(1) ) {
             case 12:
@@ -1598,16 +1683,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
             switch (alt3) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:479:2: ( ( 'Subtree' ) )
+                    // InternalCloneDetectionDSL.g:504:2: ( ( 'Subtree' ) )
                     {
-                    // InternalCloneDetectionDSL.g:479:2: ( ( 'Subtree' ) )
-                    // InternalCloneDetectionDSL.g:480:3: ( 'Subtree' )
+                    // InternalCloneDetectionDSL.g:504:2: ( ( 'Subtree' ) )
+                    // InternalCloneDetectionDSL.g:505:3: ( 'Subtree' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getMatchTargetAccess().getSubtreeEnumLiteralDeclaration_0()); 
                     }
-                    // InternalCloneDetectionDSL.g:481:3: ( 'Subtree' )
-                    // InternalCloneDetectionDSL.g:481:4: 'Subtree'
+                    // InternalCloneDetectionDSL.g:506:3: ( 'Subtree' )
+                    // InternalCloneDetectionDSL.g:506:4: 'Subtree'
                     {
                     match(input,12,FOLLOW_2); if (state.failed) return ;
 
@@ -1623,16 +1708,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:485:2: ( ( 'LLOC' ) )
+                    // InternalCloneDetectionDSL.g:510:2: ( ( 'LLOC' ) )
                     {
-                    // InternalCloneDetectionDSL.g:485:2: ( ( 'LLOC' ) )
-                    // InternalCloneDetectionDSL.g:486:3: ( 'LLOC' )
+                    // InternalCloneDetectionDSL.g:510:2: ( ( 'LLOC' ) )
+                    // InternalCloneDetectionDSL.g:511:3: ( 'LLOC' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getMatchTargetAccess().getLLOCEnumLiteralDeclaration_1()); 
                     }
-                    // InternalCloneDetectionDSL.g:487:3: ( 'LLOC' )
-                    // InternalCloneDetectionDSL.g:487:4: 'LLOC'
+                    // InternalCloneDetectionDSL.g:512:3: ( 'LLOC' )
+                    // InternalCloneDetectionDSL.g:512:4: 'LLOC'
                     {
                     match(input,13,FOLLOW_2); if (state.failed) return ;
 
@@ -1648,16 +1733,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 3 :
-                    // InternalCloneDetectionDSL.g:491:2: ( ( 'SLOC' ) )
+                    // InternalCloneDetectionDSL.g:516:2: ( ( 'SLOC' ) )
                     {
-                    // InternalCloneDetectionDSL.g:491:2: ( ( 'SLOC' ) )
-                    // InternalCloneDetectionDSL.g:492:3: ( 'SLOC' )
+                    // InternalCloneDetectionDSL.g:516:2: ( ( 'SLOC' ) )
+                    // InternalCloneDetectionDSL.g:517:3: ( 'SLOC' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getMatchTargetAccess().getSLOCEnumLiteralDeclaration_2()); 
                     }
-                    // InternalCloneDetectionDSL.g:493:3: ( 'SLOC' )
-                    // InternalCloneDetectionDSL.g:493:4: 'SLOC'
+                    // InternalCloneDetectionDSL.g:518:3: ( 'SLOC' )
+                    // InternalCloneDetectionDSL.g:518:4: 'SLOC'
                     {
                     match(input,14,FOLLOW_2); if (state.failed) return ;
 
@@ -1690,13 +1775,13 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__SizeMetric__Alternatives"
-    // InternalCloneDetectionDSL.g:501:1: rule__SizeMetric__Alternatives : ( ( ( 'tokens' ) ) | ( ( 'declarations' ) ) | ( ( 'statements' ) ) | ( ( 'nodes' ) ) | ( ( 'lines' ) ) | ( ( 'cyclomatic_complexity' ) ) );
+    // InternalCloneDetectionDSL.g:526:1: rule__SizeMetric__Alternatives : ( ( ( 'tokens' ) ) | ( ( 'declarations' ) ) | ( ( 'statements' ) ) | ( ( 'nodes' ) ) | ( ( 'lines' ) ) | ( ( 'cyclomatic_complexity' ) ) );
     public final void rule__SizeMetric__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:505:1: ( ( ( 'tokens' ) ) | ( ( 'declarations' ) ) | ( ( 'statements' ) ) | ( ( 'nodes' ) ) | ( ( 'lines' ) ) | ( ( 'cyclomatic_complexity' ) ) )
+            // InternalCloneDetectionDSL.g:530:1: ( ( ( 'tokens' ) ) | ( ( 'declarations' ) ) | ( ( 'statements' ) ) | ( ( 'nodes' ) ) | ( ( 'lines' ) ) | ( ( 'cyclomatic_complexity' ) ) )
             int alt4=6;
             switch ( input.LA(1) ) {
             case 15:
@@ -1739,16 +1824,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
             switch (alt4) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:506:2: ( ( 'tokens' ) )
+                    // InternalCloneDetectionDSL.g:531:2: ( ( 'tokens' ) )
                     {
-                    // InternalCloneDetectionDSL.g:506:2: ( ( 'tokens' ) )
-                    // InternalCloneDetectionDSL.g:507:3: ( 'tokens' )
+                    // InternalCloneDetectionDSL.g:531:2: ( ( 'tokens' ) )
+                    // InternalCloneDetectionDSL.g:532:3: ( 'tokens' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getSizeMetricAccess().getTokensEnumLiteralDeclaration_0()); 
                     }
-                    // InternalCloneDetectionDSL.g:508:3: ( 'tokens' )
-                    // InternalCloneDetectionDSL.g:508:4: 'tokens'
+                    // InternalCloneDetectionDSL.g:533:3: ( 'tokens' )
+                    // InternalCloneDetectionDSL.g:533:4: 'tokens'
                     {
                     match(input,15,FOLLOW_2); if (state.failed) return ;
 
@@ -1764,16 +1849,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:512:2: ( ( 'declarations' ) )
+                    // InternalCloneDetectionDSL.g:537:2: ( ( 'declarations' ) )
                     {
-                    // InternalCloneDetectionDSL.g:512:2: ( ( 'declarations' ) )
-                    // InternalCloneDetectionDSL.g:513:3: ( 'declarations' )
+                    // InternalCloneDetectionDSL.g:537:2: ( ( 'declarations' ) )
+                    // InternalCloneDetectionDSL.g:538:3: ( 'declarations' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getSizeMetricAccess().getDeclarationsEnumLiteralDeclaration_1()); 
                     }
-                    // InternalCloneDetectionDSL.g:514:3: ( 'declarations' )
-                    // InternalCloneDetectionDSL.g:514:4: 'declarations'
+                    // InternalCloneDetectionDSL.g:539:3: ( 'declarations' )
+                    // InternalCloneDetectionDSL.g:539:4: 'declarations'
                     {
                     match(input,16,FOLLOW_2); if (state.failed) return ;
 
@@ -1789,16 +1874,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 3 :
-                    // InternalCloneDetectionDSL.g:518:2: ( ( 'statements' ) )
+                    // InternalCloneDetectionDSL.g:543:2: ( ( 'statements' ) )
                     {
-                    // InternalCloneDetectionDSL.g:518:2: ( ( 'statements' ) )
-                    // InternalCloneDetectionDSL.g:519:3: ( 'statements' )
+                    // InternalCloneDetectionDSL.g:543:2: ( ( 'statements' ) )
+                    // InternalCloneDetectionDSL.g:544:3: ( 'statements' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getSizeMetricAccess().getStatementsEnumLiteralDeclaration_2()); 
                     }
-                    // InternalCloneDetectionDSL.g:520:3: ( 'statements' )
-                    // InternalCloneDetectionDSL.g:520:4: 'statements'
+                    // InternalCloneDetectionDSL.g:545:3: ( 'statements' )
+                    // InternalCloneDetectionDSL.g:545:4: 'statements'
                     {
                     match(input,17,FOLLOW_2); if (state.failed) return ;
 
@@ -1814,16 +1899,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 4 :
-                    // InternalCloneDetectionDSL.g:524:2: ( ( 'nodes' ) )
+                    // InternalCloneDetectionDSL.g:549:2: ( ( 'nodes' ) )
                     {
-                    // InternalCloneDetectionDSL.g:524:2: ( ( 'nodes' ) )
-                    // InternalCloneDetectionDSL.g:525:3: ( 'nodes' )
+                    // InternalCloneDetectionDSL.g:549:2: ( ( 'nodes' ) )
+                    // InternalCloneDetectionDSL.g:550:3: ( 'nodes' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getSizeMetricAccess().getNodesEnumLiteralDeclaration_3()); 
                     }
-                    // InternalCloneDetectionDSL.g:526:3: ( 'nodes' )
-                    // InternalCloneDetectionDSL.g:526:4: 'nodes'
+                    // InternalCloneDetectionDSL.g:551:3: ( 'nodes' )
+                    // InternalCloneDetectionDSL.g:551:4: 'nodes'
                     {
                     match(input,18,FOLLOW_2); if (state.failed) return ;
 
@@ -1839,16 +1924,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 5 :
-                    // InternalCloneDetectionDSL.g:530:2: ( ( 'lines' ) )
+                    // InternalCloneDetectionDSL.g:555:2: ( ( 'lines' ) )
                     {
-                    // InternalCloneDetectionDSL.g:530:2: ( ( 'lines' ) )
-                    // InternalCloneDetectionDSL.g:531:3: ( 'lines' )
+                    // InternalCloneDetectionDSL.g:555:2: ( ( 'lines' ) )
+                    // InternalCloneDetectionDSL.g:556:3: ( 'lines' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getSizeMetricAccess().getLinesEnumLiteralDeclaration_4()); 
                     }
-                    // InternalCloneDetectionDSL.g:532:3: ( 'lines' )
-                    // InternalCloneDetectionDSL.g:532:4: 'lines'
+                    // InternalCloneDetectionDSL.g:557:3: ( 'lines' )
+                    // InternalCloneDetectionDSL.g:557:4: 'lines'
                     {
                     match(input,19,FOLLOW_2); if (state.failed) return ;
 
@@ -1864,16 +1949,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 6 :
-                    // InternalCloneDetectionDSL.g:536:2: ( ( 'cyclomatic_complexity' ) )
+                    // InternalCloneDetectionDSL.g:561:2: ( ( 'cyclomatic_complexity' ) )
                     {
-                    // InternalCloneDetectionDSL.g:536:2: ( ( 'cyclomatic_complexity' ) )
-                    // InternalCloneDetectionDSL.g:537:3: ( 'cyclomatic_complexity' )
+                    // InternalCloneDetectionDSL.g:561:2: ( ( 'cyclomatic_complexity' ) )
+                    // InternalCloneDetectionDSL.g:562:3: ( 'cyclomatic_complexity' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getSizeMetricAccess().getCyclomatic_complexityEnumLiteralDeclaration_5()); 
                     }
-                    // InternalCloneDetectionDSL.g:538:3: ( 'cyclomatic_complexity' )
-                    // InternalCloneDetectionDSL.g:538:4: 'cyclomatic_complexity'
+                    // InternalCloneDetectionDSL.g:563:3: ( 'cyclomatic_complexity' )
+                    // InternalCloneDetectionDSL.g:563:4: 'cyclomatic_complexity'
                     {
                     match(input,20,FOLLOW_2); if (state.failed) return ;
 
@@ -1906,13 +1991,13 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__BoolOperator__Alternatives"
-    // InternalCloneDetectionDSL.g:546:1: rule__BoolOperator__Alternatives : ( ( ( '&' ) ) | ( ( '|' ) ) );
+    // InternalCloneDetectionDSL.g:571:1: rule__BoolOperator__Alternatives : ( ( ( '&' ) ) | ( ( '|' ) ) );
     public final void rule__BoolOperator__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:550:1: ( ( ( '&' ) ) | ( ( '|' ) ) )
+            // InternalCloneDetectionDSL.g:575:1: ( ( ( '&' ) ) | ( ( '|' ) ) )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -1931,16 +2016,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt5) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:551:2: ( ( '&' ) )
+                    // InternalCloneDetectionDSL.g:576:2: ( ( '&' ) )
                     {
-                    // InternalCloneDetectionDSL.g:551:2: ( ( '&' ) )
-                    // InternalCloneDetectionDSL.g:552:3: ( '&' )
+                    // InternalCloneDetectionDSL.g:576:2: ( ( '&' ) )
+                    // InternalCloneDetectionDSL.g:577:3: ( '&' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getBoolOperatorAccess().getANDEnumLiteralDeclaration_0()); 
                     }
-                    // InternalCloneDetectionDSL.g:553:3: ( '&' )
-                    // InternalCloneDetectionDSL.g:553:4: '&'
+                    // InternalCloneDetectionDSL.g:578:3: ( '&' )
+                    // InternalCloneDetectionDSL.g:578:4: '&'
                     {
                     match(input,21,FOLLOW_2); if (state.failed) return ;
 
@@ -1956,16 +2041,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:557:2: ( ( '|' ) )
+                    // InternalCloneDetectionDSL.g:582:2: ( ( '|' ) )
                     {
-                    // InternalCloneDetectionDSL.g:557:2: ( ( '|' ) )
-                    // InternalCloneDetectionDSL.g:558:3: ( '|' )
+                    // InternalCloneDetectionDSL.g:582:2: ( ( '|' ) )
+                    // InternalCloneDetectionDSL.g:583:3: ( '|' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getBoolOperatorAccess().getOREnumLiteralDeclaration_1()); 
                     }
-                    // InternalCloneDetectionDSL.g:559:3: ( '|' )
-                    // InternalCloneDetectionDSL.g:559:4: '|'
+                    // InternalCloneDetectionDSL.g:584:3: ( '|' )
+                    // InternalCloneDetectionDSL.g:584:4: '|'
                     {
                     match(input,22,FOLLOW_2); if (state.failed) return ;
 
@@ -1998,13 +2083,13 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Method__Alternatives"
-    // InternalCloneDetectionDSL.g:567:1: rule__Method__Alternatives : ( ( ( 'Subnodes' ) ) | ( ( 'StringMatch' ) ) | ( ( 'CompleteMatch' ) ) | ( ( 'FQI' ) ) );
+    // InternalCloneDetectionDSL.g:592:1: rule__Method__Alternatives : ( ( ( 'Subnodes' ) ) | ( ( 'StringMatch' ) ) | ( ( 'CompleteMatch' ) ) | ( ( 'FQI' ) ) );
     public final void rule__Method__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:571:1: ( ( ( 'Subnodes' ) ) | ( ( 'StringMatch' ) ) | ( ( 'CompleteMatch' ) ) | ( ( 'FQI' ) ) )
+            // InternalCloneDetectionDSL.g:596:1: ( ( ( 'Subnodes' ) ) | ( ( 'StringMatch' ) ) | ( ( 'CompleteMatch' ) ) | ( ( 'FQI' ) ) )
             int alt6=4;
             switch ( input.LA(1) ) {
             case 23:
@@ -2037,16 +2122,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
             switch (alt6) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:572:2: ( ( 'Subnodes' ) )
+                    // InternalCloneDetectionDSL.g:597:2: ( ( 'Subnodes' ) )
                     {
-                    // InternalCloneDetectionDSL.g:572:2: ( ( 'Subnodes' ) )
-                    // InternalCloneDetectionDSL.g:573:3: ( 'Subnodes' )
+                    // InternalCloneDetectionDSL.g:597:2: ( ( 'Subnodes' ) )
+                    // InternalCloneDetectionDSL.g:598:3: ( 'Subnodes' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getMethodAccess().getSubnodesEnumLiteralDeclaration_0()); 
                     }
-                    // InternalCloneDetectionDSL.g:574:3: ( 'Subnodes' )
-                    // InternalCloneDetectionDSL.g:574:4: 'Subnodes'
+                    // InternalCloneDetectionDSL.g:599:3: ( 'Subnodes' )
+                    // InternalCloneDetectionDSL.g:599:4: 'Subnodes'
                     {
                     match(input,23,FOLLOW_2); if (state.failed) return ;
 
@@ -2062,16 +2147,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:578:2: ( ( 'StringMatch' ) )
+                    // InternalCloneDetectionDSL.g:603:2: ( ( 'StringMatch' ) )
                     {
-                    // InternalCloneDetectionDSL.g:578:2: ( ( 'StringMatch' ) )
-                    // InternalCloneDetectionDSL.g:579:3: ( 'StringMatch' )
+                    // InternalCloneDetectionDSL.g:603:2: ( ( 'StringMatch' ) )
+                    // InternalCloneDetectionDSL.g:604:3: ( 'StringMatch' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getMethodAccess().getStringMatchEnumLiteralDeclaration_1()); 
                     }
-                    // InternalCloneDetectionDSL.g:580:3: ( 'StringMatch' )
-                    // InternalCloneDetectionDSL.g:580:4: 'StringMatch'
+                    // InternalCloneDetectionDSL.g:605:3: ( 'StringMatch' )
+                    // InternalCloneDetectionDSL.g:605:4: 'StringMatch'
                     {
                     match(input,24,FOLLOW_2); if (state.failed) return ;
 
@@ -2087,16 +2172,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 3 :
-                    // InternalCloneDetectionDSL.g:584:2: ( ( 'CompleteMatch' ) )
+                    // InternalCloneDetectionDSL.g:609:2: ( ( 'CompleteMatch' ) )
                     {
-                    // InternalCloneDetectionDSL.g:584:2: ( ( 'CompleteMatch' ) )
-                    // InternalCloneDetectionDSL.g:585:3: ( 'CompleteMatch' )
+                    // InternalCloneDetectionDSL.g:609:2: ( ( 'CompleteMatch' ) )
+                    // InternalCloneDetectionDSL.g:610:3: ( 'CompleteMatch' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getMethodAccess().getCompleteMatchEnumLiteralDeclaration_2()); 
                     }
-                    // InternalCloneDetectionDSL.g:586:3: ( 'CompleteMatch' )
-                    // InternalCloneDetectionDSL.g:586:4: 'CompleteMatch'
+                    // InternalCloneDetectionDSL.g:611:3: ( 'CompleteMatch' )
+                    // InternalCloneDetectionDSL.g:611:4: 'CompleteMatch'
                     {
                     match(input,25,FOLLOW_2); if (state.failed) return ;
 
@@ -2112,16 +2197,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 4 :
-                    // InternalCloneDetectionDSL.g:590:2: ( ( 'FQI' ) )
+                    // InternalCloneDetectionDSL.g:615:2: ( ( 'FQI' ) )
                     {
-                    // InternalCloneDetectionDSL.g:590:2: ( ( 'FQI' ) )
-                    // InternalCloneDetectionDSL.g:591:3: ( 'FQI' )
+                    // InternalCloneDetectionDSL.g:615:2: ( ( 'FQI' ) )
+                    // InternalCloneDetectionDSL.g:616:3: ( 'FQI' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getMethodAccess().getFQIEnumLiteralDeclaration_3()); 
                     }
-                    // InternalCloneDetectionDSL.g:592:3: ( 'FQI' )
-                    // InternalCloneDetectionDSL.g:592:4: 'FQI'
+                    // InternalCloneDetectionDSL.g:617:3: ( 'FQI' )
+                    // InternalCloneDetectionDSL.g:617:4: 'FQI'
                     {
                     match(input,26,FOLLOW_2); if (state.failed) return ;
 
@@ -2154,13 +2239,13 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Under__Alternatives"
-    // InternalCloneDetectionDSL.g:600:1: rule__Under__Alternatives : ( ( ( '->' ) ) | ( ( '=>' ) ) );
+    // InternalCloneDetectionDSL.g:625:1: rule__Under__Alternatives : ( ( ( '->' ) ) | ( ( '=>' ) ) );
     public final void rule__Under__Alternatives() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:604:1: ( ( ( '->' ) ) | ( ( '=>' ) ) )
+            // InternalCloneDetectionDSL.g:629:1: ( ( ( '->' ) ) | ( ( '=>' ) ) )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -2179,16 +2264,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt7) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:605:2: ( ( '->' ) )
+                    // InternalCloneDetectionDSL.g:630:2: ( ( '->' ) )
                     {
-                    // InternalCloneDetectionDSL.g:605:2: ( ( '->' ) )
-                    // InternalCloneDetectionDSL.g:606:3: ( '->' )
+                    // InternalCloneDetectionDSL.g:630:2: ( ( '->' ) )
+                    // InternalCloneDetectionDSL.g:631:3: ( '->' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getUnderAccess().getOneLevelEnumLiteralDeclaration_0()); 
                     }
-                    // InternalCloneDetectionDSL.g:607:3: ( '->' )
-                    // InternalCloneDetectionDSL.g:607:4: '->'
+                    // InternalCloneDetectionDSL.g:632:3: ( '->' )
+                    // InternalCloneDetectionDSL.g:632:4: '->'
                     {
                     match(input,27,FOLLOW_2); if (state.failed) return ;
 
@@ -2204,16 +2289,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:611:2: ( ( '=>' ) )
+                    // InternalCloneDetectionDSL.g:636:2: ( ( '=>' ) )
                     {
-                    // InternalCloneDetectionDSL.g:611:2: ( ( '=>' ) )
-                    // InternalCloneDetectionDSL.g:612:3: ( '=>' )
+                    // InternalCloneDetectionDSL.g:636:2: ( ( '=>' ) )
+                    // InternalCloneDetectionDSL.g:637:3: ( '=>' )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getUnderAccess().getAnyLevelEnumLiteralDeclaration_1()); 
                     }
-                    // InternalCloneDetectionDSL.g:613:3: ( '=>' )
-                    // InternalCloneDetectionDSL.g:613:4: '=>'
+                    // InternalCloneDetectionDSL.g:638:3: ( '=>' )
+                    // InternalCloneDetectionDSL.g:638:4: '=>'
                     {
                     match(input,28,FOLLOW_2); if (state.failed) return ;
 
@@ -2246,14 +2331,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Project__Group__0"
-    // InternalCloneDetectionDSL.g:621:1: rule__Project__Group__0 : rule__Project__Group__0__Impl rule__Project__Group__1 ;
+    // InternalCloneDetectionDSL.g:646:1: rule__Project__Group__0 : rule__Project__Group__0__Impl rule__Project__Group__1 ;
     public final void rule__Project__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:625:1: ( rule__Project__Group__0__Impl rule__Project__Group__1 )
-            // InternalCloneDetectionDSL.g:626:2: rule__Project__Group__0__Impl rule__Project__Group__1
+            // InternalCloneDetectionDSL.g:650:1: ( rule__Project__Group__0__Impl rule__Project__Group__1 )
+            // InternalCloneDetectionDSL.g:651:2: rule__Project__Group__0__Impl rule__Project__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__Project__Group__0__Impl();
@@ -2284,17 +2369,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Project__Group__0__Impl"
-    // InternalCloneDetectionDSL.g:633:1: rule__Project__Group__0__Impl : ( 'Project' ) ;
+    // InternalCloneDetectionDSL.g:658:1: rule__Project__Group__0__Impl : ( 'Project' ) ;
     public final void rule__Project__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:637:1: ( ( 'Project' ) )
-            // InternalCloneDetectionDSL.g:638:1: ( 'Project' )
+            // InternalCloneDetectionDSL.g:662:1: ( ( 'Project' ) )
+            // InternalCloneDetectionDSL.g:663:1: ( 'Project' )
             {
-            // InternalCloneDetectionDSL.g:638:1: ( 'Project' )
-            // InternalCloneDetectionDSL.g:639:2: 'Project'
+            // InternalCloneDetectionDSL.g:663:1: ( 'Project' )
+            // InternalCloneDetectionDSL.g:664:2: 'Project'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getProjectAccess().getProjectKeyword_0()); 
@@ -2325,14 +2410,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Project__Group__1"
-    // InternalCloneDetectionDSL.g:648:1: rule__Project__Group__1 : rule__Project__Group__1__Impl ;
+    // InternalCloneDetectionDSL.g:673:1: rule__Project__Group__1 : rule__Project__Group__1__Impl ;
     public final void rule__Project__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:652:1: ( rule__Project__Group__1__Impl )
-            // InternalCloneDetectionDSL.g:653:2: rule__Project__Group__1__Impl
+            // InternalCloneDetectionDSL.g:677:1: ( rule__Project__Group__1__Impl )
+            // InternalCloneDetectionDSL.g:678:2: rule__Project__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Project__Group__1__Impl();
@@ -2358,23 +2443,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Project__Group__1__Impl"
-    // InternalCloneDetectionDSL.g:659:1: rule__Project__Group__1__Impl : ( ( rule__Project__PathAssignment_1 ) ) ;
+    // InternalCloneDetectionDSL.g:684:1: rule__Project__Group__1__Impl : ( ( rule__Project__PathAssignment_1 ) ) ;
     public final void rule__Project__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:663:1: ( ( ( rule__Project__PathAssignment_1 ) ) )
-            // InternalCloneDetectionDSL.g:664:1: ( ( rule__Project__PathAssignment_1 ) )
+            // InternalCloneDetectionDSL.g:688:1: ( ( ( rule__Project__PathAssignment_1 ) ) )
+            // InternalCloneDetectionDSL.g:689:1: ( ( rule__Project__PathAssignment_1 ) )
             {
-            // InternalCloneDetectionDSL.g:664:1: ( ( rule__Project__PathAssignment_1 ) )
-            // InternalCloneDetectionDSL.g:665:2: ( rule__Project__PathAssignment_1 )
+            // InternalCloneDetectionDSL.g:689:1: ( ( rule__Project__PathAssignment_1 ) )
+            // InternalCloneDetectionDSL.g:690:2: ( rule__Project__PathAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getProjectAccess().getPathAssignment_1()); 
             }
-            // InternalCloneDetectionDSL.g:666:2: ( rule__Project__PathAssignment_1 )
-            // InternalCloneDetectionDSL.g:666:3: rule__Project__PathAssignment_1
+            // InternalCloneDetectionDSL.g:691:2: ( rule__Project__PathAssignment_1 )
+            // InternalCloneDetectionDSL.g:691:3: rule__Project__PathAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Project__PathAssignment_1();
@@ -2409,14 +2494,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__SearchRoot__Group__0"
-    // InternalCloneDetectionDSL.g:675:1: rule__SearchRoot__Group__0 : rule__SearchRoot__Group__0__Impl rule__SearchRoot__Group__1 ;
+    // InternalCloneDetectionDSL.g:700:1: rule__SearchRoot__Group__0 : rule__SearchRoot__Group__0__Impl rule__SearchRoot__Group__1 ;
     public final void rule__SearchRoot__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:679:1: ( rule__SearchRoot__Group__0__Impl rule__SearchRoot__Group__1 )
-            // InternalCloneDetectionDSL.g:680:2: rule__SearchRoot__Group__0__Impl rule__SearchRoot__Group__1
+            // InternalCloneDetectionDSL.g:704:1: ( rule__SearchRoot__Group__0__Impl rule__SearchRoot__Group__1 )
+            // InternalCloneDetectionDSL.g:705:2: rule__SearchRoot__Group__0__Impl rule__SearchRoot__Group__1
             {
             pushFollow(FOLLOW_4);
             rule__SearchRoot__Group__0__Impl();
@@ -2447,17 +2532,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__SearchRoot__Group__0__Impl"
-    // InternalCloneDetectionDSL.g:687:1: rule__SearchRoot__Group__0__Impl : ( 'SearchRoot' ) ;
+    // InternalCloneDetectionDSL.g:712:1: rule__SearchRoot__Group__0__Impl : ( 'SearchRoot' ) ;
     public final void rule__SearchRoot__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:691:1: ( ( 'SearchRoot' ) )
-            // InternalCloneDetectionDSL.g:692:1: ( 'SearchRoot' )
+            // InternalCloneDetectionDSL.g:716:1: ( ( 'SearchRoot' ) )
+            // InternalCloneDetectionDSL.g:717:1: ( 'SearchRoot' )
             {
-            // InternalCloneDetectionDSL.g:692:1: ( 'SearchRoot' )
-            // InternalCloneDetectionDSL.g:693:2: 'SearchRoot'
+            // InternalCloneDetectionDSL.g:717:1: ( 'SearchRoot' )
+            // InternalCloneDetectionDSL.g:718:2: 'SearchRoot'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSearchRootAccess().getSearchRootKeyword_0()); 
@@ -2488,14 +2573,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__SearchRoot__Group__1"
-    // InternalCloneDetectionDSL.g:702:1: rule__SearchRoot__Group__1 : rule__SearchRoot__Group__1__Impl ;
+    // InternalCloneDetectionDSL.g:727:1: rule__SearchRoot__Group__1 : rule__SearchRoot__Group__1__Impl ;
     public final void rule__SearchRoot__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:706:1: ( rule__SearchRoot__Group__1__Impl )
-            // InternalCloneDetectionDSL.g:707:2: rule__SearchRoot__Group__1__Impl
+            // InternalCloneDetectionDSL.g:731:1: ( rule__SearchRoot__Group__1__Impl )
+            // InternalCloneDetectionDSL.g:732:2: rule__SearchRoot__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__SearchRoot__Group__1__Impl();
@@ -2521,23 +2606,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__SearchRoot__Group__1__Impl"
-    // InternalCloneDetectionDSL.g:713:1: rule__SearchRoot__Group__1__Impl : ( ( rule__SearchRoot__NodesAssignment_1 ) ) ;
+    // InternalCloneDetectionDSL.g:738:1: rule__SearchRoot__Group__1__Impl : ( ( rule__SearchRoot__NodesAssignment_1 ) ) ;
     public final void rule__SearchRoot__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:717:1: ( ( ( rule__SearchRoot__NodesAssignment_1 ) ) )
-            // InternalCloneDetectionDSL.g:718:1: ( ( rule__SearchRoot__NodesAssignment_1 ) )
+            // InternalCloneDetectionDSL.g:742:1: ( ( ( rule__SearchRoot__NodesAssignment_1 ) ) )
+            // InternalCloneDetectionDSL.g:743:1: ( ( rule__SearchRoot__NodesAssignment_1 ) )
             {
-            // InternalCloneDetectionDSL.g:718:1: ( ( rule__SearchRoot__NodesAssignment_1 ) )
-            // InternalCloneDetectionDSL.g:719:2: ( rule__SearchRoot__NodesAssignment_1 )
+            // InternalCloneDetectionDSL.g:743:1: ( ( rule__SearchRoot__NodesAssignment_1 ) )
+            // InternalCloneDetectionDSL.g:744:2: ( rule__SearchRoot__NodesAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSearchRootAccess().getNodesAssignment_1()); 
             }
-            // InternalCloneDetectionDSL.g:720:2: ( rule__SearchRoot__NodesAssignment_1 )
-            // InternalCloneDetectionDSL.g:720:3: rule__SearchRoot__NodesAssignment_1
+            // InternalCloneDetectionDSL.g:745:2: ( rule__SearchRoot__NodesAssignment_1 )
+            // InternalCloneDetectionDSL.g:745:3: rule__SearchRoot__NodesAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__SearchRoot__NodesAssignment_1();
@@ -2572,14 +2657,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Match__Group__0"
-    // InternalCloneDetectionDSL.g:729:1: rule__Match__Group__0 : rule__Match__Group__0__Impl rule__Match__Group__1 ;
+    // InternalCloneDetectionDSL.g:754:1: rule__Match__Group__0 : rule__Match__Group__0__Impl rule__Match__Group__1 ;
     public final void rule__Match__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:733:1: ( rule__Match__Group__0__Impl rule__Match__Group__1 )
-            // InternalCloneDetectionDSL.g:734:2: rule__Match__Group__0__Impl rule__Match__Group__1
+            // InternalCloneDetectionDSL.g:758:1: ( rule__Match__Group__0__Impl rule__Match__Group__1 )
+            // InternalCloneDetectionDSL.g:759:2: rule__Match__Group__0__Impl rule__Match__Group__1
             {
             pushFollow(FOLLOW_5);
             rule__Match__Group__0__Impl();
@@ -2610,17 +2695,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Match__Group__0__Impl"
-    // InternalCloneDetectionDSL.g:741:1: rule__Match__Group__0__Impl : ( 'Match' ) ;
+    // InternalCloneDetectionDSL.g:766:1: rule__Match__Group__0__Impl : ( 'Match' ) ;
     public final void rule__Match__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:745:1: ( ( 'Match' ) )
-            // InternalCloneDetectionDSL.g:746:1: ( 'Match' )
+            // InternalCloneDetectionDSL.g:770:1: ( ( 'Match' ) )
+            // InternalCloneDetectionDSL.g:771:1: ( 'Match' )
             {
-            // InternalCloneDetectionDSL.g:746:1: ( 'Match' )
-            // InternalCloneDetectionDSL.g:747:2: 'Match'
+            // InternalCloneDetectionDSL.g:771:1: ( 'Match' )
+            // InternalCloneDetectionDSL.g:772:2: 'Match'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMatchAccess().getMatchKeyword_0()); 
@@ -2651,14 +2736,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Match__Group__1"
-    // InternalCloneDetectionDSL.g:756:1: rule__Match__Group__1 : rule__Match__Group__1__Impl ;
+    // InternalCloneDetectionDSL.g:781:1: rule__Match__Group__1 : rule__Match__Group__1__Impl ;
     public final void rule__Match__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:760:1: ( rule__Match__Group__1__Impl )
-            // InternalCloneDetectionDSL.g:761:2: rule__Match__Group__1__Impl
+            // InternalCloneDetectionDSL.g:785:1: ( rule__Match__Group__1__Impl )
+            // InternalCloneDetectionDSL.g:786:2: rule__Match__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Match__Group__1__Impl();
@@ -2684,23 +2769,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Match__Group__1__Impl"
-    // InternalCloneDetectionDSL.g:767:1: rule__Match__Group__1__Impl : ( ( rule__Match__TargetAssignment_1 ) ) ;
+    // InternalCloneDetectionDSL.g:792:1: rule__Match__Group__1__Impl : ( ( rule__Match__TargetAssignment_1 ) ) ;
     public final void rule__Match__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:771:1: ( ( ( rule__Match__TargetAssignment_1 ) ) )
-            // InternalCloneDetectionDSL.g:772:1: ( ( rule__Match__TargetAssignment_1 ) )
+            // InternalCloneDetectionDSL.g:796:1: ( ( ( rule__Match__TargetAssignment_1 ) ) )
+            // InternalCloneDetectionDSL.g:797:1: ( ( rule__Match__TargetAssignment_1 ) )
             {
-            // InternalCloneDetectionDSL.g:772:1: ( ( rule__Match__TargetAssignment_1 ) )
-            // InternalCloneDetectionDSL.g:773:2: ( rule__Match__TargetAssignment_1 )
+            // InternalCloneDetectionDSL.g:797:1: ( ( rule__Match__TargetAssignment_1 ) )
+            // InternalCloneDetectionDSL.g:798:2: ( rule__Match__TargetAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMatchAccess().getTargetAssignment_1()); 
             }
-            // InternalCloneDetectionDSL.g:774:2: ( rule__Match__TargetAssignment_1 )
-            // InternalCloneDetectionDSL.g:774:3: rule__Match__TargetAssignment_1
+            // InternalCloneDetectionDSL.g:799:2: ( rule__Match__TargetAssignment_1 )
+            // InternalCloneDetectionDSL.g:799:3: rule__Match__TargetAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Match__TargetAssignment_1();
@@ -2735,14 +2820,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Exclude__Group__0"
-    // InternalCloneDetectionDSL.g:783:1: rule__Exclude__Group__0 : rule__Exclude__Group__0__Impl rule__Exclude__Group__1 ;
+    // InternalCloneDetectionDSL.g:808:1: rule__Exclude__Group__0 : rule__Exclude__Group__0__Impl rule__Exclude__Group__1 ;
     public final void rule__Exclude__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:787:1: ( rule__Exclude__Group__0__Impl rule__Exclude__Group__1 )
-            // InternalCloneDetectionDSL.g:788:2: rule__Exclude__Group__0__Impl rule__Exclude__Group__1
+            // InternalCloneDetectionDSL.g:812:1: ( rule__Exclude__Group__0__Impl rule__Exclude__Group__1 )
+            // InternalCloneDetectionDSL.g:813:2: rule__Exclude__Group__0__Impl rule__Exclude__Group__1
             {
             pushFollow(FOLLOW_4);
             rule__Exclude__Group__0__Impl();
@@ -2773,17 +2858,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Exclude__Group__0__Impl"
-    // InternalCloneDetectionDSL.g:795:1: rule__Exclude__Group__0__Impl : ( 'Exclude' ) ;
+    // InternalCloneDetectionDSL.g:820:1: rule__Exclude__Group__0__Impl : ( 'Exclude' ) ;
     public final void rule__Exclude__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:799:1: ( ( 'Exclude' ) )
-            // InternalCloneDetectionDSL.g:800:1: ( 'Exclude' )
+            // InternalCloneDetectionDSL.g:824:1: ( ( 'Exclude' ) )
+            // InternalCloneDetectionDSL.g:825:1: ( 'Exclude' )
             {
-            // InternalCloneDetectionDSL.g:800:1: ( 'Exclude' )
-            // InternalCloneDetectionDSL.g:801:2: 'Exclude'
+            // InternalCloneDetectionDSL.g:825:1: ( 'Exclude' )
+            // InternalCloneDetectionDSL.g:826:2: 'Exclude'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getExcludeAccess().getExcludeKeyword_0()); 
@@ -2814,14 +2899,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Exclude__Group__1"
-    // InternalCloneDetectionDSL.g:810:1: rule__Exclude__Group__1 : rule__Exclude__Group__1__Impl ;
+    // InternalCloneDetectionDSL.g:835:1: rule__Exclude__Group__1 : rule__Exclude__Group__1__Impl ;
     public final void rule__Exclude__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:814:1: ( rule__Exclude__Group__1__Impl )
-            // InternalCloneDetectionDSL.g:815:2: rule__Exclude__Group__1__Impl
+            // InternalCloneDetectionDSL.g:839:1: ( rule__Exclude__Group__1__Impl )
+            // InternalCloneDetectionDSL.g:840:2: rule__Exclude__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Exclude__Group__1__Impl();
@@ -2847,17 +2932,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Exclude__Group__1__Impl"
-    // InternalCloneDetectionDSL.g:821:1: rule__Exclude__Group__1__Impl : ( ruleNodes ) ;
+    // InternalCloneDetectionDSL.g:846:1: rule__Exclude__Group__1__Impl : ( ruleNodes ) ;
     public final void rule__Exclude__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:825:1: ( ( ruleNodes ) )
-            // InternalCloneDetectionDSL.g:826:1: ( ruleNodes )
+            // InternalCloneDetectionDSL.g:850:1: ( ( ruleNodes ) )
+            // InternalCloneDetectionDSL.g:851:1: ( ruleNodes )
             {
-            // InternalCloneDetectionDSL.g:826:1: ( ruleNodes )
-            // InternalCloneDetectionDSL.g:827:2: ruleNodes
+            // InternalCloneDetectionDSL.g:851:1: ( ruleNodes )
+            // InternalCloneDetectionDSL.g:852:2: ruleNodes
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getExcludeAccess().getNodesParserRuleCall_1()); 
@@ -2892,14 +2977,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Node__Group__0"
-    // InternalCloneDetectionDSL.g:837:1: rule__Node__Group__0 : rule__Node__Group__0__Impl rule__Node__Group__1 ;
+    // InternalCloneDetectionDSL.g:862:1: rule__Node__Group__0 : rule__Node__Group__0__Impl rule__Node__Group__1 ;
     public final void rule__Node__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:841:1: ( rule__Node__Group__0__Impl rule__Node__Group__1 )
-            // InternalCloneDetectionDSL.g:842:2: rule__Node__Group__0__Impl rule__Node__Group__1
+            // InternalCloneDetectionDSL.g:866:1: ( rule__Node__Group__0__Impl rule__Node__Group__1 )
+            // InternalCloneDetectionDSL.g:867:2: rule__Node__Group__0__Impl rule__Node__Group__1
             {
             pushFollow(FOLLOW_6);
             rule__Node__Group__0__Impl();
@@ -2930,23 +3015,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Node__Group__0__Impl"
-    // InternalCloneDetectionDSL.g:849:1: rule__Node__Group__0__Impl : ( ( rule__Node__Alternatives_0 ) ) ;
+    // InternalCloneDetectionDSL.g:874:1: rule__Node__Group__0__Impl : ( ( rule__Node__Alternatives_0 ) ) ;
     public final void rule__Node__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:853:1: ( ( ( rule__Node__Alternatives_0 ) ) )
-            // InternalCloneDetectionDSL.g:854:1: ( ( rule__Node__Alternatives_0 ) )
+            // InternalCloneDetectionDSL.g:878:1: ( ( ( rule__Node__Alternatives_0 ) ) )
+            // InternalCloneDetectionDSL.g:879:1: ( ( rule__Node__Alternatives_0 ) )
             {
-            // InternalCloneDetectionDSL.g:854:1: ( ( rule__Node__Alternatives_0 ) )
-            // InternalCloneDetectionDSL.g:855:2: ( rule__Node__Alternatives_0 )
+            // InternalCloneDetectionDSL.g:879:1: ( ( rule__Node__Alternatives_0 ) )
+            // InternalCloneDetectionDSL.g:880:2: ( rule__Node__Alternatives_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodeAccess().getAlternatives_0()); 
             }
-            // InternalCloneDetectionDSL.g:856:2: ( rule__Node__Alternatives_0 )
-            // InternalCloneDetectionDSL.g:856:3: rule__Node__Alternatives_0
+            // InternalCloneDetectionDSL.g:881:2: ( rule__Node__Alternatives_0 )
+            // InternalCloneDetectionDSL.g:881:3: rule__Node__Alternatives_0
             {
             pushFollow(FOLLOW_2);
             rule__Node__Alternatives_0();
@@ -2981,14 +3066,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Node__Group__1"
-    // InternalCloneDetectionDSL.g:864:1: rule__Node__Group__1 : rule__Node__Group__1__Impl ;
+    // InternalCloneDetectionDSL.g:889:1: rule__Node__Group__1 : rule__Node__Group__1__Impl ;
     public final void rule__Node__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:868:1: ( rule__Node__Group__1__Impl )
-            // InternalCloneDetectionDSL.g:869:2: rule__Node__Group__1__Impl
+            // InternalCloneDetectionDSL.g:893:1: ( rule__Node__Group__1__Impl )
+            // InternalCloneDetectionDSL.g:894:2: rule__Node__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Node__Group__1__Impl();
@@ -3014,22 +3099,22 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Node__Group__1__Impl"
-    // InternalCloneDetectionDSL.g:875:1: rule__Node__Group__1__Impl : ( ( rule__Node__Group_1__0 )? ) ;
+    // InternalCloneDetectionDSL.g:900:1: rule__Node__Group__1__Impl : ( ( rule__Node__Group_1__0 )? ) ;
     public final void rule__Node__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:879:1: ( ( ( rule__Node__Group_1__0 )? ) )
-            // InternalCloneDetectionDSL.g:880:1: ( ( rule__Node__Group_1__0 )? )
+            // InternalCloneDetectionDSL.g:904:1: ( ( ( rule__Node__Group_1__0 )? ) )
+            // InternalCloneDetectionDSL.g:905:1: ( ( rule__Node__Group_1__0 )? )
             {
-            // InternalCloneDetectionDSL.g:880:1: ( ( rule__Node__Group_1__0 )? )
-            // InternalCloneDetectionDSL.g:881:2: ( rule__Node__Group_1__0 )?
+            // InternalCloneDetectionDSL.g:905:1: ( ( rule__Node__Group_1__0 )? )
+            // InternalCloneDetectionDSL.g:906:2: ( rule__Node__Group_1__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodeAccess().getGroup_1()); 
             }
-            // InternalCloneDetectionDSL.g:882:2: ( rule__Node__Group_1__0 )?
+            // InternalCloneDetectionDSL.g:907:2: ( rule__Node__Group_1__0 )?
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -3038,7 +3123,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt8) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:882:3: rule__Node__Group_1__0
+                    // InternalCloneDetectionDSL.g:907:3: rule__Node__Group_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Node__Group_1__0();
@@ -3076,14 +3161,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Node__Group_1__0"
-    // InternalCloneDetectionDSL.g:891:1: rule__Node__Group_1__0 : rule__Node__Group_1__0__Impl rule__Node__Group_1__1 ;
+    // InternalCloneDetectionDSL.g:916:1: rule__Node__Group_1__0 : rule__Node__Group_1__0__Impl rule__Node__Group_1__1 ;
     public final void rule__Node__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:895:1: ( rule__Node__Group_1__0__Impl rule__Node__Group_1__1 )
-            // InternalCloneDetectionDSL.g:896:2: rule__Node__Group_1__0__Impl rule__Node__Group_1__1
+            // InternalCloneDetectionDSL.g:920:1: ( rule__Node__Group_1__0__Impl rule__Node__Group_1__1 )
+            // InternalCloneDetectionDSL.g:921:2: rule__Node__Group_1__0__Impl rule__Node__Group_1__1
             {
             pushFollow(FOLLOW_4);
             rule__Node__Group_1__0__Impl();
@@ -3114,23 +3199,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Node__Group_1__0__Impl"
-    // InternalCloneDetectionDSL.g:903:1: rule__Node__Group_1__0__Impl : ( ( rule__Node__UnderAssignment_1_0 ) ) ;
+    // InternalCloneDetectionDSL.g:928:1: rule__Node__Group_1__0__Impl : ( ( rule__Node__UnderAssignment_1_0 ) ) ;
     public final void rule__Node__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:907:1: ( ( ( rule__Node__UnderAssignment_1_0 ) ) )
-            // InternalCloneDetectionDSL.g:908:1: ( ( rule__Node__UnderAssignment_1_0 ) )
+            // InternalCloneDetectionDSL.g:932:1: ( ( ( rule__Node__UnderAssignment_1_0 ) ) )
+            // InternalCloneDetectionDSL.g:933:1: ( ( rule__Node__UnderAssignment_1_0 ) )
             {
-            // InternalCloneDetectionDSL.g:908:1: ( ( rule__Node__UnderAssignment_1_0 ) )
-            // InternalCloneDetectionDSL.g:909:2: ( rule__Node__UnderAssignment_1_0 )
+            // InternalCloneDetectionDSL.g:933:1: ( ( rule__Node__UnderAssignment_1_0 ) )
+            // InternalCloneDetectionDSL.g:934:2: ( rule__Node__UnderAssignment_1_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodeAccess().getUnderAssignment_1_0()); 
             }
-            // InternalCloneDetectionDSL.g:910:2: ( rule__Node__UnderAssignment_1_0 )
-            // InternalCloneDetectionDSL.g:910:3: rule__Node__UnderAssignment_1_0
+            // InternalCloneDetectionDSL.g:935:2: ( rule__Node__UnderAssignment_1_0 )
+            // InternalCloneDetectionDSL.g:935:3: rule__Node__UnderAssignment_1_0
             {
             pushFollow(FOLLOW_2);
             rule__Node__UnderAssignment_1_0();
@@ -3165,14 +3250,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Node__Group_1__1"
-    // InternalCloneDetectionDSL.g:918:1: rule__Node__Group_1__1 : rule__Node__Group_1__1__Impl ;
+    // InternalCloneDetectionDSL.g:943:1: rule__Node__Group_1__1 : rule__Node__Group_1__1__Impl ;
     public final void rule__Node__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:922:1: ( rule__Node__Group_1__1__Impl )
-            // InternalCloneDetectionDSL.g:923:2: rule__Node__Group_1__1__Impl
+            // InternalCloneDetectionDSL.g:947:1: ( rule__Node__Group_1__1__Impl )
+            // InternalCloneDetectionDSL.g:948:2: rule__Node__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Node__Group_1__1__Impl();
@@ -3198,23 +3283,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Node__Group_1__1__Impl"
-    // InternalCloneDetectionDSL.g:929:1: rule__Node__Group_1__1__Impl : ( ( rule__Node__NodeAssignment_1_1 ) ) ;
+    // InternalCloneDetectionDSL.g:954:1: rule__Node__Group_1__1__Impl : ( ( rule__Node__NodeAssignment_1_1 ) ) ;
     public final void rule__Node__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:933:1: ( ( ( rule__Node__NodeAssignment_1_1 ) ) )
-            // InternalCloneDetectionDSL.g:934:1: ( ( rule__Node__NodeAssignment_1_1 ) )
+            // InternalCloneDetectionDSL.g:958:1: ( ( ( rule__Node__NodeAssignment_1_1 ) ) )
+            // InternalCloneDetectionDSL.g:959:1: ( ( rule__Node__NodeAssignment_1_1 ) )
             {
-            // InternalCloneDetectionDSL.g:934:1: ( ( rule__Node__NodeAssignment_1_1 ) )
-            // InternalCloneDetectionDSL.g:935:2: ( rule__Node__NodeAssignment_1_1 )
+            // InternalCloneDetectionDSL.g:959:1: ( ( rule__Node__NodeAssignment_1_1 ) )
+            // InternalCloneDetectionDSL.g:960:2: ( rule__Node__NodeAssignment_1_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodeAccess().getNodeAssignment_1_1()); 
             }
-            // InternalCloneDetectionDSL.g:936:2: ( rule__Node__NodeAssignment_1_1 )
-            // InternalCloneDetectionDSL.g:936:3: rule__Node__NodeAssignment_1_1
+            // InternalCloneDetectionDSL.g:961:2: ( rule__Node__NodeAssignment_1_1 )
+            // InternalCloneDetectionDSL.g:961:3: rule__Node__NodeAssignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__Node__NodeAssignment_1_1();
@@ -3249,14 +3334,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Nodes__Group__0"
-    // InternalCloneDetectionDSL.g:945:1: rule__Nodes__Group__0 : rule__Nodes__Group__0__Impl rule__Nodes__Group__1 ;
+    // InternalCloneDetectionDSL.g:970:1: rule__Nodes__Group__0 : rule__Nodes__Group__0__Impl rule__Nodes__Group__1 ;
     public final void rule__Nodes__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:949:1: ( rule__Nodes__Group__0__Impl rule__Nodes__Group__1 )
-            // InternalCloneDetectionDSL.g:950:2: rule__Nodes__Group__0__Impl rule__Nodes__Group__1
+            // InternalCloneDetectionDSL.g:974:1: ( rule__Nodes__Group__0__Impl rule__Nodes__Group__1 )
+            // InternalCloneDetectionDSL.g:975:2: rule__Nodes__Group__0__Impl rule__Nodes__Group__1
             {
             pushFollow(FOLLOW_7);
             rule__Nodes__Group__0__Impl();
@@ -3287,23 +3372,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Nodes__Group__0__Impl"
-    // InternalCloneDetectionDSL.g:957:1: rule__Nodes__Group__0__Impl : ( ( rule__Nodes__NodeAssignment_0 ) ) ;
+    // InternalCloneDetectionDSL.g:982:1: rule__Nodes__Group__0__Impl : ( ( rule__Nodes__NodeAssignment_0 ) ) ;
     public final void rule__Nodes__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:961:1: ( ( ( rule__Nodes__NodeAssignment_0 ) ) )
-            // InternalCloneDetectionDSL.g:962:1: ( ( rule__Nodes__NodeAssignment_0 ) )
+            // InternalCloneDetectionDSL.g:986:1: ( ( ( rule__Nodes__NodeAssignment_0 ) ) )
+            // InternalCloneDetectionDSL.g:987:1: ( ( rule__Nodes__NodeAssignment_0 ) )
             {
-            // InternalCloneDetectionDSL.g:962:1: ( ( rule__Nodes__NodeAssignment_0 ) )
-            // InternalCloneDetectionDSL.g:963:2: ( rule__Nodes__NodeAssignment_0 )
+            // InternalCloneDetectionDSL.g:987:1: ( ( rule__Nodes__NodeAssignment_0 ) )
+            // InternalCloneDetectionDSL.g:988:2: ( rule__Nodes__NodeAssignment_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodesAccess().getNodeAssignment_0()); 
             }
-            // InternalCloneDetectionDSL.g:964:2: ( rule__Nodes__NodeAssignment_0 )
-            // InternalCloneDetectionDSL.g:964:3: rule__Nodes__NodeAssignment_0
+            // InternalCloneDetectionDSL.g:989:2: ( rule__Nodes__NodeAssignment_0 )
+            // InternalCloneDetectionDSL.g:989:3: rule__Nodes__NodeAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__Nodes__NodeAssignment_0();
@@ -3338,14 +3423,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Nodes__Group__1"
-    // InternalCloneDetectionDSL.g:972:1: rule__Nodes__Group__1 : rule__Nodes__Group__1__Impl ;
+    // InternalCloneDetectionDSL.g:997:1: rule__Nodes__Group__1 : rule__Nodes__Group__1__Impl ;
     public final void rule__Nodes__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:976:1: ( rule__Nodes__Group__1__Impl )
-            // InternalCloneDetectionDSL.g:977:2: rule__Nodes__Group__1__Impl
+            // InternalCloneDetectionDSL.g:1001:1: ( rule__Nodes__Group__1__Impl )
+            // InternalCloneDetectionDSL.g:1002:2: rule__Nodes__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Nodes__Group__1__Impl();
@@ -3371,22 +3456,22 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Nodes__Group__1__Impl"
-    // InternalCloneDetectionDSL.g:983:1: rule__Nodes__Group__1__Impl : ( ( rule__Nodes__Group_1__0 )? ) ;
+    // InternalCloneDetectionDSL.g:1008:1: rule__Nodes__Group__1__Impl : ( ( rule__Nodes__Group_1__0 )? ) ;
     public final void rule__Nodes__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:987:1: ( ( ( rule__Nodes__Group_1__0 )? ) )
-            // InternalCloneDetectionDSL.g:988:1: ( ( rule__Nodes__Group_1__0 )? )
+            // InternalCloneDetectionDSL.g:1012:1: ( ( ( rule__Nodes__Group_1__0 )? ) )
+            // InternalCloneDetectionDSL.g:1013:1: ( ( rule__Nodes__Group_1__0 )? )
             {
-            // InternalCloneDetectionDSL.g:988:1: ( ( rule__Nodes__Group_1__0 )? )
-            // InternalCloneDetectionDSL.g:989:2: ( rule__Nodes__Group_1__0 )?
+            // InternalCloneDetectionDSL.g:1013:1: ( ( rule__Nodes__Group_1__0 )? )
+            // InternalCloneDetectionDSL.g:1014:2: ( rule__Nodes__Group_1__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodesAccess().getGroup_1()); 
             }
-            // InternalCloneDetectionDSL.g:990:2: ( rule__Nodes__Group_1__0 )?
+            // InternalCloneDetectionDSL.g:1015:2: ( rule__Nodes__Group_1__0 )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -3395,7 +3480,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt9) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:990:3: rule__Nodes__Group_1__0
+                    // InternalCloneDetectionDSL.g:1015:3: rule__Nodes__Group_1__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Nodes__Group_1__0();
@@ -3433,14 +3518,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Nodes__Group_1__0"
-    // InternalCloneDetectionDSL.g:999:1: rule__Nodes__Group_1__0 : rule__Nodes__Group_1__0__Impl rule__Nodes__Group_1__1 ;
+    // InternalCloneDetectionDSL.g:1024:1: rule__Nodes__Group_1__0 : rule__Nodes__Group_1__0__Impl rule__Nodes__Group_1__1 ;
     public final void rule__Nodes__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1003:1: ( rule__Nodes__Group_1__0__Impl rule__Nodes__Group_1__1 )
-            // InternalCloneDetectionDSL.g:1004:2: rule__Nodes__Group_1__0__Impl rule__Nodes__Group_1__1
+            // InternalCloneDetectionDSL.g:1028:1: ( rule__Nodes__Group_1__0__Impl rule__Nodes__Group_1__1 )
+            // InternalCloneDetectionDSL.g:1029:2: rule__Nodes__Group_1__0__Impl rule__Nodes__Group_1__1
             {
             pushFollow(FOLLOW_4);
             rule__Nodes__Group_1__0__Impl();
@@ -3471,17 +3556,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Nodes__Group_1__0__Impl"
-    // InternalCloneDetectionDSL.g:1011:1: rule__Nodes__Group_1__0__Impl : ( ',' ) ;
+    // InternalCloneDetectionDSL.g:1036:1: rule__Nodes__Group_1__0__Impl : ( ',' ) ;
     public final void rule__Nodes__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1015:1: ( ( ',' ) )
-            // InternalCloneDetectionDSL.g:1016:1: ( ',' )
+            // InternalCloneDetectionDSL.g:1040:1: ( ( ',' ) )
+            // InternalCloneDetectionDSL.g:1041:1: ( ',' )
             {
-            // InternalCloneDetectionDSL.g:1016:1: ( ',' )
-            // InternalCloneDetectionDSL.g:1017:2: ','
+            // InternalCloneDetectionDSL.g:1041:1: ( ',' )
+            // InternalCloneDetectionDSL.g:1042:2: ','
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodesAccess().getCommaKeyword_1_0()); 
@@ -3512,14 +3597,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Nodes__Group_1__1"
-    // InternalCloneDetectionDSL.g:1026:1: rule__Nodes__Group_1__1 : rule__Nodes__Group_1__1__Impl ;
+    // InternalCloneDetectionDSL.g:1051:1: rule__Nodes__Group_1__1 : rule__Nodes__Group_1__1__Impl ;
     public final void rule__Nodes__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1030:1: ( rule__Nodes__Group_1__1__Impl )
-            // InternalCloneDetectionDSL.g:1031:2: rule__Nodes__Group_1__1__Impl
+            // InternalCloneDetectionDSL.g:1055:1: ( rule__Nodes__Group_1__1__Impl )
+            // InternalCloneDetectionDSL.g:1056:2: rule__Nodes__Group_1__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Nodes__Group_1__1__Impl();
@@ -3545,23 +3630,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Nodes__Group_1__1__Impl"
-    // InternalCloneDetectionDSL.g:1037:1: rule__Nodes__Group_1__1__Impl : ( ( rule__Nodes__NodesAssignment_1_1 ) ) ;
+    // InternalCloneDetectionDSL.g:1062:1: rule__Nodes__Group_1__1__Impl : ( ( rule__Nodes__NodesAssignment_1_1 ) ) ;
     public final void rule__Nodes__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1041:1: ( ( ( rule__Nodes__NodesAssignment_1_1 ) ) )
-            // InternalCloneDetectionDSL.g:1042:1: ( ( rule__Nodes__NodesAssignment_1_1 ) )
+            // InternalCloneDetectionDSL.g:1066:1: ( ( ( rule__Nodes__NodesAssignment_1_1 ) ) )
+            // InternalCloneDetectionDSL.g:1067:1: ( ( rule__Nodes__NodesAssignment_1_1 ) )
             {
-            // InternalCloneDetectionDSL.g:1042:1: ( ( rule__Nodes__NodesAssignment_1_1 ) )
-            // InternalCloneDetectionDSL.g:1043:2: ( rule__Nodes__NodesAssignment_1_1 )
+            // InternalCloneDetectionDSL.g:1067:1: ( ( rule__Nodes__NodesAssignment_1_1 ) )
+            // InternalCloneDetectionDSL.g:1068:2: ( rule__Nodes__NodesAssignment_1_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodesAccess().getNodesAssignment_1_1()); 
             }
-            // InternalCloneDetectionDSL.g:1044:2: ( rule__Nodes__NodesAssignment_1_1 )
-            // InternalCloneDetectionDSL.g:1044:3: rule__Nodes__NodesAssignment_1_1
+            // InternalCloneDetectionDSL.g:1069:2: ( rule__Nodes__NodesAssignment_1_1 )
+            // InternalCloneDetectionDSL.g:1069:3: rule__Nodes__NodesAssignment_1_1
             {
             pushFollow(FOLLOW_2);
             rule__Nodes__NodesAssignment_1_1();
@@ -3595,17 +3680,174 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
     // $ANTLR end "rule__Nodes__Group_1__1__Impl"
 
 
+    // $ANTLR start "rule__Size__Group__0"
+    // InternalCloneDetectionDSL.g:1078:1: rule__Size__Group__0 : rule__Size__Group__0__Impl rule__Size__Group__1 ;
+    public final void rule__Size__Group__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalCloneDetectionDSL.g:1082:1: ( rule__Size__Group__0__Impl rule__Size__Group__1 )
+            // InternalCloneDetectionDSL.g:1083:2: rule__Size__Group__0__Impl rule__Size__Group__1
+            {
+            pushFollow(FOLLOW_8);
+            rule__Size__Group__0__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_2);
+            rule__Size__Group__1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Size__Group__0"
+
+
+    // $ANTLR start "rule__Size__Group__0__Impl"
+    // InternalCloneDetectionDSL.g:1090:1: rule__Size__Group__0__Impl : ( 'Size' ) ;
+    public final void rule__Size__Group__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalCloneDetectionDSL.g:1094:1: ( ( 'Size' ) )
+            // InternalCloneDetectionDSL.g:1095:1: ( 'Size' )
+            {
+            // InternalCloneDetectionDSL.g:1095:1: ( 'Size' )
+            // InternalCloneDetectionDSL.g:1096:2: 'Size'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getSizeAccess().getSizeKeyword_0()); 
+            }
+            match(input,34,FOLLOW_2); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getSizeAccess().getSizeKeyword_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Size__Group__0__Impl"
+
+
+    // $ANTLR start "rule__Size__Group__1"
+    // InternalCloneDetectionDSL.g:1105:1: rule__Size__Group__1 : rule__Size__Group__1__Impl ;
+    public final void rule__Size__Group__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalCloneDetectionDSL.g:1109:1: ( rule__Size__Group__1__Impl )
+            // InternalCloneDetectionDSL.g:1110:2: rule__Size__Group__1__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__Size__Group__1__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Size__Group__1"
+
+
+    // $ANTLR start "rule__Size__Group__1__Impl"
+    // InternalCloneDetectionDSL.g:1116:1: rule__Size__Group__1__Impl : ( ruleMinSize ) ;
+    public final void rule__Size__Group__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalCloneDetectionDSL.g:1120:1: ( ( ruleMinSize ) )
+            // InternalCloneDetectionDSL.g:1121:1: ( ruleMinSize )
+            {
+            // InternalCloneDetectionDSL.g:1121:1: ( ruleMinSize )
+            // InternalCloneDetectionDSL.g:1122:2: ruleMinSize
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getSizeAccess().getMinSizeParserRuleCall_1()); 
+            }
+            pushFollow(FOLLOW_2);
+            ruleMinSize();
+
+            state._fsp--;
+            if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getSizeAccess().getMinSizeParserRuleCall_1()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Size__Group__1__Impl"
+
+
     // $ANTLR start "rule__MinSize__Group__0"
-    // InternalCloneDetectionDSL.g:1053:1: rule__MinSize__Group__0 : rule__MinSize__Group__0__Impl rule__MinSize__Group__1 ;
+    // InternalCloneDetectionDSL.g:1132:1: rule__MinSize__Group__0 : rule__MinSize__Group__0__Impl rule__MinSize__Group__1 ;
     public final void rule__MinSize__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1057:1: ( rule__MinSize__Group__0__Impl rule__MinSize__Group__1 )
-            // InternalCloneDetectionDSL.g:1058:2: rule__MinSize__Group__0__Impl rule__MinSize__Group__1
+            // InternalCloneDetectionDSL.g:1136:1: ( rule__MinSize__Group__0__Impl rule__MinSize__Group__1 )
+            // InternalCloneDetectionDSL.g:1137:2: rule__MinSize__Group__0__Impl rule__MinSize__Group__1
             {
-            pushFollow(FOLLOW_8);
+            pushFollow(FOLLOW_9);
             rule__MinSize__Group__0__Impl();
 
             state._fsp--;
@@ -3634,24 +3876,34 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__MinSize__Group__0__Impl"
-    // InternalCloneDetectionDSL.g:1065:1: rule__MinSize__Group__0__Impl : ( 'Size' ) ;
+    // InternalCloneDetectionDSL.g:1144:1: rule__MinSize__Group__0__Impl : ( ( rule__MinSize__Alternatives_0 ) ) ;
     public final void rule__MinSize__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1069:1: ( ( 'Size' ) )
-            // InternalCloneDetectionDSL.g:1070:1: ( 'Size' )
+            // InternalCloneDetectionDSL.g:1148:1: ( ( ( rule__MinSize__Alternatives_0 ) ) )
+            // InternalCloneDetectionDSL.g:1149:1: ( ( rule__MinSize__Alternatives_0 ) )
             {
-            // InternalCloneDetectionDSL.g:1070:1: ( 'Size' )
-            // InternalCloneDetectionDSL.g:1071:2: 'Size'
+            // InternalCloneDetectionDSL.g:1149:1: ( ( rule__MinSize__Alternatives_0 ) )
+            // InternalCloneDetectionDSL.g:1150:2: ( rule__MinSize__Alternatives_0 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMinSizeAccess().getSizeKeyword_0()); 
+               before(grammarAccess.getMinSizeAccess().getAlternatives_0()); 
             }
-            match(input,34,FOLLOW_2); if (state.failed) return ;
+            // InternalCloneDetectionDSL.g:1151:2: ( rule__MinSize__Alternatives_0 )
+            // InternalCloneDetectionDSL.g:1151:3: rule__MinSize__Alternatives_0
+            {
+            pushFollow(FOLLOW_2);
+            rule__MinSize__Alternatives_0();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMinSizeAccess().getSizeKeyword_0()); 
+               after(grammarAccess.getMinSizeAccess().getAlternatives_0()); 
             }
 
             }
@@ -3675,22 +3927,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__MinSize__Group__1"
-    // InternalCloneDetectionDSL.g:1080:1: rule__MinSize__Group__1 : rule__MinSize__Group__1__Impl rule__MinSize__Group__2 ;
+    // InternalCloneDetectionDSL.g:1159:1: rule__MinSize__Group__1 : rule__MinSize__Group__1__Impl ;
     public final void rule__MinSize__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1084:1: ( rule__MinSize__Group__1__Impl rule__MinSize__Group__2 )
-            // InternalCloneDetectionDSL.g:1085:2: rule__MinSize__Group__1__Impl rule__MinSize__Group__2
+            // InternalCloneDetectionDSL.g:1163:1: ( rule__MinSize__Group__1__Impl )
+            // InternalCloneDetectionDSL.g:1164:2: rule__MinSize__Group__1__Impl
             {
-            pushFollow(FOLLOW_9);
-            rule__MinSize__Group__1__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__MinSize__Group__2();
+            rule__MinSize__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
@@ -3713,34 +3960,45 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__MinSize__Group__1__Impl"
-    // InternalCloneDetectionDSL.g:1092:1: rule__MinSize__Group__1__Impl : ( ( rule__MinSize__Alternatives_1 ) ) ;
+    // InternalCloneDetectionDSL.g:1170:1: rule__MinSize__Group__1__Impl : ( ( rule__MinSize__Group_1__0 )? ) ;
     public final void rule__MinSize__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1096:1: ( ( ( rule__MinSize__Alternatives_1 ) ) )
-            // InternalCloneDetectionDSL.g:1097:1: ( ( rule__MinSize__Alternatives_1 ) )
+            // InternalCloneDetectionDSL.g:1174:1: ( ( ( rule__MinSize__Group_1__0 )? ) )
+            // InternalCloneDetectionDSL.g:1175:1: ( ( rule__MinSize__Group_1__0 )? )
             {
-            // InternalCloneDetectionDSL.g:1097:1: ( ( rule__MinSize__Alternatives_1 ) )
-            // InternalCloneDetectionDSL.g:1098:2: ( rule__MinSize__Alternatives_1 )
+            // InternalCloneDetectionDSL.g:1175:1: ( ( rule__MinSize__Group_1__0 )? )
+            // InternalCloneDetectionDSL.g:1176:2: ( rule__MinSize__Group_1__0 )?
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMinSizeAccess().getAlternatives_1()); 
+               before(grammarAccess.getMinSizeAccess().getGroup_1()); 
             }
-            // InternalCloneDetectionDSL.g:1099:2: ( rule__MinSize__Alternatives_1 )
-            // InternalCloneDetectionDSL.g:1099:3: rule__MinSize__Alternatives_1
-            {
-            pushFollow(FOLLOW_2);
-            rule__MinSize__Alternatives_1();
+            // InternalCloneDetectionDSL.g:1177:2: ( rule__MinSize__Group_1__0 )?
+            int alt10=2;
+            int LA10_0 = input.LA(1);
 
-            state._fsp--;
-            if (state.failed) return ;
+            if ( ((LA10_0>=21 && LA10_0<=22)) ) {
+                alt10=1;
+            }
+            switch (alt10) {
+                case 1 :
+                    // InternalCloneDetectionDSL.g:1177:3: rule__MinSize__Group_1__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__MinSize__Group_1__0();
+
+                    state._fsp--;
+                    if (state.failed) return ;
+
+                    }
+                    break;
 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMinSizeAccess().getAlternatives_1()); 
+               after(grammarAccess.getMinSizeAccess().getGroup_1()); 
             }
 
             }
@@ -3763,118 +4021,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
     // $ANTLR end "rule__MinSize__Group__1__Impl"
 
 
-    // $ANTLR start "rule__MinSize__Group__2"
-    // InternalCloneDetectionDSL.g:1107:1: rule__MinSize__Group__2 : rule__MinSize__Group__2__Impl ;
-    public final void rule__MinSize__Group__2() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__Group_0_1__0"
+    // InternalCloneDetectionDSL.g:1186:1: rule__MinSize__Group_0_1__0 : rule__MinSize__Group_0_1__0__Impl rule__MinSize__Group_0_1__1 ;
+    public final void rule__MinSize__Group_0_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1111:1: ( rule__MinSize__Group__2__Impl )
-            // InternalCloneDetectionDSL.g:1112:2: rule__MinSize__Group__2__Impl
+            // InternalCloneDetectionDSL.g:1190:1: ( rule__MinSize__Group_0_1__0__Impl rule__MinSize__Group_0_1__1 )
+            // InternalCloneDetectionDSL.g:1191:2: rule__MinSize__Group_0_1__0__Impl rule__MinSize__Group_0_1__1
             {
-            pushFollow(FOLLOW_2);
-            rule__MinSize__Group__2__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__MinSize__Group__2"
-
-
-    // $ANTLR start "rule__MinSize__Group__2__Impl"
-    // InternalCloneDetectionDSL.g:1118:1: rule__MinSize__Group__2__Impl : ( ( rule__MinSize__Group_2__0 )? ) ;
-    public final void rule__MinSize__Group__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalCloneDetectionDSL.g:1122:1: ( ( ( rule__MinSize__Group_2__0 )? ) )
-            // InternalCloneDetectionDSL.g:1123:1: ( ( rule__MinSize__Group_2__0 )? )
-            {
-            // InternalCloneDetectionDSL.g:1123:1: ( ( rule__MinSize__Group_2__0 )? )
-            // InternalCloneDetectionDSL.g:1124:2: ( rule__MinSize__Group_2__0 )?
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getMinSizeAccess().getGroup_2()); 
-            }
-            // InternalCloneDetectionDSL.g:1125:2: ( rule__MinSize__Group_2__0 )?
-            int alt10=2;
-            int LA10_0 = input.LA(1);
-
-            if ( ((LA10_0>=21 && LA10_0<=22)) ) {
-                alt10=1;
-            }
-            switch (alt10) {
-                case 1 :
-                    // InternalCloneDetectionDSL.g:1125:3: rule__MinSize__Group_2__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__MinSize__Group_2__0();
-
-                    state._fsp--;
-                    if (state.failed) return ;
-
-                    }
-                    break;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getMinSizeAccess().getGroup_2()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__MinSize__Group__2__Impl"
-
-
-    // $ANTLR start "rule__MinSize__Group_1_1__0"
-    // InternalCloneDetectionDSL.g:1134:1: rule__MinSize__Group_1_1__0 : rule__MinSize__Group_1_1__0__Impl rule__MinSize__Group_1_1__1 ;
-    public final void rule__MinSize__Group_1_1__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalCloneDetectionDSL.g:1138:1: ( rule__MinSize__Group_1_1__0__Impl rule__MinSize__Group_1_1__1 )
-            // InternalCloneDetectionDSL.g:1139:2: rule__MinSize__Group_1_1__0__Impl rule__MinSize__Group_1_1__1
-            {
-            pushFollow(FOLLOW_10);
-            rule__MinSize__Group_1_1__0__Impl();
+            pushFollow(FOLLOW_8);
+            rule__MinSize__Group_0_1__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__MinSize__Group_1_1__1();
+            rule__MinSize__Group_0_1__1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -3893,28 +4056,28 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__Group_1_1__0"
+    // $ANTLR end "rule__MinSize__Group_0_1__0"
 
 
-    // $ANTLR start "rule__MinSize__Group_1_1__0__Impl"
-    // InternalCloneDetectionDSL.g:1146:1: rule__MinSize__Group_1_1__0__Impl : ( '(' ) ;
-    public final void rule__MinSize__Group_1_1__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__Group_0_1__0__Impl"
+    // InternalCloneDetectionDSL.g:1198:1: rule__MinSize__Group_0_1__0__Impl : ( '(' ) ;
+    public final void rule__MinSize__Group_0_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1150:1: ( ( '(' ) )
-            // InternalCloneDetectionDSL.g:1151:1: ( '(' )
+            // InternalCloneDetectionDSL.g:1202:1: ( ( '(' ) )
+            // InternalCloneDetectionDSL.g:1203:1: ( '(' )
             {
-            // InternalCloneDetectionDSL.g:1151:1: ( '(' )
-            // InternalCloneDetectionDSL.g:1152:2: '('
+            // InternalCloneDetectionDSL.g:1203:1: ( '(' )
+            // InternalCloneDetectionDSL.g:1204:2: '('
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMinSizeAccess().getLeftParenthesisKeyword_1_1_0()); 
+               before(grammarAccess.getMinSizeAccess().getLeftParenthesisKeyword_0_1_0()); 
             }
             match(input,35,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMinSizeAccess().getLeftParenthesisKeyword_1_1_0()); 
+               after(grammarAccess.getMinSizeAccess().getLeftParenthesisKeyword_0_1_0()); 
             }
 
             }
@@ -3934,26 +4097,26 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__Group_1_1__0__Impl"
+    // $ANTLR end "rule__MinSize__Group_0_1__0__Impl"
 
 
-    // $ANTLR start "rule__MinSize__Group_1_1__1"
-    // InternalCloneDetectionDSL.g:1161:1: rule__MinSize__Group_1_1__1 : rule__MinSize__Group_1_1__1__Impl rule__MinSize__Group_1_1__2 ;
-    public final void rule__MinSize__Group_1_1__1() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__Group_0_1__1"
+    // InternalCloneDetectionDSL.g:1213:1: rule__MinSize__Group_0_1__1 : rule__MinSize__Group_0_1__1__Impl rule__MinSize__Group_0_1__2 ;
+    public final void rule__MinSize__Group_0_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1165:1: ( rule__MinSize__Group_1_1__1__Impl rule__MinSize__Group_1_1__2 )
-            // InternalCloneDetectionDSL.g:1166:2: rule__MinSize__Group_1_1__1__Impl rule__MinSize__Group_1_1__2
+            // InternalCloneDetectionDSL.g:1217:1: ( rule__MinSize__Group_0_1__1__Impl rule__MinSize__Group_0_1__2 )
+            // InternalCloneDetectionDSL.g:1218:2: rule__MinSize__Group_0_1__1__Impl rule__MinSize__Group_0_1__2
             {
-            pushFollow(FOLLOW_11);
-            rule__MinSize__Group_1_1__1__Impl();
+            pushFollow(FOLLOW_10);
+            rule__MinSize__Group_0_1__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__MinSize__Group_1_1__2();
+            rule__MinSize__Group_0_1__2();
 
             state._fsp--;
             if (state.failed) return ;
@@ -3972,30 +4135,30 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__Group_1_1__1"
+    // $ANTLR end "rule__MinSize__Group_0_1__1"
 
 
-    // $ANTLR start "rule__MinSize__Group_1_1__1__Impl"
-    // InternalCloneDetectionDSL.g:1173:1: rule__MinSize__Group_1_1__1__Impl : ( ( rule__MinSize__BracketsAssignment_1_1_1 ) ) ;
-    public final void rule__MinSize__Group_1_1__1__Impl() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__Group_0_1__1__Impl"
+    // InternalCloneDetectionDSL.g:1225:1: rule__MinSize__Group_0_1__1__Impl : ( ( rule__MinSize__BracketsAssignment_0_1_1 ) ) ;
+    public final void rule__MinSize__Group_0_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1177:1: ( ( ( rule__MinSize__BracketsAssignment_1_1_1 ) ) )
-            // InternalCloneDetectionDSL.g:1178:1: ( ( rule__MinSize__BracketsAssignment_1_1_1 ) )
+            // InternalCloneDetectionDSL.g:1229:1: ( ( ( rule__MinSize__BracketsAssignment_0_1_1 ) ) )
+            // InternalCloneDetectionDSL.g:1230:1: ( ( rule__MinSize__BracketsAssignment_0_1_1 ) )
             {
-            // InternalCloneDetectionDSL.g:1178:1: ( ( rule__MinSize__BracketsAssignment_1_1_1 ) )
-            // InternalCloneDetectionDSL.g:1179:2: ( rule__MinSize__BracketsAssignment_1_1_1 )
+            // InternalCloneDetectionDSL.g:1230:1: ( ( rule__MinSize__BracketsAssignment_0_1_1 ) )
+            // InternalCloneDetectionDSL.g:1231:2: ( rule__MinSize__BracketsAssignment_0_1_1 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMinSizeAccess().getBracketsAssignment_1_1_1()); 
+               before(grammarAccess.getMinSizeAccess().getBracketsAssignment_0_1_1()); 
             }
-            // InternalCloneDetectionDSL.g:1180:2: ( rule__MinSize__BracketsAssignment_1_1_1 )
-            // InternalCloneDetectionDSL.g:1180:3: rule__MinSize__BracketsAssignment_1_1_1
+            // InternalCloneDetectionDSL.g:1232:2: ( rule__MinSize__BracketsAssignment_0_1_1 )
+            // InternalCloneDetectionDSL.g:1232:3: rule__MinSize__BracketsAssignment_0_1_1
             {
             pushFollow(FOLLOW_2);
-            rule__MinSize__BracketsAssignment_1_1_1();
+            rule__MinSize__BracketsAssignment_0_1_1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -4003,7 +4166,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMinSizeAccess().getBracketsAssignment_1_1_1()); 
+               after(grammarAccess.getMinSizeAccess().getBracketsAssignment_0_1_1()); 
             }
 
             }
@@ -4023,21 +4186,21 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__Group_1_1__1__Impl"
+    // $ANTLR end "rule__MinSize__Group_0_1__1__Impl"
 
 
-    // $ANTLR start "rule__MinSize__Group_1_1__2"
-    // InternalCloneDetectionDSL.g:1188:1: rule__MinSize__Group_1_1__2 : rule__MinSize__Group_1_1__2__Impl ;
-    public final void rule__MinSize__Group_1_1__2() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__Group_0_1__2"
+    // InternalCloneDetectionDSL.g:1240:1: rule__MinSize__Group_0_1__2 : rule__MinSize__Group_0_1__2__Impl ;
+    public final void rule__MinSize__Group_0_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1192:1: ( rule__MinSize__Group_1_1__2__Impl )
-            // InternalCloneDetectionDSL.g:1193:2: rule__MinSize__Group_1_1__2__Impl
+            // InternalCloneDetectionDSL.g:1244:1: ( rule__MinSize__Group_0_1__2__Impl )
+            // InternalCloneDetectionDSL.g:1245:2: rule__MinSize__Group_0_1__2__Impl
             {
             pushFollow(FOLLOW_2);
-            rule__MinSize__Group_1_1__2__Impl();
+            rule__MinSize__Group_0_1__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
@@ -4056,28 +4219,28 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__Group_1_1__2"
+    // $ANTLR end "rule__MinSize__Group_0_1__2"
 
 
-    // $ANTLR start "rule__MinSize__Group_1_1__2__Impl"
-    // InternalCloneDetectionDSL.g:1199:1: rule__MinSize__Group_1_1__2__Impl : ( ')' ) ;
-    public final void rule__MinSize__Group_1_1__2__Impl() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__Group_0_1__2__Impl"
+    // InternalCloneDetectionDSL.g:1251:1: rule__MinSize__Group_0_1__2__Impl : ( ')' ) ;
+    public final void rule__MinSize__Group_0_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1203:1: ( ( ')' ) )
-            // InternalCloneDetectionDSL.g:1204:1: ( ')' )
+            // InternalCloneDetectionDSL.g:1255:1: ( ( ')' ) )
+            // InternalCloneDetectionDSL.g:1256:1: ( ')' )
             {
-            // InternalCloneDetectionDSL.g:1204:1: ( ')' )
-            // InternalCloneDetectionDSL.g:1205:2: ')'
+            // InternalCloneDetectionDSL.g:1256:1: ( ')' )
+            // InternalCloneDetectionDSL.g:1257:2: ')'
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMinSizeAccess().getRightParenthesisKeyword_1_1_2()); 
+               before(grammarAccess.getMinSizeAccess().getRightParenthesisKeyword_0_1_2()); 
             }
             match(input,36,FOLLOW_2); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMinSizeAccess().getRightParenthesisKeyword_1_1_2()); 
+               after(grammarAccess.getMinSizeAccess().getRightParenthesisKeyword_0_1_2()); 
             }
 
             }
@@ -4097,26 +4260,26 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__Group_1_1__2__Impl"
+    // $ANTLR end "rule__MinSize__Group_0_1__2__Impl"
 
 
-    // $ANTLR start "rule__MinSize__Group_2__0"
-    // InternalCloneDetectionDSL.g:1215:1: rule__MinSize__Group_2__0 : rule__MinSize__Group_2__0__Impl rule__MinSize__Group_2__1 ;
-    public final void rule__MinSize__Group_2__0() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__Group_1__0"
+    // InternalCloneDetectionDSL.g:1267:1: rule__MinSize__Group_1__0 : rule__MinSize__Group_1__0__Impl rule__MinSize__Group_1__1 ;
+    public final void rule__MinSize__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1219:1: ( rule__MinSize__Group_2__0__Impl rule__MinSize__Group_2__1 )
-            // InternalCloneDetectionDSL.g:1220:2: rule__MinSize__Group_2__0__Impl rule__MinSize__Group_2__1
+            // InternalCloneDetectionDSL.g:1271:1: ( rule__MinSize__Group_1__0__Impl rule__MinSize__Group_1__1 )
+            // InternalCloneDetectionDSL.g:1272:2: rule__MinSize__Group_1__0__Impl rule__MinSize__Group_1__1
             {
-            pushFollow(FOLLOW_10);
-            rule__MinSize__Group_2__0__Impl();
+            pushFollow(FOLLOW_8);
+            rule__MinSize__Group_1__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
             pushFollow(FOLLOW_2);
-            rule__MinSize__Group_2__1();
+            rule__MinSize__Group_1__1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -4135,114 +4298,30 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__Group_2__0"
+    // $ANTLR end "rule__MinSize__Group_1__0"
 
 
-    // $ANTLR start "rule__MinSize__Group_2__0__Impl"
-    // InternalCloneDetectionDSL.g:1227:1: rule__MinSize__Group_2__0__Impl : ( ( rule__MinSize__OperatorAssignment_2_0 ) ) ;
-    public final void rule__MinSize__Group_2__0__Impl() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__Group_1__0__Impl"
+    // InternalCloneDetectionDSL.g:1279:1: rule__MinSize__Group_1__0__Impl : ( ( rule__MinSize__OperatorAssignment_1_0 ) ) ;
+    public final void rule__MinSize__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1231:1: ( ( ( rule__MinSize__OperatorAssignment_2_0 ) ) )
-            // InternalCloneDetectionDSL.g:1232:1: ( ( rule__MinSize__OperatorAssignment_2_0 ) )
+            // InternalCloneDetectionDSL.g:1283:1: ( ( ( rule__MinSize__OperatorAssignment_1_0 ) ) )
+            // InternalCloneDetectionDSL.g:1284:1: ( ( rule__MinSize__OperatorAssignment_1_0 ) )
             {
-            // InternalCloneDetectionDSL.g:1232:1: ( ( rule__MinSize__OperatorAssignment_2_0 ) )
-            // InternalCloneDetectionDSL.g:1233:2: ( rule__MinSize__OperatorAssignment_2_0 )
+            // InternalCloneDetectionDSL.g:1284:1: ( ( rule__MinSize__OperatorAssignment_1_0 ) )
+            // InternalCloneDetectionDSL.g:1285:2: ( rule__MinSize__OperatorAssignment_1_0 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMinSizeAccess().getOperatorAssignment_2_0()); 
+               before(grammarAccess.getMinSizeAccess().getOperatorAssignment_1_0()); 
             }
-            // InternalCloneDetectionDSL.g:1234:2: ( rule__MinSize__OperatorAssignment_2_0 )
-            // InternalCloneDetectionDSL.g:1234:3: rule__MinSize__OperatorAssignment_2_0
+            // InternalCloneDetectionDSL.g:1286:2: ( rule__MinSize__OperatorAssignment_1_0 )
+            // InternalCloneDetectionDSL.g:1286:3: rule__MinSize__OperatorAssignment_1_0
             {
             pushFollow(FOLLOW_2);
-            rule__MinSize__OperatorAssignment_2_0();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-            if ( state.backtracking==0 ) {
-               after(grammarAccess.getMinSizeAccess().getOperatorAssignment_2_0()); 
-            }
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__MinSize__Group_2__0__Impl"
-
-
-    // $ANTLR start "rule__MinSize__Group_2__1"
-    // InternalCloneDetectionDSL.g:1242:1: rule__MinSize__Group_2__1 : rule__MinSize__Group_2__1__Impl ;
-    public final void rule__MinSize__Group_2__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalCloneDetectionDSL.g:1246:1: ( rule__MinSize__Group_2__1__Impl )
-            // InternalCloneDetectionDSL.g:1247:2: rule__MinSize__Group_2__1__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__MinSize__Group_2__1__Impl();
-
-            state._fsp--;
-            if (state.failed) return ;
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__MinSize__Group_2__1"
-
-
-    // $ANTLR start "rule__MinSize__Group_2__1__Impl"
-    // InternalCloneDetectionDSL.g:1253:1: rule__MinSize__Group_2__1__Impl : ( ( rule__MinSize__SizeAssignment_2_1 ) ) ;
-    public final void rule__MinSize__Group_2__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalCloneDetectionDSL.g:1257:1: ( ( ( rule__MinSize__SizeAssignment_2_1 ) ) )
-            // InternalCloneDetectionDSL.g:1258:1: ( ( rule__MinSize__SizeAssignment_2_1 ) )
-            {
-            // InternalCloneDetectionDSL.g:1258:1: ( ( rule__MinSize__SizeAssignment_2_1 ) )
-            // InternalCloneDetectionDSL.g:1259:2: ( rule__MinSize__SizeAssignment_2_1 )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getMinSizeAccess().getSizeAssignment_2_1()); 
-            }
-            // InternalCloneDetectionDSL.g:1260:2: ( rule__MinSize__SizeAssignment_2_1 )
-            // InternalCloneDetectionDSL.g:1260:3: rule__MinSize__SizeAssignment_2_1
-            {
-            pushFollow(FOLLOW_2);
-            rule__MinSize__SizeAssignment_2_1();
+            rule__MinSize__OperatorAssignment_1_0();
 
             state._fsp--;
             if (state.failed) return ;
@@ -4250,7 +4329,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMinSizeAccess().getSizeAssignment_2_1()); 
+               after(grammarAccess.getMinSizeAccess().getOperatorAssignment_1_0()); 
             }
 
             }
@@ -4270,20 +4349,104 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__Group_2__1__Impl"
+    // $ANTLR end "rule__MinSize__Group_1__0__Impl"
+
+
+    // $ANTLR start "rule__MinSize__Group_1__1"
+    // InternalCloneDetectionDSL.g:1294:1: rule__MinSize__Group_1__1 : rule__MinSize__Group_1__1__Impl ;
+    public final void rule__MinSize__Group_1__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalCloneDetectionDSL.g:1298:1: ( rule__MinSize__Group_1__1__Impl )
+            // InternalCloneDetectionDSL.g:1299:2: rule__MinSize__Group_1__1__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__MinSize__Group_1__1__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__MinSize__Group_1__1"
+
+
+    // $ANTLR start "rule__MinSize__Group_1__1__Impl"
+    // InternalCloneDetectionDSL.g:1305:1: rule__MinSize__Group_1__1__Impl : ( ( rule__MinSize__SizeAssignment_1_1 ) ) ;
+    public final void rule__MinSize__Group_1__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalCloneDetectionDSL.g:1309:1: ( ( ( rule__MinSize__SizeAssignment_1_1 ) ) )
+            // InternalCloneDetectionDSL.g:1310:1: ( ( rule__MinSize__SizeAssignment_1_1 ) )
+            {
+            // InternalCloneDetectionDSL.g:1310:1: ( ( rule__MinSize__SizeAssignment_1_1 ) )
+            // InternalCloneDetectionDSL.g:1311:2: ( rule__MinSize__SizeAssignment_1_1 )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getMinSizeAccess().getSizeAssignment_1_1()); 
+            }
+            // InternalCloneDetectionDSL.g:1312:2: ( rule__MinSize__SizeAssignment_1_1 )
+            // InternalCloneDetectionDSL.g:1312:3: rule__MinSize__SizeAssignment_1_1
+            {
+            pushFollow(FOLLOW_2);
+            rule__MinSize__SizeAssignment_1_1();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getMinSizeAccess().getSizeAssignment_1_1()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__MinSize__Group_1__1__Impl"
 
 
     // $ANTLR start "rule__MetricExpr__Group__0"
-    // InternalCloneDetectionDSL.g:1269:1: rule__MetricExpr__Group__0 : rule__MetricExpr__Group__0__Impl rule__MetricExpr__Group__1 ;
+    // InternalCloneDetectionDSL.g:1321:1: rule__MetricExpr__Group__0 : rule__MetricExpr__Group__0__Impl rule__MetricExpr__Group__1 ;
     public final void rule__MetricExpr__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1273:1: ( rule__MetricExpr__Group__0__Impl rule__MetricExpr__Group__1 )
-            // InternalCloneDetectionDSL.g:1274:2: rule__MetricExpr__Group__0__Impl rule__MetricExpr__Group__1
+            // InternalCloneDetectionDSL.g:1325:1: ( rule__MetricExpr__Group__0__Impl rule__MetricExpr__Group__1 )
+            // InternalCloneDetectionDSL.g:1326:2: rule__MetricExpr__Group__0__Impl rule__MetricExpr__Group__1
             {
-            pushFollow(FOLLOW_12);
+            pushFollow(FOLLOW_11);
             rule__MetricExpr__Group__0__Impl();
 
             state._fsp--;
@@ -4312,23 +4475,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__MetricExpr__Group__0__Impl"
-    // InternalCloneDetectionDSL.g:1281:1: rule__MetricExpr__Group__0__Impl : ( ( rule__MetricExpr__AmountAssignment_0 ) ) ;
+    // InternalCloneDetectionDSL.g:1333:1: rule__MetricExpr__Group__0__Impl : ( ( rule__MetricExpr__AmountAssignment_0 ) ) ;
     public final void rule__MetricExpr__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1285:1: ( ( ( rule__MetricExpr__AmountAssignment_0 ) ) )
-            // InternalCloneDetectionDSL.g:1286:1: ( ( rule__MetricExpr__AmountAssignment_0 ) )
+            // InternalCloneDetectionDSL.g:1337:1: ( ( ( rule__MetricExpr__AmountAssignment_0 ) ) )
+            // InternalCloneDetectionDSL.g:1338:1: ( ( rule__MetricExpr__AmountAssignment_0 ) )
             {
-            // InternalCloneDetectionDSL.g:1286:1: ( ( rule__MetricExpr__AmountAssignment_0 ) )
-            // InternalCloneDetectionDSL.g:1287:2: ( rule__MetricExpr__AmountAssignment_0 )
+            // InternalCloneDetectionDSL.g:1338:1: ( ( rule__MetricExpr__AmountAssignment_0 ) )
+            // InternalCloneDetectionDSL.g:1339:2: ( rule__MetricExpr__AmountAssignment_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMetricExprAccess().getAmountAssignment_0()); 
             }
-            // InternalCloneDetectionDSL.g:1288:2: ( rule__MetricExpr__AmountAssignment_0 )
-            // InternalCloneDetectionDSL.g:1288:3: rule__MetricExpr__AmountAssignment_0
+            // InternalCloneDetectionDSL.g:1340:2: ( rule__MetricExpr__AmountAssignment_0 )
+            // InternalCloneDetectionDSL.g:1340:3: rule__MetricExpr__AmountAssignment_0
             {
             pushFollow(FOLLOW_2);
             rule__MetricExpr__AmountAssignment_0();
@@ -4363,14 +4526,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__MetricExpr__Group__1"
-    // InternalCloneDetectionDSL.g:1296:1: rule__MetricExpr__Group__1 : rule__MetricExpr__Group__1__Impl ;
+    // InternalCloneDetectionDSL.g:1348:1: rule__MetricExpr__Group__1 : rule__MetricExpr__Group__1__Impl ;
     public final void rule__MetricExpr__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1300:1: ( rule__MetricExpr__Group__1__Impl )
-            // InternalCloneDetectionDSL.g:1301:2: rule__MetricExpr__Group__1__Impl
+            // InternalCloneDetectionDSL.g:1352:1: ( rule__MetricExpr__Group__1__Impl )
+            // InternalCloneDetectionDSL.g:1353:2: rule__MetricExpr__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__MetricExpr__Group__1__Impl();
@@ -4396,23 +4559,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__MetricExpr__Group__1__Impl"
-    // InternalCloneDetectionDSL.g:1307:1: rule__MetricExpr__Group__1__Impl : ( ( rule__MetricExpr__MetricAssignment_1 ) ) ;
+    // InternalCloneDetectionDSL.g:1359:1: rule__MetricExpr__Group__1__Impl : ( ( rule__MetricExpr__MetricAssignment_1 ) ) ;
     public final void rule__MetricExpr__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1311:1: ( ( ( rule__MetricExpr__MetricAssignment_1 ) ) )
-            // InternalCloneDetectionDSL.g:1312:1: ( ( rule__MetricExpr__MetricAssignment_1 ) )
+            // InternalCloneDetectionDSL.g:1363:1: ( ( ( rule__MetricExpr__MetricAssignment_1 ) ) )
+            // InternalCloneDetectionDSL.g:1364:1: ( ( rule__MetricExpr__MetricAssignment_1 ) )
             {
-            // InternalCloneDetectionDSL.g:1312:1: ( ( rule__MetricExpr__MetricAssignment_1 ) )
-            // InternalCloneDetectionDSL.g:1313:2: ( rule__MetricExpr__MetricAssignment_1 )
+            // InternalCloneDetectionDSL.g:1364:1: ( ( rule__MetricExpr__MetricAssignment_1 ) )
+            // InternalCloneDetectionDSL.g:1365:2: ( rule__MetricExpr__MetricAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMetricExprAccess().getMetricAssignment_1()); 
             }
-            // InternalCloneDetectionDSL.g:1314:2: ( rule__MetricExpr__MetricAssignment_1 )
-            // InternalCloneDetectionDSL.g:1314:3: rule__MetricExpr__MetricAssignment_1
+            // InternalCloneDetectionDSL.g:1366:2: ( rule__MetricExpr__MetricAssignment_1 )
+            // InternalCloneDetectionDSL.g:1366:3: rule__MetricExpr__MetricAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__MetricExpr__MetricAssignment_1();
@@ -4447,14 +4610,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__DoNotCompare__Group__0"
-    // InternalCloneDetectionDSL.g:1323:1: rule__DoNotCompare__Group__0 : rule__DoNotCompare__Group__0__Impl rule__DoNotCompare__Group__1 ;
+    // InternalCloneDetectionDSL.g:1375:1: rule__DoNotCompare__Group__0 : rule__DoNotCompare__Group__0__Impl rule__DoNotCompare__Group__1 ;
     public final void rule__DoNotCompare__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1327:1: ( rule__DoNotCompare__Group__0__Impl rule__DoNotCompare__Group__1 )
-            // InternalCloneDetectionDSL.g:1328:2: rule__DoNotCompare__Group__0__Impl rule__DoNotCompare__Group__1
+            // InternalCloneDetectionDSL.g:1379:1: ( rule__DoNotCompare__Group__0__Impl rule__DoNotCompare__Group__1 )
+            // InternalCloneDetectionDSL.g:1380:2: rule__DoNotCompare__Group__0__Impl rule__DoNotCompare__Group__1
             {
             pushFollow(FOLLOW_4);
             rule__DoNotCompare__Group__0__Impl();
@@ -4485,17 +4648,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__DoNotCompare__Group__0__Impl"
-    // InternalCloneDetectionDSL.g:1335:1: rule__DoNotCompare__Group__0__Impl : ( 'DoNotCompare' ) ;
+    // InternalCloneDetectionDSL.g:1387:1: rule__DoNotCompare__Group__0__Impl : ( 'DoNotCompare' ) ;
     public final void rule__DoNotCompare__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1339:1: ( ( 'DoNotCompare' ) )
-            // InternalCloneDetectionDSL.g:1340:1: ( 'DoNotCompare' )
+            // InternalCloneDetectionDSL.g:1391:1: ( ( 'DoNotCompare' ) )
+            // InternalCloneDetectionDSL.g:1392:1: ( 'DoNotCompare' )
             {
-            // InternalCloneDetectionDSL.g:1340:1: ( 'DoNotCompare' )
-            // InternalCloneDetectionDSL.g:1341:2: 'DoNotCompare'
+            // InternalCloneDetectionDSL.g:1392:1: ( 'DoNotCompare' )
+            // InternalCloneDetectionDSL.g:1393:2: 'DoNotCompare'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDoNotCompareAccess().getDoNotCompareKeyword_0()); 
@@ -4526,14 +4689,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__DoNotCompare__Group__1"
-    // InternalCloneDetectionDSL.g:1350:1: rule__DoNotCompare__Group__1 : rule__DoNotCompare__Group__1__Impl ;
+    // InternalCloneDetectionDSL.g:1402:1: rule__DoNotCompare__Group__1 : rule__DoNotCompare__Group__1__Impl ;
     public final void rule__DoNotCompare__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1354:1: ( rule__DoNotCompare__Group__1__Impl )
-            // InternalCloneDetectionDSL.g:1355:2: rule__DoNotCompare__Group__1__Impl
+            // InternalCloneDetectionDSL.g:1406:1: ( rule__DoNotCompare__Group__1__Impl )
+            // InternalCloneDetectionDSL.g:1407:2: rule__DoNotCompare__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__DoNotCompare__Group__1__Impl();
@@ -4559,17 +4722,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__DoNotCompare__Group__1__Impl"
-    // InternalCloneDetectionDSL.g:1361:1: rule__DoNotCompare__Group__1__Impl : ( ruleNodes ) ;
+    // InternalCloneDetectionDSL.g:1413:1: rule__DoNotCompare__Group__1__Impl : ( ruleNodes ) ;
     public final void rule__DoNotCompare__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1365:1: ( ( ruleNodes ) )
-            // InternalCloneDetectionDSL.g:1366:1: ( ruleNodes )
+            // InternalCloneDetectionDSL.g:1417:1: ( ( ruleNodes ) )
+            // InternalCloneDetectionDSL.g:1418:1: ( ruleNodes )
             {
-            // InternalCloneDetectionDSL.g:1366:1: ( ruleNodes )
-            // InternalCloneDetectionDSL.g:1367:2: ruleNodes
+            // InternalCloneDetectionDSL.g:1418:1: ( ruleNodes )
+            // InternalCloneDetectionDSL.g:1419:2: ruleNodes
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDoNotCompareAccess().getNodesParserRuleCall_1()); 
@@ -4604,14 +4767,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__Group__0"
-    // InternalCloneDetectionDSL.g:1377:1: rule__Compare__Group__0 : rule__Compare__Group__0__Impl rule__Compare__Group__1 ;
+    // InternalCloneDetectionDSL.g:1429:1: rule__Compare__Group__0 : rule__Compare__Group__0__Impl rule__Compare__Group__1 ;
     public final void rule__Compare__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1381:1: ( rule__Compare__Group__0__Impl rule__Compare__Group__1 )
-            // InternalCloneDetectionDSL.g:1382:2: rule__Compare__Group__0__Impl rule__Compare__Group__1
+            // InternalCloneDetectionDSL.g:1433:1: ( rule__Compare__Group__0__Impl rule__Compare__Group__1 )
+            // InternalCloneDetectionDSL.g:1434:2: rule__Compare__Group__0__Impl rule__Compare__Group__1
             {
             pushFollow(FOLLOW_4);
             rule__Compare__Group__0__Impl();
@@ -4642,17 +4805,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__Group__0__Impl"
-    // InternalCloneDetectionDSL.g:1389:1: rule__Compare__Group__0__Impl : ( 'Compare' ) ;
+    // InternalCloneDetectionDSL.g:1441:1: rule__Compare__Group__0__Impl : ( 'Compare' ) ;
     public final void rule__Compare__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1393:1: ( ( 'Compare' ) )
-            // InternalCloneDetectionDSL.g:1394:1: ( 'Compare' )
+            // InternalCloneDetectionDSL.g:1445:1: ( ( 'Compare' ) )
+            // InternalCloneDetectionDSL.g:1446:1: ( 'Compare' )
             {
-            // InternalCloneDetectionDSL.g:1394:1: ( 'Compare' )
-            // InternalCloneDetectionDSL.g:1395:2: 'Compare'
+            // InternalCloneDetectionDSL.g:1446:1: ( 'Compare' )
+            // InternalCloneDetectionDSL.g:1447:2: 'Compare'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCompareAccess().getCompareKeyword_0()); 
@@ -4683,16 +4846,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__Group__1"
-    // InternalCloneDetectionDSL.g:1404:1: rule__Compare__Group__1 : rule__Compare__Group__1__Impl rule__Compare__Group__2 ;
+    // InternalCloneDetectionDSL.g:1456:1: rule__Compare__Group__1 : rule__Compare__Group__1__Impl rule__Compare__Group__2 ;
     public final void rule__Compare__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1408:1: ( rule__Compare__Group__1__Impl rule__Compare__Group__2 )
-            // InternalCloneDetectionDSL.g:1409:2: rule__Compare__Group__1__Impl rule__Compare__Group__2
+            // InternalCloneDetectionDSL.g:1460:1: ( rule__Compare__Group__1__Impl rule__Compare__Group__2 )
+            // InternalCloneDetectionDSL.g:1461:2: rule__Compare__Group__1__Impl rule__Compare__Group__2
             {
-            pushFollow(FOLLOW_13);
+            pushFollow(FOLLOW_12);
             rule__Compare__Group__1__Impl();
 
             state._fsp--;
@@ -4721,23 +4884,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__Group__1__Impl"
-    // InternalCloneDetectionDSL.g:1416:1: rule__Compare__Group__1__Impl : ( ( rule__Compare__NodesAssignment_1 ) ) ;
+    // InternalCloneDetectionDSL.g:1468:1: rule__Compare__Group__1__Impl : ( ( rule__Compare__NodesAssignment_1 ) ) ;
     public final void rule__Compare__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1420:1: ( ( ( rule__Compare__NodesAssignment_1 ) ) )
-            // InternalCloneDetectionDSL.g:1421:1: ( ( rule__Compare__NodesAssignment_1 ) )
+            // InternalCloneDetectionDSL.g:1472:1: ( ( ( rule__Compare__NodesAssignment_1 ) ) )
+            // InternalCloneDetectionDSL.g:1473:1: ( ( rule__Compare__NodesAssignment_1 ) )
             {
-            // InternalCloneDetectionDSL.g:1421:1: ( ( rule__Compare__NodesAssignment_1 ) )
-            // InternalCloneDetectionDSL.g:1422:2: ( rule__Compare__NodesAssignment_1 )
+            // InternalCloneDetectionDSL.g:1473:1: ( ( rule__Compare__NodesAssignment_1 ) )
+            // InternalCloneDetectionDSL.g:1474:2: ( rule__Compare__NodesAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCompareAccess().getNodesAssignment_1()); 
             }
-            // InternalCloneDetectionDSL.g:1423:2: ( rule__Compare__NodesAssignment_1 )
-            // InternalCloneDetectionDSL.g:1423:3: rule__Compare__NodesAssignment_1
+            // InternalCloneDetectionDSL.g:1475:2: ( rule__Compare__NodesAssignment_1 )
+            // InternalCloneDetectionDSL.g:1475:3: rule__Compare__NodesAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Compare__NodesAssignment_1();
@@ -4772,16 +4935,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__Group__2"
-    // InternalCloneDetectionDSL.g:1431:1: rule__Compare__Group__2 : rule__Compare__Group__2__Impl rule__Compare__Group__3 ;
+    // InternalCloneDetectionDSL.g:1483:1: rule__Compare__Group__2 : rule__Compare__Group__2__Impl rule__Compare__Group__3 ;
     public final void rule__Compare__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1435:1: ( rule__Compare__Group__2__Impl rule__Compare__Group__3 )
-            // InternalCloneDetectionDSL.g:1436:2: rule__Compare__Group__2__Impl rule__Compare__Group__3
+            // InternalCloneDetectionDSL.g:1487:1: ( rule__Compare__Group__2__Impl rule__Compare__Group__3 )
+            // InternalCloneDetectionDSL.g:1488:2: rule__Compare__Group__2__Impl rule__Compare__Group__3
             {
-            pushFollow(FOLLOW_14);
+            pushFollow(FOLLOW_13);
             rule__Compare__Group__2__Impl();
 
             state._fsp--;
@@ -4810,23 +4973,23 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__Group__2__Impl"
-    // InternalCloneDetectionDSL.g:1443:1: rule__Compare__Group__2__Impl : ( ( rule__Compare__ComparisonMethodAssignment_2 ) ) ;
+    // InternalCloneDetectionDSL.g:1495:1: rule__Compare__Group__2__Impl : ( ( rule__Compare__ComparisonMethodAssignment_2 ) ) ;
     public final void rule__Compare__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1447:1: ( ( ( rule__Compare__ComparisonMethodAssignment_2 ) ) )
-            // InternalCloneDetectionDSL.g:1448:1: ( ( rule__Compare__ComparisonMethodAssignment_2 ) )
+            // InternalCloneDetectionDSL.g:1499:1: ( ( ( rule__Compare__ComparisonMethodAssignment_2 ) ) )
+            // InternalCloneDetectionDSL.g:1500:1: ( ( rule__Compare__ComparisonMethodAssignment_2 ) )
             {
-            // InternalCloneDetectionDSL.g:1448:1: ( ( rule__Compare__ComparisonMethodAssignment_2 ) )
-            // InternalCloneDetectionDSL.g:1449:2: ( rule__Compare__ComparisonMethodAssignment_2 )
+            // InternalCloneDetectionDSL.g:1500:1: ( ( rule__Compare__ComparisonMethodAssignment_2 ) )
+            // InternalCloneDetectionDSL.g:1501:2: ( rule__Compare__ComparisonMethodAssignment_2 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCompareAccess().getComparisonMethodAssignment_2()); 
             }
-            // InternalCloneDetectionDSL.g:1450:2: ( rule__Compare__ComparisonMethodAssignment_2 )
-            // InternalCloneDetectionDSL.g:1450:3: rule__Compare__ComparisonMethodAssignment_2
+            // InternalCloneDetectionDSL.g:1502:2: ( rule__Compare__ComparisonMethodAssignment_2 )
+            // InternalCloneDetectionDSL.g:1502:3: rule__Compare__ComparisonMethodAssignment_2
             {
             pushFollow(FOLLOW_2);
             rule__Compare__ComparisonMethodAssignment_2();
@@ -4861,16 +5024,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__Group__3"
-    // InternalCloneDetectionDSL.g:1458:1: rule__Compare__Group__3 : rule__Compare__Group__3__Impl rule__Compare__Group__4 ;
+    // InternalCloneDetectionDSL.g:1510:1: rule__Compare__Group__3 : rule__Compare__Group__3__Impl rule__Compare__Group__4 ;
     public final void rule__Compare__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1462:1: ( rule__Compare__Group__3__Impl rule__Compare__Group__4 )
-            // InternalCloneDetectionDSL.g:1463:2: rule__Compare__Group__3__Impl rule__Compare__Group__4
+            // InternalCloneDetectionDSL.g:1514:1: ( rule__Compare__Group__3__Impl rule__Compare__Group__4 )
+            // InternalCloneDetectionDSL.g:1515:2: rule__Compare__Group__3__Impl rule__Compare__Group__4
             {
-            pushFollow(FOLLOW_14);
+            pushFollow(FOLLOW_13);
             rule__Compare__Group__3__Impl();
 
             state._fsp--;
@@ -4899,22 +5062,22 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__Group__3__Impl"
-    // InternalCloneDetectionDSL.g:1470:1: rule__Compare__Group__3__Impl : ( ( rule__Compare__DeepestNodeAssignment_3 )? ) ;
+    // InternalCloneDetectionDSL.g:1522:1: rule__Compare__Group__3__Impl : ( ( rule__Compare__DeepestNodeAssignment_3 )? ) ;
     public final void rule__Compare__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1474:1: ( ( ( rule__Compare__DeepestNodeAssignment_3 )? ) )
-            // InternalCloneDetectionDSL.g:1475:1: ( ( rule__Compare__DeepestNodeAssignment_3 )? )
+            // InternalCloneDetectionDSL.g:1526:1: ( ( ( rule__Compare__DeepestNodeAssignment_3 )? ) )
+            // InternalCloneDetectionDSL.g:1527:1: ( ( rule__Compare__DeepestNodeAssignment_3 )? )
             {
-            // InternalCloneDetectionDSL.g:1475:1: ( ( rule__Compare__DeepestNodeAssignment_3 )? )
-            // InternalCloneDetectionDSL.g:1476:2: ( rule__Compare__DeepestNodeAssignment_3 )?
+            // InternalCloneDetectionDSL.g:1527:1: ( ( rule__Compare__DeepestNodeAssignment_3 )? )
+            // InternalCloneDetectionDSL.g:1528:2: ( rule__Compare__DeepestNodeAssignment_3 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCompareAccess().getDeepestNodeAssignment_3()); 
             }
-            // InternalCloneDetectionDSL.g:1477:2: ( rule__Compare__DeepestNodeAssignment_3 )?
+            // InternalCloneDetectionDSL.g:1529:2: ( rule__Compare__DeepestNodeAssignment_3 )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -4923,7 +5086,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt11) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:1477:3: rule__Compare__DeepestNodeAssignment_3
+                    // InternalCloneDetectionDSL.g:1529:3: rule__Compare__DeepestNodeAssignment_3
                     {
                     pushFollow(FOLLOW_2);
                     rule__Compare__DeepestNodeAssignment_3();
@@ -4961,14 +5124,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__Group__4"
-    // InternalCloneDetectionDSL.g:1485:1: rule__Compare__Group__4 : rule__Compare__Group__4__Impl ;
+    // InternalCloneDetectionDSL.g:1537:1: rule__Compare__Group__4 : rule__Compare__Group__4__Impl ;
     public final void rule__Compare__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1489:1: ( rule__Compare__Group__4__Impl )
-            // InternalCloneDetectionDSL.g:1490:2: rule__Compare__Group__4__Impl
+            // InternalCloneDetectionDSL.g:1541:1: ( rule__Compare__Group__4__Impl )
+            // InternalCloneDetectionDSL.g:1542:2: rule__Compare__Group__4__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Compare__Group__4__Impl();
@@ -4994,22 +5157,22 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__Group__4__Impl"
-    // InternalCloneDetectionDSL.g:1496:1: rule__Compare__Group__4__Impl : ( ( rule__Compare__PercAssignment_4 )? ) ;
+    // InternalCloneDetectionDSL.g:1548:1: rule__Compare__Group__4__Impl : ( ( rule__Compare__PercAssignment_4 )? ) ;
     public final void rule__Compare__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1500:1: ( ( ( rule__Compare__PercAssignment_4 )? ) )
-            // InternalCloneDetectionDSL.g:1501:1: ( ( rule__Compare__PercAssignment_4 )? )
+            // InternalCloneDetectionDSL.g:1552:1: ( ( ( rule__Compare__PercAssignment_4 )? ) )
+            // InternalCloneDetectionDSL.g:1553:1: ( ( rule__Compare__PercAssignment_4 )? )
             {
-            // InternalCloneDetectionDSL.g:1501:1: ( ( rule__Compare__PercAssignment_4 )? )
-            // InternalCloneDetectionDSL.g:1502:2: ( rule__Compare__PercAssignment_4 )?
+            // InternalCloneDetectionDSL.g:1553:1: ( ( rule__Compare__PercAssignment_4 )? )
+            // InternalCloneDetectionDSL.g:1554:2: ( rule__Compare__PercAssignment_4 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCompareAccess().getPercAssignment_4()); 
             }
-            // InternalCloneDetectionDSL.g:1503:2: ( rule__Compare__PercAssignment_4 )?
+            // InternalCloneDetectionDSL.g:1555:2: ( rule__Compare__PercAssignment_4 )?
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -5018,7 +5181,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt12) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:1503:3: rule__Compare__PercAssignment_4
+                    // InternalCloneDetectionDSL.g:1555:3: rule__Compare__PercAssignment_4
                     {
                     pushFollow(FOLLOW_2);
                     rule__Compare__PercAssignment_4();
@@ -5056,16 +5219,16 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Percentage__Group__0"
-    // InternalCloneDetectionDSL.g:1512:1: rule__Percentage__Group__0 : rule__Percentage__Group__0__Impl rule__Percentage__Group__1 ;
+    // InternalCloneDetectionDSL.g:1564:1: rule__Percentage__Group__0 : rule__Percentage__Group__0__Impl rule__Percentage__Group__1 ;
     public final void rule__Percentage__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1516:1: ( rule__Percentage__Group__0__Impl rule__Percentage__Group__1 )
-            // InternalCloneDetectionDSL.g:1517:2: rule__Percentage__Group__0__Impl rule__Percentage__Group__1
+            // InternalCloneDetectionDSL.g:1568:1: ( rule__Percentage__Group__0__Impl rule__Percentage__Group__1 )
+            // InternalCloneDetectionDSL.g:1569:2: rule__Percentage__Group__0__Impl rule__Percentage__Group__1
             {
-            pushFollow(FOLLOW_15);
+            pushFollow(FOLLOW_14);
             rule__Percentage__Group__0__Impl();
 
             state._fsp--;
@@ -5094,17 +5257,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Percentage__Group__0__Impl"
-    // InternalCloneDetectionDSL.g:1524:1: rule__Percentage__Group__0__Impl : ( RULE_INT ) ;
+    // InternalCloneDetectionDSL.g:1576:1: rule__Percentage__Group__0__Impl : ( RULE_INT ) ;
     public final void rule__Percentage__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1528:1: ( ( RULE_INT ) )
-            // InternalCloneDetectionDSL.g:1529:1: ( RULE_INT )
+            // InternalCloneDetectionDSL.g:1580:1: ( ( RULE_INT ) )
+            // InternalCloneDetectionDSL.g:1581:1: ( RULE_INT )
             {
-            // InternalCloneDetectionDSL.g:1529:1: ( RULE_INT )
-            // InternalCloneDetectionDSL.g:1530:2: RULE_INT
+            // InternalCloneDetectionDSL.g:1581:1: ( RULE_INT )
+            // InternalCloneDetectionDSL.g:1582:2: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getPercentageAccess().getINTTerminalRuleCall_0()); 
@@ -5135,14 +5298,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Percentage__Group__1"
-    // InternalCloneDetectionDSL.g:1539:1: rule__Percentage__Group__1 : rule__Percentage__Group__1__Impl ;
+    // InternalCloneDetectionDSL.g:1591:1: rule__Percentage__Group__1 : rule__Percentage__Group__1__Impl ;
     public final void rule__Percentage__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1543:1: ( rule__Percentage__Group__1__Impl )
-            // InternalCloneDetectionDSL.g:1544:2: rule__Percentage__Group__1__Impl
+            // InternalCloneDetectionDSL.g:1595:1: ( rule__Percentage__Group__1__Impl )
+            // InternalCloneDetectionDSL.g:1596:2: rule__Percentage__Group__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Percentage__Group__1__Impl();
@@ -5168,17 +5331,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Percentage__Group__1__Impl"
-    // InternalCloneDetectionDSL.g:1550:1: rule__Percentage__Group__1__Impl : ( '%' ) ;
+    // InternalCloneDetectionDSL.g:1602:1: rule__Percentage__Group__1__Impl : ( '%' ) ;
     public final void rule__Percentage__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1554:1: ( ( '%' ) )
-            // InternalCloneDetectionDSL.g:1555:1: ( '%' )
+            // InternalCloneDetectionDSL.g:1606:1: ( ( '%' ) )
+            // InternalCloneDetectionDSL.g:1607:1: ( '%' )
             {
-            // InternalCloneDetectionDSL.g:1555:1: ( '%' )
-            // InternalCloneDetectionDSL.g:1556:2: '%'
+            // InternalCloneDetectionDSL.g:1607:1: ( '%' )
+            // InternalCloneDetectionDSL.g:1608:2: '%'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getPercentageAccess().getPercentSignKeyword_1()); 
@@ -5209,15 +5372,15 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__UnorderedGroup"
-    // InternalCloneDetectionDSL.g:1566:1: rule__CloneDetection__UnorderedGroup : rule__CloneDetection__UnorderedGroup__0 {...}?;
+    // InternalCloneDetectionDSL.g:1618:1: rule__CloneDetection__UnorderedGroup : rule__CloneDetection__UnorderedGroup__0 {...}?;
     public final void rule__CloneDetection__UnorderedGroup() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         		getUnorderedGroupHelper().enter(grammarAccess.getCloneDetectionAccess().getUnorderedGroup());
         	
         try {
-            // InternalCloneDetectionDSL.g:1571:1: ( rule__CloneDetection__UnorderedGroup__0 {...}?)
-            // InternalCloneDetectionDSL.g:1572:2: rule__CloneDetection__UnorderedGroup__0 {...}?
+            // InternalCloneDetectionDSL.g:1623:1: ( rule__CloneDetection__UnorderedGroup__0 {...}?)
+            // InternalCloneDetectionDSL.g:1624:2: rule__CloneDetection__UnorderedGroup__0 {...}?
             {
             pushFollow(FOLLOW_2);
             rule__CloneDetection__UnorderedGroup__0();
@@ -5248,17 +5411,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__UnorderedGroup__Impl"
-    // InternalCloneDetectionDSL.g:1580:1: rule__CloneDetection__UnorderedGroup__Impl : ( ({...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) ) ) ) ;
+    // InternalCloneDetectionDSL.g:1632:1: rule__CloneDetection__UnorderedGroup__Impl : ( ({...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) ) ) ) ;
     public final void rule__CloneDetection__UnorderedGroup__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         		boolean selected = false;
         	
         try {
-            // InternalCloneDetectionDSL.g:1585:1: ( ( ({...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) ) ) ) )
-            // InternalCloneDetectionDSL.g:1586:3: ( ({...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) ) ) )
+            // InternalCloneDetectionDSL.g:1637:1: ( ( ({...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) ) ) ) )
+            // InternalCloneDetectionDSL.g:1638:3: ( ({...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) ) ) )
             {
-            // InternalCloneDetectionDSL.g:1586:3: ( ({...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) ) ) )
+            // InternalCloneDetectionDSL.g:1638:3: ( ({...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) ) ) | ({...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) ) ) | ({...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) ) ) )
             int alt15=7;
             int LA15_0 = input.LA(1);
 
@@ -5292,28 +5455,28 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt15) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:1587:3: ({...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) ) )
+                    // InternalCloneDetectionDSL.g:1639:3: ({...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) ) )
                     {
-                    // InternalCloneDetectionDSL.g:1587:3: ({...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) ) )
-                    // InternalCloneDetectionDSL.g:1588:4: {...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) )
+                    // InternalCloneDetectionDSL.g:1639:3: ({...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) ) )
+                    // InternalCloneDetectionDSL.g:1640:4: {...}? => ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 0) ) {
                         if (state.backtracking>0) {state.failed=true; return ;}
                         throw new FailedPredicateException(input, "rule__CloneDetection__UnorderedGroup__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 0)");
                     }
-                    // InternalCloneDetectionDSL.g:1588:108: ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) )
-                    // InternalCloneDetectionDSL.g:1589:5: ( ( rule__CloneDetection__ProjectAssignment_0 ) )
+                    // InternalCloneDetectionDSL.g:1640:108: ( ( ( rule__CloneDetection__ProjectAssignment_0 ) ) )
+                    // InternalCloneDetectionDSL.g:1641:5: ( ( rule__CloneDetection__ProjectAssignment_0 ) )
                     {
                     getUnorderedGroupHelper().select(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 0);
                     selected = true;
-                    // InternalCloneDetectionDSL.g:1595:5: ( ( rule__CloneDetection__ProjectAssignment_0 ) )
-                    // InternalCloneDetectionDSL.g:1596:6: ( rule__CloneDetection__ProjectAssignment_0 )
+                    // InternalCloneDetectionDSL.g:1647:5: ( ( rule__CloneDetection__ProjectAssignment_0 ) )
+                    // InternalCloneDetectionDSL.g:1648:6: ( rule__CloneDetection__ProjectAssignment_0 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getCloneDetectionAccess().getProjectAssignment_0()); 
                     }
-                    // InternalCloneDetectionDSL.g:1597:6: ( rule__CloneDetection__ProjectAssignment_0 )
-                    // InternalCloneDetectionDSL.g:1597:7: rule__CloneDetection__ProjectAssignment_0
+                    // InternalCloneDetectionDSL.g:1649:6: ( rule__CloneDetection__ProjectAssignment_0 )
+                    // InternalCloneDetectionDSL.g:1649:7: rule__CloneDetection__ProjectAssignment_0
                     {
                     pushFollow(FOLLOW_2);
                     rule__CloneDetection__ProjectAssignment_0();
@@ -5339,28 +5502,28 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 2 :
-                    // InternalCloneDetectionDSL.g:1602:3: ({...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) ) )
+                    // InternalCloneDetectionDSL.g:1654:3: ({...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) ) )
                     {
-                    // InternalCloneDetectionDSL.g:1602:3: ({...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) ) )
-                    // InternalCloneDetectionDSL.g:1603:4: {...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) )
+                    // InternalCloneDetectionDSL.g:1654:3: ({...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) ) )
+                    // InternalCloneDetectionDSL.g:1655:4: {...}? => ( ( ( rule__CloneDetection__RootAssignment_1 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 1) ) {
                         if (state.backtracking>0) {state.failed=true; return ;}
                         throw new FailedPredicateException(input, "rule__CloneDetection__UnorderedGroup__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 1)");
                     }
-                    // InternalCloneDetectionDSL.g:1603:108: ( ( ( rule__CloneDetection__RootAssignment_1 ) ) )
-                    // InternalCloneDetectionDSL.g:1604:5: ( ( rule__CloneDetection__RootAssignment_1 ) )
+                    // InternalCloneDetectionDSL.g:1655:108: ( ( ( rule__CloneDetection__RootAssignment_1 ) ) )
+                    // InternalCloneDetectionDSL.g:1656:5: ( ( rule__CloneDetection__RootAssignment_1 ) )
                     {
                     getUnorderedGroupHelper().select(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 1);
                     selected = true;
-                    // InternalCloneDetectionDSL.g:1610:5: ( ( rule__CloneDetection__RootAssignment_1 ) )
-                    // InternalCloneDetectionDSL.g:1611:6: ( rule__CloneDetection__RootAssignment_1 )
+                    // InternalCloneDetectionDSL.g:1662:5: ( ( rule__CloneDetection__RootAssignment_1 ) )
+                    // InternalCloneDetectionDSL.g:1663:6: ( rule__CloneDetection__RootAssignment_1 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getCloneDetectionAccess().getRootAssignment_1()); 
                     }
-                    // InternalCloneDetectionDSL.g:1612:6: ( rule__CloneDetection__RootAssignment_1 )
-                    // InternalCloneDetectionDSL.g:1612:7: rule__CloneDetection__RootAssignment_1
+                    // InternalCloneDetectionDSL.g:1664:6: ( rule__CloneDetection__RootAssignment_1 )
+                    // InternalCloneDetectionDSL.g:1664:7: rule__CloneDetection__RootAssignment_1
                     {
                     pushFollow(FOLLOW_2);
                     rule__CloneDetection__RootAssignment_1();
@@ -5386,28 +5549,28 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 3 :
-                    // InternalCloneDetectionDSL.g:1617:3: ({...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) ) )
+                    // InternalCloneDetectionDSL.g:1669:3: ({...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) ) )
                     {
-                    // InternalCloneDetectionDSL.g:1617:3: ({...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) ) )
-                    // InternalCloneDetectionDSL.g:1618:4: {...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) )
+                    // InternalCloneDetectionDSL.g:1669:3: ({...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) ) )
+                    // InternalCloneDetectionDSL.g:1670:4: {...}? => ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 2) ) {
                         if (state.backtracking>0) {state.failed=true; return ;}
                         throw new FailedPredicateException(input, "rule__CloneDetection__UnorderedGroup__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 2)");
                     }
-                    // InternalCloneDetectionDSL.g:1618:108: ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) )
-                    // InternalCloneDetectionDSL.g:1619:5: ( ( rule__CloneDetection__MatchAssignment_2 ) )
+                    // InternalCloneDetectionDSL.g:1670:108: ( ( ( rule__CloneDetection__MatchAssignment_2 ) ) )
+                    // InternalCloneDetectionDSL.g:1671:5: ( ( rule__CloneDetection__MatchAssignment_2 ) )
                     {
                     getUnorderedGroupHelper().select(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 2);
                     selected = true;
-                    // InternalCloneDetectionDSL.g:1625:5: ( ( rule__CloneDetection__MatchAssignment_2 ) )
-                    // InternalCloneDetectionDSL.g:1626:6: ( rule__CloneDetection__MatchAssignment_2 )
+                    // InternalCloneDetectionDSL.g:1677:5: ( ( rule__CloneDetection__MatchAssignment_2 ) )
+                    // InternalCloneDetectionDSL.g:1678:6: ( rule__CloneDetection__MatchAssignment_2 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getCloneDetectionAccess().getMatchAssignment_2()); 
                     }
-                    // InternalCloneDetectionDSL.g:1627:6: ( rule__CloneDetection__MatchAssignment_2 )
-                    // InternalCloneDetectionDSL.g:1627:7: rule__CloneDetection__MatchAssignment_2
+                    // InternalCloneDetectionDSL.g:1679:6: ( rule__CloneDetection__MatchAssignment_2 )
+                    // InternalCloneDetectionDSL.g:1679:7: rule__CloneDetection__MatchAssignment_2
                     {
                     pushFollow(FOLLOW_2);
                     rule__CloneDetection__MatchAssignment_2();
@@ -5433,28 +5596,28 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 4 :
-                    // InternalCloneDetectionDSL.g:1632:3: ({...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) ) )
+                    // InternalCloneDetectionDSL.g:1684:3: ({...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) ) )
                     {
-                    // InternalCloneDetectionDSL.g:1632:3: ({...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) ) )
-                    // InternalCloneDetectionDSL.g:1633:4: {...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) )
+                    // InternalCloneDetectionDSL.g:1684:3: ({...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) ) )
+                    // InternalCloneDetectionDSL.g:1685:4: {...}? => ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 3) ) {
                         if (state.backtracking>0) {state.failed=true; return ;}
                         throw new FailedPredicateException(input, "rule__CloneDetection__UnorderedGroup__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 3)");
                     }
-                    // InternalCloneDetectionDSL.g:1633:108: ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) )
-                    // InternalCloneDetectionDSL.g:1634:5: ( ( rule__CloneDetection__ExcludeAssignment_3 ) )
+                    // InternalCloneDetectionDSL.g:1685:108: ( ( ( rule__CloneDetection__ExcludeAssignment_3 ) ) )
+                    // InternalCloneDetectionDSL.g:1686:5: ( ( rule__CloneDetection__ExcludeAssignment_3 ) )
                     {
                     getUnorderedGroupHelper().select(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 3);
                     selected = true;
-                    // InternalCloneDetectionDSL.g:1640:5: ( ( rule__CloneDetection__ExcludeAssignment_3 ) )
-                    // InternalCloneDetectionDSL.g:1641:6: ( rule__CloneDetection__ExcludeAssignment_3 )
+                    // InternalCloneDetectionDSL.g:1692:5: ( ( rule__CloneDetection__ExcludeAssignment_3 ) )
+                    // InternalCloneDetectionDSL.g:1693:6: ( rule__CloneDetection__ExcludeAssignment_3 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getCloneDetectionAccess().getExcludeAssignment_3()); 
                     }
-                    // InternalCloneDetectionDSL.g:1642:6: ( rule__CloneDetection__ExcludeAssignment_3 )
-                    // InternalCloneDetectionDSL.g:1642:7: rule__CloneDetection__ExcludeAssignment_3
+                    // InternalCloneDetectionDSL.g:1694:6: ( rule__CloneDetection__ExcludeAssignment_3 )
+                    // InternalCloneDetectionDSL.g:1694:7: rule__CloneDetection__ExcludeAssignment_3
                     {
                     pushFollow(FOLLOW_2);
                     rule__CloneDetection__ExcludeAssignment_3();
@@ -5480,28 +5643,28 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 5 :
-                    // InternalCloneDetectionDSL.g:1647:3: ({...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) ) )
+                    // InternalCloneDetectionDSL.g:1699:3: ({...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) ) )
                     {
-                    // InternalCloneDetectionDSL.g:1647:3: ({...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) ) )
-                    // InternalCloneDetectionDSL.g:1648:4: {...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) )
+                    // InternalCloneDetectionDSL.g:1699:3: ({...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) ) )
+                    // InternalCloneDetectionDSL.g:1700:4: {...}? => ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 4) ) {
                         if (state.backtracking>0) {state.failed=true; return ;}
                         throw new FailedPredicateException(input, "rule__CloneDetection__UnorderedGroup__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 4)");
                     }
-                    // InternalCloneDetectionDSL.g:1648:108: ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) )
-                    // InternalCloneDetectionDSL.g:1649:5: ( ( rule__CloneDetection__SizeAssignment_4 ) )
+                    // InternalCloneDetectionDSL.g:1700:108: ( ( ( rule__CloneDetection__SizeAssignment_4 ) ) )
+                    // InternalCloneDetectionDSL.g:1701:5: ( ( rule__CloneDetection__SizeAssignment_4 ) )
                     {
                     getUnorderedGroupHelper().select(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 4);
                     selected = true;
-                    // InternalCloneDetectionDSL.g:1655:5: ( ( rule__CloneDetection__SizeAssignment_4 ) )
-                    // InternalCloneDetectionDSL.g:1656:6: ( rule__CloneDetection__SizeAssignment_4 )
+                    // InternalCloneDetectionDSL.g:1707:5: ( ( rule__CloneDetection__SizeAssignment_4 ) )
+                    // InternalCloneDetectionDSL.g:1708:6: ( rule__CloneDetection__SizeAssignment_4 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getCloneDetectionAccess().getSizeAssignment_4()); 
                     }
-                    // InternalCloneDetectionDSL.g:1657:6: ( rule__CloneDetection__SizeAssignment_4 )
-                    // InternalCloneDetectionDSL.g:1657:7: rule__CloneDetection__SizeAssignment_4
+                    // InternalCloneDetectionDSL.g:1709:6: ( rule__CloneDetection__SizeAssignment_4 )
+                    // InternalCloneDetectionDSL.g:1709:7: rule__CloneDetection__SizeAssignment_4
                     {
                     pushFollow(FOLLOW_2);
                     rule__CloneDetection__SizeAssignment_4();
@@ -5527,33 +5690,33 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 6 :
-                    // InternalCloneDetectionDSL.g:1662:3: ({...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) ) )
+                    // InternalCloneDetectionDSL.g:1714:3: ({...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) ) )
                     {
-                    // InternalCloneDetectionDSL.g:1662:3: ({...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) ) )
-                    // InternalCloneDetectionDSL.g:1663:4: {...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) )
+                    // InternalCloneDetectionDSL.g:1714:3: ({...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) ) )
+                    // InternalCloneDetectionDSL.g:1715:4: {...}? => ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 5) ) {
                         if (state.backtracking>0) {state.failed=true; return ;}
                         throw new FailedPredicateException(input, "rule__CloneDetection__UnorderedGroup__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 5)");
                     }
-                    // InternalCloneDetectionDSL.g:1663:108: ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) )
-                    // InternalCloneDetectionDSL.g:1664:5: ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) )
+                    // InternalCloneDetectionDSL.g:1715:108: ( ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) ) )
+                    // InternalCloneDetectionDSL.g:1716:5: ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) )
                     {
                     getUnorderedGroupHelper().select(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 5);
                     selected = true;
-                    // InternalCloneDetectionDSL.g:1670:5: ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) )
-                    // InternalCloneDetectionDSL.g:1671:6: ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* )
+                    // InternalCloneDetectionDSL.g:1722:5: ( ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* ) )
+                    // InternalCloneDetectionDSL.g:1723:6: ( ( rule__CloneDetection__NotCompareAssignment_5 ) ) ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* )
                     {
-                    // InternalCloneDetectionDSL.g:1671:6: ( ( rule__CloneDetection__NotCompareAssignment_5 ) )
-                    // InternalCloneDetectionDSL.g:1672:7: ( rule__CloneDetection__NotCompareAssignment_5 )
+                    // InternalCloneDetectionDSL.g:1723:6: ( ( rule__CloneDetection__NotCompareAssignment_5 ) )
+                    // InternalCloneDetectionDSL.g:1724:7: ( rule__CloneDetection__NotCompareAssignment_5 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getCloneDetectionAccess().getNotCompareAssignment_5()); 
                     }
-                    // InternalCloneDetectionDSL.g:1673:7: ( rule__CloneDetection__NotCompareAssignment_5 )
-                    // InternalCloneDetectionDSL.g:1673:8: rule__CloneDetection__NotCompareAssignment_5
+                    // InternalCloneDetectionDSL.g:1725:7: ( rule__CloneDetection__NotCompareAssignment_5 )
+                    // InternalCloneDetectionDSL.g:1725:8: rule__CloneDetection__NotCompareAssignment_5
                     {
-                    pushFollow(FOLLOW_16);
+                    pushFollow(FOLLOW_15);
                     rule__CloneDetection__NotCompareAssignment_5();
 
                     state._fsp--;
@@ -5567,13 +5730,13 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
                     }
 
-                    // InternalCloneDetectionDSL.g:1676:6: ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* )
-                    // InternalCloneDetectionDSL.g:1677:7: ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )*
+                    // InternalCloneDetectionDSL.g:1728:6: ( ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )* )
+                    // InternalCloneDetectionDSL.g:1729:7: ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )*
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getCloneDetectionAccess().getNotCompareAssignment_5()); 
                     }
-                    // InternalCloneDetectionDSL.g:1678:7: ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )*
+                    // InternalCloneDetectionDSL.g:1730:7: ( ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5 )*
                     loop13:
                     do {
                         int alt13=2;
@@ -5607,9 +5770,9 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
                         switch (alt13) {
                     	case 1 :
-                    	    // InternalCloneDetectionDSL.g:1678:8: ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5
+                    	    // InternalCloneDetectionDSL.g:1730:8: ( rule__CloneDetection__NotCompareAssignment_5 )=> rule__CloneDetection__NotCompareAssignment_5
                     	    {
-                    	    pushFollow(FOLLOW_16);
+                    	    pushFollow(FOLLOW_15);
                     	    rule__CloneDetection__NotCompareAssignment_5();
 
                     	    state._fsp--;
@@ -5642,33 +5805,33 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
                     }
                     break;
                 case 7 :
-                    // InternalCloneDetectionDSL.g:1684:3: ({...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) ) )
+                    // InternalCloneDetectionDSL.g:1736:3: ({...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) ) )
                     {
-                    // InternalCloneDetectionDSL.g:1684:3: ({...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) ) )
-                    // InternalCloneDetectionDSL.g:1685:4: {...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) )
+                    // InternalCloneDetectionDSL.g:1736:3: ({...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) ) )
+                    // InternalCloneDetectionDSL.g:1737:4: {...}? => ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) )
                     {
                     if ( ! getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 6) ) {
                         if (state.backtracking>0) {state.failed=true; return ;}
                         throw new FailedPredicateException(input, "rule__CloneDetection__UnorderedGroup__Impl", "getUnorderedGroupHelper().canSelect(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 6)");
                     }
-                    // InternalCloneDetectionDSL.g:1685:108: ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) )
-                    // InternalCloneDetectionDSL.g:1686:5: ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) )
+                    // InternalCloneDetectionDSL.g:1737:108: ( ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) ) )
+                    // InternalCloneDetectionDSL.g:1738:5: ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) )
                     {
                     getUnorderedGroupHelper().select(grammarAccess.getCloneDetectionAccess().getUnorderedGroup(), 6);
                     selected = true;
-                    // InternalCloneDetectionDSL.g:1692:5: ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) )
-                    // InternalCloneDetectionDSL.g:1693:6: ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* )
+                    // InternalCloneDetectionDSL.g:1744:5: ( ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* ) )
+                    // InternalCloneDetectionDSL.g:1745:6: ( ( rule__CloneDetection__CompareAssignment_6 ) ) ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* )
                     {
-                    // InternalCloneDetectionDSL.g:1693:6: ( ( rule__CloneDetection__CompareAssignment_6 ) )
-                    // InternalCloneDetectionDSL.g:1694:7: ( rule__CloneDetection__CompareAssignment_6 )
+                    // InternalCloneDetectionDSL.g:1745:6: ( ( rule__CloneDetection__CompareAssignment_6 ) )
+                    // InternalCloneDetectionDSL.g:1746:7: ( rule__CloneDetection__CompareAssignment_6 )
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getCloneDetectionAccess().getCompareAssignment_6()); 
                     }
-                    // InternalCloneDetectionDSL.g:1695:7: ( rule__CloneDetection__CompareAssignment_6 )
-                    // InternalCloneDetectionDSL.g:1695:8: rule__CloneDetection__CompareAssignment_6
+                    // InternalCloneDetectionDSL.g:1747:7: ( rule__CloneDetection__CompareAssignment_6 )
+                    // InternalCloneDetectionDSL.g:1747:8: rule__CloneDetection__CompareAssignment_6
                     {
-                    pushFollow(FOLLOW_17);
+                    pushFollow(FOLLOW_16);
                     rule__CloneDetection__CompareAssignment_6();
 
                     state._fsp--;
@@ -5682,22 +5845,22 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
                     }
 
-                    // InternalCloneDetectionDSL.g:1698:6: ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* )
-                    // InternalCloneDetectionDSL.g:1699:7: ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )*
+                    // InternalCloneDetectionDSL.g:1750:6: ( ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )* )
+                    // InternalCloneDetectionDSL.g:1751:7: ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )*
                     {
                     if ( state.backtracking==0 ) {
                        before(grammarAccess.getCloneDetectionAccess().getCompareAssignment_6()); 
                     }
-                    // InternalCloneDetectionDSL.g:1700:7: ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )*
+                    // InternalCloneDetectionDSL.g:1752:7: ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )*
                     loop14:
                     do {
                         int alt14=2;
                         alt14 = dfa14.predict(input);
                         switch (alt14) {
                     	case 1 :
-                    	    // InternalCloneDetectionDSL.g:1700:8: ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6
+                    	    // InternalCloneDetectionDSL.g:1752:8: ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6
                     	    {
-                    	    pushFollow(FOLLOW_17);
+                    	    pushFollow(FOLLOW_16);
                     	    rule__CloneDetection__CompareAssignment_6();
 
                     	    state._fsp--;
@@ -5753,21 +5916,21 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__UnorderedGroup__0"
-    // InternalCloneDetectionDSL.g:1714:1: rule__CloneDetection__UnorderedGroup__0 : rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__1 )? ;
+    // InternalCloneDetectionDSL.g:1766:1: rule__CloneDetection__UnorderedGroup__0 : rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__1 )? ;
     public final void rule__CloneDetection__UnorderedGroup__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1718:1: ( rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__1 )? )
-            // InternalCloneDetectionDSL.g:1719:2: rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__1 )?
+            // InternalCloneDetectionDSL.g:1770:1: ( rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__1 )? )
+            // InternalCloneDetectionDSL.g:1771:2: rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__1 )?
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_17);
             rule__CloneDetection__UnorderedGroup__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            // InternalCloneDetectionDSL.g:1720:2: ( rule__CloneDetection__UnorderedGroup__1 )?
+            // InternalCloneDetectionDSL.g:1772:2: ( rule__CloneDetection__UnorderedGroup__1 )?
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -5794,7 +5957,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt16) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:1720:2: rule__CloneDetection__UnorderedGroup__1
+                    // InternalCloneDetectionDSL.g:1772:2: rule__CloneDetection__UnorderedGroup__1
                     {
                     pushFollow(FOLLOW_2);
                     rule__CloneDetection__UnorderedGroup__1();
@@ -5826,21 +5989,21 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__UnorderedGroup__1"
-    // InternalCloneDetectionDSL.g:1726:1: rule__CloneDetection__UnorderedGroup__1 : rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__2 )? ;
+    // InternalCloneDetectionDSL.g:1778:1: rule__CloneDetection__UnorderedGroup__1 : rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__2 )? ;
     public final void rule__CloneDetection__UnorderedGroup__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1730:1: ( rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__2 )? )
-            // InternalCloneDetectionDSL.g:1731:2: rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__2 )?
+            // InternalCloneDetectionDSL.g:1782:1: ( rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__2 )? )
+            // InternalCloneDetectionDSL.g:1783:2: rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__2 )?
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_17);
             rule__CloneDetection__UnorderedGroup__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            // InternalCloneDetectionDSL.g:1732:2: ( rule__CloneDetection__UnorderedGroup__2 )?
+            // InternalCloneDetectionDSL.g:1784:2: ( rule__CloneDetection__UnorderedGroup__2 )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -5867,7 +6030,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt17) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:1732:2: rule__CloneDetection__UnorderedGroup__2
+                    // InternalCloneDetectionDSL.g:1784:2: rule__CloneDetection__UnorderedGroup__2
                     {
                     pushFollow(FOLLOW_2);
                     rule__CloneDetection__UnorderedGroup__2();
@@ -5899,21 +6062,21 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__UnorderedGroup__2"
-    // InternalCloneDetectionDSL.g:1738:1: rule__CloneDetection__UnorderedGroup__2 : rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__3 )? ;
+    // InternalCloneDetectionDSL.g:1790:1: rule__CloneDetection__UnorderedGroup__2 : rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__3 )? ;
     public final void rule__CloneDetection__UnorderedGroup__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1742:1: ( rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__3 )? )
-            // InternalCloneDetectionDSL.g:1743:2: rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__3 )?
+            // InternalCloneDetectionDSL.g:1794:1: ( rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__3 )? )
+            // InternalCloneDetectionDSL.g:1795:2: rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__3 )?
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_17);
             rule__CloneDetection__UnorderedGroup__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            // InternalCloneDetectionDSL.g:1744:2: ( rule__CloneDetection__UnorderedGroup__3 )?
+            // InternalCloneDetectionDSL.g:1796:2: ( rule__CloneDetection__UnorderedGroup__3 )?
             int alt18=2;
             int LA18_0 = input.LA(1);
 
@@ -5940,7 +6103,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt18) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:1744:2: rule__CloneDetection__UnorderedGroup__3
+                    // InternalCloneDetectionDSL.g:1796:2: rule__CloneDetection__UnorderedGroup__3
                     {
                     pushFollow(FOLLOW_2);
                     rule__CloneDetection__UnorderedGroup__3();
@@ -5972,21 +6135,21 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__UnorderedGroup__3"
-    // InternalCloneDetectionDSL.g:1750:1: rule__CloneDetection__UnorderedGroup__3 : rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__4 )? ;
+    // InternalCloneDetectionDSL.g:1802:1: rule__CloneDetection__UnorderedGroup__3 : rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__4 )? ;
     public final void rule__CloneDetection__UnorderedGroup__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1754:1: ( rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__4 )? )
-            // InternalCloneDetectionDSL.g:1755:2: rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__4 )?
+            // InternalCloneDetectionDSL.g:1806:1: ( rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__4 )? )
+            // InternalCloneDetectionDSL.g:1807:2: rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__4 )?
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_17);
             rule__CloneDetection__UnorderedGroup__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            // InternalCloneDetectionDSL.g:1756:2: ( rule__CloneDetection__UnorderedGroup__4 )?
+            // InternalCloneDetectionDSL.g:1808:2: ( rule__CloneDetection__UnorderedGroup__4 )?
             int alt19=2;
             int LA19_0 = input.LA(1);
 
@@ -6013,7 +6176,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt19) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:1756:2: rule__CloneDetection__UnorderedGroup__4
+                    // InternalCloneDetectionDSL.g:1808:2: rule__CloneDetection__UnorderedGroup__4
                     {
                     pushFollow(FOLLOW_2);
                     rule__CloneDetection__UnorderedGroup__4();
@@ -6045,21 +6208,21 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__UnorderedGroup__4"
-    // InternalCloneDetectionDSL.g:1762:1: rule__CloneDetection__UnorderedGroup__4 : rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__5 )? ;
+    // InternalCloneDetectionDSL.g:1814:1: rule__CloneDetection__UnorderedGroup__4 : rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__5 )? ;
     public final void rule__CloneDetection__UnorderedGroup__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1766:1: ( rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__5 )? )
-            // InternalCloneDetectionDSL.g:1767:2: rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__5 )?
+            // InternalCloneDetectionDSL.g:1818:1: ( rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__5 )? )
+            // InternalCloneDetectionDSL.g:1819:2: rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__5 )?
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_17);
             rule__CloneDetection__UnorderedGroup__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            // InternalCloneDetectionDSL.g:1768:2: ( rule__CloneDetection__UnorderedGroup__5 )?
+            // InternalCloneDetectionDSL.g:1820:2: ( rule__CloneDetection__UnorderedGroup__5 )?
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -6086,7 +6249,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt20) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:1768:2: rule__CloneDetection__UnorderedGroup__5
+                    // InternalCloneDetectionDSL.g:1820:2: rule__CloneDetection__UnorderedGroup__5
                     {
                     pushFollow(FOLLOW_2);
                     rule__CloneDetection__UnorderedGroup__5();
@@ -6118,21 +6281,21 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__UnorderedGroup__5"
-    // InternalCloneDetectionDSL.g:1774:1: rule__CloneDetection__UnorderedGroup__5 : rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__6 )? ;
+    // InternalCloneDetectionDSL.g:1826:1: rule__CloneDetection__UnorderedGroup__5 : rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__6 )? ;
     public final void rule__CloneDetection__UnorderedGroup__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1778:1: ( rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__6 )? )
-            // InternalCloneDetectionDSL.g:1779:2: rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__6 )?
+            // InternalCloneDetectionDSL.g:1830:1: ( rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__6 )? )
+            // InternalCloneDetectionDSL.g:1831:2: rule__CloneDetection__UnorderedGroup__Impl ( rule__CloneDetection__UnorderedGroup__6 )?
             {
-            pushFollow(FOLLOW_18);
+            pushFollow(FOLLOW_17);
             rule__CloneDetection__UnorderedGroup__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            // InternalCloneDetectionDSL.g:1780:2: ( rule__CloneDetection__UnorderedGroup__6 )?
+            // InternalCloneDetectionDSL.g:1832:2: ( rule__CloneDetection__UnorderedGroup__6 )?
             int alt21=2;
             int LA21_0 = input.LA(1);
 
@@ -6159,7 +6322,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             }
             switch (alt21) {
                 case 1 :
-                    // InternalCloneDetectionDSL.g:1780:2: rule__CloneDetection__UnorderedGroup__6
+                    // InternalCloneDetectionDSL.g:1832:2: rule__CloneDetection__UnorderedGroup__6
                     {
                     pushFollow(FOLLOW_2);
                     rule__CloneDetection__UnorderedGroup__6();
@@ -6191,14 +6354,14 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__UnorderedGroup__6"
-    // InternalCloneDetectionDSL.g:1786:1: rule__CloneDetection__UnorderedGroup__6 : rule__CloneDetection__UnorderedGroup__Impl ;
+    // InternalCloneDetectionDSL.g:1838:1: rule__CloneDetection__UnorderedGroup__6 : rule__CloneDetection__UnorderedGroup__Impl ;
     public final void rule__CloneDetection__UnorderedGroup__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1790:1: ( rule__CloneDetection__UnorderedGroup__Impl )
-            // InternalCloneDetectionDSL.g:1791:2: rule__CloneDetection__UnorderedGroup__Impl
+            // InternalCloneDetectionDSL.g:1842:1: ( rule__CloneDetection__UnorderedGroup__Impl )
+            // InternalCloneDetectionDSL.g:1843:2: rule__CloneDetection__UnorderedGroup__Impl
             {
             pushFollow(FOLLOW_2);
             rule__CloneDetection__UnorderedGroup__Impl();
@@ -6224,17 +6387,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__ProjectAssignment_0"
-    // InternalCloneDetectionDSL.g:1798:1: rule__CloneDetection__ProjectAssignment_0 : ( ruleProject ) ;
+    // InternalCloneDetectionDSL.g:1850:1: rule__CloneDetection__ProjectAssignment_0 : ( ruleProject ) ;
     public final void rule__CloneDetection__ProjectAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1802:1: ( ( ruleProject ) )
-            // InternalCloneDetectionDSL.g:1803:2: ( ruleProject )
+            // InternalCloneDetectionDSL.g:1854:1: ( ( ruleProject ) )
+            // InternalCloneDetectionDSL.g:1855:2: ( ruleProject )
             {
-            // InternalCloneDetectionDSL.g:1803:2: ( ruleProject )
-            // InternalCloneDetectionDSL.g:1804:3: ruleProject
+            // InternalCloneDetectionDSL.g:1855:2: ( ruleProject )
+            // InternalCloneDetectionDSL.g:1856:3: ruleProject
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCloneDetectionAccess().getProjectProjectParserRuleCall_0_0()); 
@@ -6269,17 +6432,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__RootAssignment_1"
-    // InternalCloneDetectionDSL.g:1813:1: rule__CloneDetection__RootAssignment_1 : ( ruleSearchRoot ) ;
+    // InternalCloneDetectionDSL.g:1865:1: rule__CloneDetection__RootAssignment_1 : ( ruleSearchRoot ) ;
     public final void rule__CloneDetection__RootAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1817:1: ( ( ruleSearchRoot ) )
-            // InternalCloneDetectionDSL.g:1818:2: ( ruleSearchRoot )
+            // InternalCloneDetectionDSL.g:1869:1: ( ( ruleSearchRoot ) )
+            // InternalCloneDetectionDSL.g:1870:2: ( ruleSearchRoot )
             {
-            // InternalCloneDetectionDSL.g:1818:2: ( ruleSearchRoot )
-            // InternalCloneDetectionDSL.g:1819:3: ruleSearchRoot
+            // InternalCloneDetectionDSL.g:1870:2: ( ruleSearchRoot )
+            // InternalCloneDetectionDSL.g:1871:3: ruleSearchRoot
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCloneDetectionAccess().getRootSearchRootParserRuleCall_1_0()); 
@@ -6314,17 +6477,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__MatchAssignment_2"
-    // InternalCloneDetectionDSL.g:1828:1: rule__CloneDetection__MatchAssignment_2 : ( ruleMatch ) ;
+    // InternalCloneDetectionDSL.g:1880:1: rule__CloneDetection__MatchAssignment_2 : ( ruleMatch ) ;
     public final void rule__CloneDetection__MatchAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1832:1: ( ( ruleMatch ) )
-            // InternalCloneDetectionDSL.g:1833:2: ( ruleMatch )
+            // InternalCloneDetectionDSL.g:1884:1: ( ( ruleMatch ) )
+            // InternalCloneDetectionDSL.g:1885:2: ( ruleMatch )
             {
-            // InternalCloneDetectionDSL.g:1833:2: ( ruleMatch )
-            // InternalCloneDetectionDSL.g:1834:3: ruleMatch
+            // InternalCloneDetectionDSL.g:1885:2: ( ruleMatch )
+            // InternalCloneDetectionDSL.g:1886:3: ruleMatch
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCloneDetectionAccess().getMatchMatchParserRuleCall_2_0()); 
@@ -6359,17 +6522,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__ExcludeAssignment_3"
-    // InternalCloneDetectionDSL.g:1843:1: rule__CloneDetection__ExcludeAssignment_3 : ( ruleExclude ) ;
+    // InternalCloneDetectionDSL.g:1895:1: rule__CloneDetection__ExcludeAssignment_3 : ( ruleExclude ) ;
     public final void rule__CloneDetection__ExcludeAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1847:1: ( ( ruleExclude ) )
-            // InternalCloneDetectionDSL.g:1848:2: ( ruleExclude )
+            // InternalCloneDetectionDSL.g:1899:1: ( ( ruleExclude ) )
+            // InternalCloneDetectionDSL.g:1900:2: ( ruleExclude )
             {
-            // InternalCloneDetectionDSL.g:1848:2: ( ruleExclude )
-            // InternalCloneDetectionDSL.g:1849:3: ruleExclude
+            // InternalCloneDetectionDSL.g:1900:2: ( ruleExclude )
+            // InternalCloneDetectionDSL.g:1901:3: ruleExclude
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCloneDetectionAccess().getExcludeExcludeParserRuleCall_3_0()); 
@@ -6404,28 +6567,28 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__SizeAssignment_4"
-    // InternalCloneDetectionDSL.g:1858:1: rule__CloneDetection__SizeAssignment_4 : ( ruleMinSize ) ;
+    // InternalCloneDetectionDSL.g:1910:1: rule__CloneDetection__SizeAssignment_4 : ( ruleSize ) ;
     public final void rule__CloneDetection__SizeAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1862:1: ( ( ruleMinSize ) )
-            // InternalCloneDetectionDSL.g:1863:2: ( ruleMinSize )
+            // InternalCloneDetectionDSL.g:1914:1: ( ( ruleSize ) )
+            // InternalCloneDetectionDSL.g:1915:2: ( ruleSize )
             {
-            // InternalCloneDetectionDSL.g:1863:2: ( ruleMinSize )
-            // InternalCloneDetectionDSL.g:1864:3: ruleMinSize
+            // InternalCloneDetectionDSL.g:1915:2: ( ruleSize )
+            // InternalCloneDetectionDSL.g:1916:3: ruleSize
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getCloneDetectionAccess().getSizeMinSizeParserRuleCall_4_0()); 
+               before(grammarAccess.getCloneDetectionAccess().getSizeSizeParserRuleCall_4_0()); 
             }
             pushFollow(FOLLOW_2);
-            ruleMinSize();
+            ruleSize();
 
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getCloneDetectionAccess().getSizeMinSizeParserRuleCall_4_0()); 
+               after(grammarAccess.getCloneDetectionAccess().getSizeSizeParserRuleCall_4_0()); 
             }
 
             }
@@ -6449,17 +6612,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__NotCompareAssignment_5"
-    // InternalCloneDetectionDSL.g:1873:1: rule__CloneDetection__NotCompareAssignment_5 : ( ruleDoNotCompare ) ;
+    // InternalCloneDetectionDSL.g:1925:1: rule__CloneDetection__NotCompareAssignment_5 : ( ruleDoNotCompare ) ;
     public final void rule__CloneDetection__NotCompareAssignment_5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1877:1: ( ( ruleDoNotCompare ) )
-            // InternalCloneDetectionDSL.g:1878:2: ( ruleDoNotCompare )
+            // InternalCloneDetectionDSL.g:1929:1: ( ( ruleDoNotCompare ) )
+            // InternalCloneDetectionDSL.g:1930:2: ( ruleDoNotCompare )
             {
-            // InternalCloneDetectionDSL.g:1878:2: ( ruleDoNotCompare )
-            // InternalCloneDetectionDSL.g:1879:3: ruleDoNotCompare
+            // InternalCloneDetectionDSL.g:1930:2: ( ruleDoNotCompare )
+            // InternalCloneDetectionDSL.g:1931:3: ruleDoNotCompare
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCloneDetectionAccess().getNotCompareDoNotCompareParserRuleCall_5_0()); 
@@ -6494,17 +6657,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__CloneDetection__CompareAssignment_6"
-    // InternalCloneDetectionDSL.g:1888:1: rule__CloneDetection__CompareAssignment_6 : ( ruleCompare ) ;
+    // InternalCloneDetectionDSL.g:1940:1: rule__CloneDetection__CompareAssignment_6 : ( ruleCompare ) ;
     public final void rule__CloneDetection__CompareAssignment_6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1892:1: ( ( ruleCompare ) )
-            // InternalCloneDetectionDSL.g:1893:2: ( ruleCompare )
+            // InternalCloneDetectionDSL.g:1944:1: ( ( ruleCompare ) )
+            // InternalCloneDetectionDSL.g:1945:2: ( ruleCompare )
             {
-            // InternalCloneDetectionDSL.g:1893:2: ( ruleCompare )
-            // InternalCloneDetectionDSL.g:1894:3: ruleCompare
+            // InternalCloneDetectionDSL.g:1945:2: ( ruleCompare )
+            // InternalCloneDetectionDSL.g:1946:3: ruleCompare
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCloneDetectionAccess().getCompareCompareParserRuleCall_6_0()); 
@@ -6539,17 +6702,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Project__PathAssignment_1"
-    // InternalCloneDetectionDSL.g:1903:1: rule__Project__PathAssignment_1 : ( RULE_STRING ) ;
+    // InternalCloneDetectionDSL.g:1955:1: rule__Project__PathAssignment_1 : ( RULE_STRING ) ;
     public final void rule__Project__PathAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1907:1: ( ( RULE_STRING ) )
-            // InternalCloneDetectionDSL.g:1908:2: ( RULE_STRING )
+            // InternalCloneDetectionDSL.g:1959:1: ( ( RULE_STRING ) )
+            // InternalCloneDetectionDSL.g:1960:2: ( RULE_STRING )
             {
-            // InternalCloneDetectionDSL.g:1908:2: ( RULE_STRING )
-            // InternalCloneDetectionDSL.g:1909:3: RULE_STRING
+            // InternalCloneDetectionDSL.g:1960:2: ( RULE_STRING )
+            // InternalCloneDetectionDSL.g:1961:3: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getProjectAccess().getPathSTRINGTerminalRuleCall_1_0()); 
@@ -6580,17 +6743,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__SearchRoot__NodesAssignment_1"
-    // InternalCloneDetectionDSL.g:1918:1: rule__SearchRoot__NodesAssignment_1 : ( ruleNodes ) ;
+    // InternalCloneDetectionDSL.g:1970:1: rule__SearchRoot__NodesAssignment_1 : ( ruleNodes ) ;
     public final void rule__SearchRoot__NodesAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1922:1: ( ( ruleNodes ) )
-            // InternalCloneDetectionDSL.g:1923:2: ( ruleNodes )
+            // InternalCloneDetectionDSL.g:1974:1: ( ( ruleNodes ) )
+            // InternalCloneDetectionDSL.g:1975:2: ( ruleNodes )
             {
-            // InternalCloneDetectionDSL.g:1923:2: ( ruleNodes )
-            // InternalCloneDetectionDSL.g:1924:3: ruleNodes
+            // InternalCloneDetectionDSL.g:1975:2: ( ruleNodes )
+            // InternalCloneDetectionDSL.g:1976:3: ruleNodes
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSearchRootAccess().getNodesNodesParserRuleCall_1_0()); 
@@ -6625,17 +6788,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Match__TargetAssignment_1"
-    // InternalCloneDetectionDSL.g:1933:1: rule__Match__TargetAssignment_1 : ( ruleMatchTarget ) ;
+    // InternalCloneDetectionDSL.g:1985:1: rule__Match__TargetAssignment_1 : ( ruleMatchTarget ) ;
     public final void rule__Match__TargetAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1937:1: ( ( ruleMatchTarget ) )
-            // InternalCloneDetectionDSL.g:1938:2: ( ruleMatchTarget )
+            // InternalCloneDetectionDSL.g:1989:1: ( ( ruleMatchTarget ) )
+            // InternalCloneDetectionDSL.g:1990:2: ( ruleMatchTarget )
             {
-            // InternalCloneDetectionDSL.g:1938:2: ( ruleMatchTarget )
-            // InternalCloneDetectionDSL.g:1939:3: ruleMatchTarget
+            // InternalCloneDetectionDSL.g:1990:2: ( ruleMatchTarget )
+            // InternalCloneDetectionDSL.g:1991:3: ruleMatchTarget
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMatchAccess().getTargetMatchTargetEnumRuleCall_1_0()); 
@@ -6670,17 +6833,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Node__NameAssignment_0_0"
-    // InternalCloneDetectionDSL.g:1948:1: rule__Node__NameAssignment_0_0 : ( RULE_ID ) ;
+    // InternalCloneDetectionDSL.g:2000:1: rule__Node__NameAssignment_0_0 : ( RULE_ID ) ;
     public final void rule__Node__NameAssignment_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1952:1: ( ( RULE_ID ) )
-            // InternalCloneDetectionDSL.g:1953:2: ( RULE_ID )
+            // InternalCloneDetectionDSL.g:2004:1: ( ( RULE_ID ) )
+            // InternalCloneDetectionDSL.g:2005:2: ( RULE_ID )
             {
-            // InternalCloneDetectionDSL.g:1953:2: ( RULE_ID )
-            // InternalCloneDetectionDSL.g:1954:3: RULE_ID
+            // InternalCloneDetectionDSL.g:2005:2: ( RULE_ID )
+            // InternalCloneDetectionDSL.g:2006:3: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodeAccess().getNameIDTerminalRuleCall_0_0_0()); 
@@ -6711,17 +6874,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Node__UnderAssignment_1_0"
-    // InternalCloneDetectionDSL.g:1963:1: rule__Node__UnderAssignment_1_0 : ( ruleUnder ) ;
+    // InternalCloneDetectionDSL.g:2015:1: rule__Node__UnderAssignment_1_0 : ( ruleUnder ) ;
     public final void rule__Node__UnderAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1967:1: ( ( ruleUnder ) )
-            // InternalCloneDetectionDSL.g:1968:2: ( ruleUnder )
+            // InternalCloneDetectionDSL.g:2019:1: ( ( ruleUnder ) )
+            // InternalCloneDetectionDSL.g:2020:2: ( ruleUnder )
             {
-            // InternalCloneDetectionDSL.g:1968:2: ( ruleUnder )
-            // InternalCloneDetectionDSL.g:1969:3: ruleUnder
+            // InternalCloneDetectionDSL.g:2020:2: ( ruleUnder )
+            // InternalCloneDetectionDSL.g:2021:3: ruleUnder
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodeAccess().getUnderUnderEnumRuleCall_1_0_0()); 
@@ -6756,17 +6919,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Node__NodeAssignment_1_1"
-    // InternalCloneDetectionDSL.g:1978:1: rule__Node__NodeAssignment_1_1 : ( ruleNode ) ;
+    // InternalCloneDetectionDSL.g:2030:1: rule__Node__NodeAssignment_1_1 : ( ruleNode ) ;
     public final void rule__Node__NodeAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1982:1: ( ( ruleNode ) )
-            // InternalCloneDetectionDSL.g:1983:2: ( ruleNode )
+            // InternalCloneDetectionDSL.g:2034:1: ( ( ruleNode ) )
+            // InternalCloneDetectionDSL.g:2035:2: ( ruleNode )
             {
-            // InternalCloneDetectionDSL.g:1983:2: ( ruleNode )
-            // InternalCloneDetectionDSL.g:1984:3: ruleNode
+            // InternalCloneDetectionDSL.g:2035:2: ( ruleNode )
+            // InternalCloneDetectionDSL.g:2036:3: ruleNode
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodeAccess().getNodeNodeParserRuleCall_1_1_0()); 
@@ -6801,17 +6964,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Nodes__NodeAssignment_0"
-    // InternalCloneDetectionDSL.g:1993:1: rule__Nodes__NodeAssignment_0 : ( ruleNode ) ;
+    // InternalCloneDetectionDSL.g:2045:1: rule__Nodes__NodeAssignment_0 : ( ruleNode ) ;
     public final void rule__Nodes__NodeAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:1997:1: ( ( ruleNode ) )
-            // InternalCloneDetectionDSL.g:1998:2: ( ruleNode )
+            // InternalCloneDetectionDSL.g:2049:1: ( ( ruleNode ) )
+            // InternalCloneDetectionDSL.g:2050:2: ( ruleNode )
             {
-            // InternalCloneDetectionDSL.g:1998:2: ( ruleNode )
-            // InternalCloneDetectionDSL.g:1999:3: ruleNode
+            // InternalCloneDetectionDSL.g:2050:2: ( ruleNode )
+            // InternalCloneDetectionDSL.g:2051:3: ruleNode
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodesAccess().getNodeNodeParserRuleCall_0_0()); 
@@ -6846,17 +7009,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Nodes__NodesAssignment_1_1"
-    // InternalCloneDetectionDSL.g:2008:1: rule__Nodes__NodesAssignment_1_1 : ( ruleNodes ) ;
+    // InternalCloneDetectionDSL.g:2060:1: rule__Nodes__NodesAssignment_1_1 : ( ruleNodes ) ;
     public final void rule__Nodes__NodesAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:2012:1: ( ( ruleNodes ) )
-            // InternalCloneDetectionDSL.g:2013:2: ( ruleNodes )
+            // InternalCloneDetectionDSL.g:2064:1: ( ( ruleNodes ) )
+            // InternalCloneDetectionDSL.g:2065:2: ( ruleNodes )
             {
-            // InternalCloneDetectionDSL.g:2013:2: ( ruleNodes )
-            // InternalCloneDetectionDSL.g:2014:3: ruleNodes
+            // InternalCloneDetectionDSL.g:2065:2: ( ruleNodes )
+            // InternalCloneDetectionDSL.g:2066:3: ruleNodes
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getNodesAccess().getNodesNodesParserRuleCall_1_1_0()); 
@@ -6890,21 +7053,21 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
     // $ANTLR end "rule__Nodes__NodesAssignment_1_1"
 
 
-    // $ANTLR start "rule__MinSize__ExprAssignment_1_0"
-    // InternalCloneDetectionDSL.g:2023:1: rule__MinSize__ExprAssignment_1_0 : ( ruleMetricExpr ) ;
-    public final void rule__MinSize__ExprAssignment_1_0() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__ExprAssignment_0_0"
+    // InternalCloneDetectionDSL.g:2075:1: rule__MinSize__ExprAssignment_0_0 : ( ruleMetricExpr ) ;
+    public final void rule__MinSize__ExprAssignment_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:2027:1: ( ( ruleMetricExpr ) )
-            // InternalCloneDetectionDSL.g:2028:2: ( ruleMetricExpr )
+            // InternalCloneDetectionDSL.g:2079:1: ( ( ruleMetricExpr ) )
+            // InternalCloneDetectionDSL.g:2080:2: ( ruleMetricExpr )
             {
-            // InternalCloneDetectionDSL.g:2028:2: ( ruleMetricExpr )
-            // InternalCloneDetectionDSL.g:2029:3: ruleMetricExpr
+            // InternalCloneDetectionDSL.g:2080:2: ( ruleMetricExpr )
+            // InternalCloneDetectionDSL.g:2081:3: ruleMetricExpr
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMinSizeAccess().getExprMetricExprParserRuleCall_1_0_0()); 
+               before(grammarAccess.getMinSizeAccess().getExprMetricExprParserRuleCall_0_0_0()); 
             }
             pushFollow(FOLLOW_2);
             ruleMetricExpr();
@@ -6912,7 +7075,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMinSizeAccess().getExprMetricExprParserRuleCall_1_0_0()); 
+               after(grammarAccess.getMinSizeAccess().getExprMetricExprParserRuleCall_0_0_0()); 
             }
 
             }
@@ -6932,24 +7095,24 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__ExprAssignment_1_0"
+    // $ANTLR end "rule__MinSize__ExprAssignment_0_0"
 
 
-    // $ANTLR start "rule__MinSize__BracketsAssignment_1_1_1"
-    // InternalCloneDetectionDSL.g:2038:1: rule__MinSize__BracketsAssignment_1_1_1 : ( ruleMinSize ) ;
-    public final void rule__MinSize__BracketsAssignment_1_1_1() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__BracketsAssignment_0_1_1"
+    // InternalCloneDetectionDSL.g:2090:1: rule__MinSize__BracketsAssignment_0_1_1 : ( ruleMinSize ) ;
+    public final void rule__MinSize__BracketsAssignment_0_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:2042:1: ( ( ruleMinSize ) )
-            // InternalCloneDetectionDSL.g:2043:2: ( ruleMinSize )
+            // InternalCloneDetectionDSL.g:2094:1: ( ( ruleMinSize ) )
+            // InternalCloneDetectionDSL.g:2095:2: ( ruleMinSize )
             {
-            // InternalCloneDetectionDSL.g:2043:2: ( ruleMinSize )
-            // InternalCloneDetectionDSL.g:2044:3: ruleMinSize
+            // InternalCloneDetectionDSL.g:2095:2: ( ruleMinSize )
+            // InternalCloneDetectionDSL.g:2096:3: ruleMinSize
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMinSizeAccess().getBracketsMinSizeParserRuleCall_1_1_1_0()); 
+               before(grammarAccess.getMinSizeAccess().getBracketsMinSizeParserRuleCall_0_1_1_0()); 
             }
             pushFollow(FOLLOW_2);
             ruleMinSize();
@@ -6957,7 +7120,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMinSizeAccess().getBracketsMinSizeParserRuleCall_1_1_1_0()); 
+               after(grammarAccess.getMinSizeAccess().getBracketsMinSizeParserRuleCall_0_1_1_0()); 
             }
 
             }
@@ -6977,24 +7140,24 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__BracketsAssignment_1_1_1"
+    // $ANTLR end "rule__MinSize__BracketsAssignment_0_1_1"
 
 
-    // $ANTLR start "rule__MinSize__OperatorAssignment_2_0"
-    // InternalCloneDetectionDSL.g:2053:1: rule__MinSize__OperatorAssignment_2_0 : ( ruleBoolOperator ) ;
-    public final void rule__MinSize__OperatorAssignment_2_0() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__OperatorAssignment_1_0"
+    // InternalCloneDetectionDSL.g:2105:1: rule__MinSize__OperatorAssignment_1_0 : ( ruleBoolOperator ) ;
+    public final void rule__MinSize__OperatorAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:2057:1: ( ( ruleBoolOperator ) )
-            // InternalCloneDetectionDSL.g:2058:2: ( ruleBoolOperator )
+            // InternalCloneDetectionDSL.g:2109:1: ( ( ruleBoolOperator ) )
+            // InternalCloneDetectionDSL.g:2110:2: ( ruleBoolOperator )
             {
-            // InternalCloneDetectionDSL.g:2058:2: ( ruleBoolOperator )
-            // InternalCloneDetectionDSL.g:2059:3: ruleBoolOperator
+            // InternalCloneDetectionDSL.g:2110:2: ( ruleBoolOperator )
+            // InternalCloneDetectionDSL.g:2111:3: ruleBoolOperator
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMinSizeAccess().getOperatorBoolOperatorEnumRuleCall_2_0_0()); 
+               before(grammarAccess.getMinSizeAccess().getOperatorBoolOperatorEnumRuleCall_1_0_0()); 
             }
             pushFollow(FOLLOW_2);
             ruleBoolOperator();
@@ -7002,7 +7165,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMinSizeAccess().getOperatorBoolOperatorEnumRuleCall_2_0_0()); 
+               after(grammarAccess.getMinSizeAccess().getOperatorBoolOperatorEnumRuleCall_1_0_0()); 
             }
 
             }
@@ -7022,24 +7185,24 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__OperatorAssignment_2_0"
+    // $ANTLR end "rule__MinSize__OperatorAssignment_1_0"
 
 
-    // $ANTLR start "rule__MinSize__SizeAssignment_2_1"
-    // InternalCloneDetectionDSL.g:2068:1: rule__MinSize__SizeAssignment_2_1 : ( ruleMinSize ) ;
-    public final void rule__MinSize__SizeAssignment_2_1() throws RecognitionException {
+    // $ANTLR start "rule__MinSize__SizeAssignment_1_1"
+    // InternalCloneDetectionDSL.g:2120:1: rule__MinSize__SizeAssignment_1_1 : ( ruleMinSize ) ;
+    public final void rule__MinSize__SizeAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:2072:1: ( ( ruleMinSize ) )
-            // InternalCloneDetectionDSL.g:2073:2: ( ruleMinSize )
+            // InternalCloneDetectionDSL.g:2124:1: ( ( ruleMinSize ) )
+            // InternalCloneDetectionDSL.g:2125:2: ( ruleMinSize )
             {
-            // InternalCloneDetectionDSL.g:2073:2: ( ruleMinSize )
-            // InternalCloneDetectionDSL.g:2074:3: ruleMinSize
+            // InternalCloneDetectionDSL.g:2125:2: ( ruleMinSize )
+            // InternalCloneDetectionDSL.g:2126:3: ruleMinSize
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getMinSizeAccess().getSizeMinSizeParserRuleCall_2_1_0()); 
+               before(grammarAccess.getMinSizeAccess().getSizeMinSizeParserRuleCall_1_1_0()); 
             }
             pushFollow(FOLLOW_2);
             ruleMinSize();
@@ -7047,7 +7210,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             state._fsp--;
             if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getMinSizeAccess().getSizeMinSizeParserRuleCall_2_1_0()); 
+               after(grammarAccess.getMinSizeAccess().getSizeMinSizeParserRuleCall_1_1_0()); 
             }
 
             }
@@ -7067,21 +7230,21 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
         }
         return ;
     }
-    // $ANTLR end "rule__MinSize__SizeAssignment_2_1"
+    // $ANTLR end "rule__MinSize__SizeAssignment_1_1"
 
 
     // $ANTLR start "rule__MetricExpr__AmountAssignment_0"
-    // InternalCloneDetectionDSL.g:2083:1: rule__MetricExpr__AmountAssignment_0 : ( RULE_INT ) ;
+    // InternalCloneDetectionDSL.g:2135:1: rule__MetricExpr__AmountAssignment_0 : ( RULE_INT ) ;
     public final void rule__MetricExpr__AmountAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:2087:1: ( ( RULE_INT ) )
-            // InternalCloneDetectionDSL.g:2088:2: ( RULE_INT )
+            // InternalCloneDetectionDSL.g:2139:1: ( ( RULE_INT ) )
+            // InternalCloneDetectionDSL.g:2140:2: ( RULE_INT )
             {
-            // InternalCloneDetectionDSL.g:2088:2: ( RULE_INT )
-            // InternalCloneDetectionDSL.g:2089:3: RULE_INT
+            // InternalCloneDetectionDSL.g:2140:2: ( RULE_INT )
+            // InternalCloneDetectionDSL.g:2141:3: RULE_INT
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMetricExprAccess().getAmountINTTerminalRuleCall_0_0()); 
@@ -7112,17 +7275,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__MetricExpr__MetricAssignment_1"
-    // InternalCloneDetectionDSL.g:2098:1: rule__MetricExpr__MetricAssignment_1 : ( ruleSizeMetric ) ;
+    // InternalCloneDetectionDSL.g:2150:1: rule__MetricExpr__MetricAssignment_1 : ( ruleSizeMetric ) ;
     public final void rule__MetricExpr__MetricAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:2102:1: ( ( ruleSizeMetric ) )
-            // InternalCloneDetectionDSL.g:2103:2: ( ruleSizeMetric )
+            // InternalCloneDetectionDSL.g:2154:1: ( ( ruleSizeMetric ) )
+            // InternalCloneDetectionDSL.g:2155:2: ( ruleSizeMetric )
             {
-            // InternalCloneDetectionDSL.g:2103:2: ( ruleSizeMetric )
-            // InternalCloneDetectionDSL.g:2104:3: ruleSizeMetric
+            // InternalCloneDetectionDSL.g:2155:2: ( ruleSizeMetric )
+            // InternalCloneDetectionDSL.g:2156:3: ruleSizeMetric
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getMetricExprAccess().getMetricSizeMetricEnumRuleCall_1_0()); 
@@ -7157,17 +7320,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__NodesAssignment_1"
-    // InternalCloneDetectionDSL.g:2113:1: rule__Compare__NodesAssignment_1 : ( ruleNodes ) ;
+    // InternalCloneDetectionDSL.g:2165:1: rule__Compare__NodesAssignment_1 : ( ruleNodes ) ;
     public final void rule__Compare__NodesAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:2117:1: ( ( ruleNodes ) )
-            // InternalCloneDetectionDSL.g:2118:2: ( ruleNodes )
+            // InternalCloneDetectionDSL.g:2169:1: ( ( ruleNodes ) )
+            // InternalCloneDetectionDSL.g:2170:2: ( ruleNodes )
             {
-            // InternalCloneDetectionDSL.g:2118:2: ( ruleNodes )
-            // InternalCloneDetectionDSL.g:2119:3: ruleNodes
+            // InternalCloneDetectionDSL.g:2170:2: ( ruleNodes )
+            // InternalCloneDetectionDSL.g:2171:3: ruleNodes
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCompareAccess().getNodesNodesParserRuleCall_1_0()); 
@@ -7202,17 +7365,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__ComparisonMethodAssignment_2"
-    // InternalCloneDetectionDSL.g:2128:1: rule__Compare__ComparisonMethodAssignment_2 : ( ruleMethod ) ;
+    // InternalCloneDetectionDSL.g:2180:1: rule__Compare__ComparisonMethodAssignment_2 : ( ruleMethod ) ;
     public final void rule__Compare__ComparisonMethodAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:2132:1: ( ( ruleMethod ) )
-            // InternalCloneDetectionDSL.g:2133:2: ( ruleMethod )
+            // InternalCloneDetectionDSL.g:2184:1: ( ( ruleMethod ) )
+            // InternalCloneDetectionDSL.g:2185:2: ( ruleMethod )
             {
-            // InternalCloneDetectionDSL.g:2133:2: ( ruleMethod )
-            // InternalCloneDetectionDSL.g:2134:3: ruleMethod
+            // InternalCloneDetectionDSL.g:2185:2: ( ruleMethod )
+            // InternalCloneDetectionDSL.g:2186:3: ruleMethod
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCompareAccess().getComparisonMethodMethodEnumRuleCall_2_0()); 
@@ -7247,17 +7410,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__DeepestNodeAssignment_3"
-    // InternalCloneDetectionDSL.g:2143:1: rule__Compare__DeepestNodeAssignment_3 : ( ruleNode ) ;
+    // InternalCloneDetectionDSL.g:2195:1: rule__Compare__DeepestNodeAssignment_3 : ( ruleNode ) ;
     public final void rule__Compare__DeepestNodeAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:2147:1: ( ( ruleNode ) )
-            // InternalCloneDetectionDSL.g:2148:2: ( ruleNode )
+            // InternalCloneDetectionDSL.g:2199:1: ( ( ruleNode ) )
+            // InternalCloneDetectionDSL.g:2200:2: ( ruleNode )
             {
-            // InternalCloneDetectionDSL.g:2148:2: ( ruleNode )
-            // InternalCloneDetectionDSL.g:2149:3: ruleNode
+            // InternalCloneDetectionDSL.g:2200:2: ( ruleNode )
+            // InternalCloneDetectionDSL.g:2201:3: ruleNode
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCompareAccess().getDeepestNodeNodeParserRuleCall_3_0()); 
@@ -7292,17 +7455,17 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
 
     // $ANTLR start "rule__Compare__PercAssignment_4"
-    // InternalCloneDetectionDSL.g:2158:1: rule__Compare__PercAssignment_4 : ( rulePercentage ) ;
+    // InternalCloneDetectionDSL.g:2210:1: rule__Compare__PercAssignment_4 : ( rulePercentage ) ;
     public final void rule__Compare__PercAssignment_4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalCloneDetectionDSL.g:2162:1: ( ( rulePercentage ) )
-            // InternalCloneDetectionDSL.g:2163:2: ( rulePercentage )
+            // InternalCloneDetectionDSL.g:2214:1: ( ( rulePercentage ) )
+            // InternalCloneDetectionDSL.g:2215:2: ( rulePercentage )
             {
-            // InternalCloneDetectionDSL.g:2163:2: ( rulePercentage )
-            // InternalCloneDetectionDSL.g:2164:3: rulePercentage
+            // InternalCloneDetectionDSL.g:2215:2: ( rulePercentage )
+            // InternalCloneDetectionDSL.g:2216:3: rulePercentage
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getCompareAccess().getPercPercentageParserRuleCall_4_0()); 
@@ -7337,8 +7500,8 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
     // $ANTLR start synpred1_InternalCloneDetectionDSL
     public final void synpred1_InternalCloneDetectionDSL_fragment() throws RecognitionException {   
-        // InternalCloneDetectionDSL.g:1678:8: ( rule__CloneDetection__NotCompareAssignment_5 )
-        // InternalCloneDetectionDSL.g:1678:9: rule__CloneDetection__NotCompareAssignment_5
+        // InternalCloneDetectionDSL.g:1730:8: ( rule__CloneDetection__NotCompareAssignment_5 )
+        // InternalCloneDetectionDSL.g:1730:9: rule__CloneDetection__NotCompareAssignment_5
         {
         pushFollow(FOLLOW_2);
         rule__CloneDetection__NotCompareAssignment_5();
@@ -7352,8 +7515,8 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
 
     // $ANTLR start synpred2_InternalCloneDetectionDSL
     public final void synpred2_InternalCloneDetectionDSL_fragment() throws RecognitionException {   
-        // InternalCloneDetectionDSL.g:1700:8: ( rule__CloneDetection__CompareAssignment_6 )
-        // InternalCloneDetectionDSL.g:1700:9: rule__CloneDetection__CompareAssignment_6
+        // InternalCloneDetectionDSL.g:1752:8: ( rule__CloneDetection__CompareAssignment_6 )
+        // InternalCloneDetectionDSL.g:1752:9: rule__CloneDetection__CompareAssignment_6
         {
         pushFollow(FOLLOW_2);
         rule__CloneDetection__CompareAssignment_6();
@@ -7439,7 +7602,7 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
             this.transition = dfa_7;
         }
         public String getDescription() {
-            return "()* loopback of 1700:7: ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )*";
+            return "()* loopback of 1752:7: ( ( rule__CloneDetection__CompareAssignment_6 )=> rule__CloneDetection__CompareAssignment_6 )*";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -7479,14 +7642,13 @@ public class InternalCloneDetectionDSLParser extends AbstractInternalContentAssi
     public static final BitSet FOLLOW_7 = new BitSet(new long[]{0x0000000200000000L});
     public static final BitSet FOLLOW_8 = new BitSet(new long[]{0x0000000800000010L});
     public static final BitSet FOLLOW_9 = new BitSet(new long[]{0x0000000000600000L});
-    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000000400000000L});
-    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x0000001000000000L});
-    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x00000000001F8000L});
-    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000007800000L});
-    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000000000000850L});
-    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000008000000000L});
-    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000002000000002L});
-    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000004000000002L});
-    public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x00000065E0000002L});
+    public static final BitSet FOLLOW_10 = new BitSet(new long[]{0x0000001000000000L});
+    public static final BitSet FOLLOW_11 = new BitSet(new long[]{0x00000000001F8000L});
+    public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000007800000L});
+    public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0000000000000850L});
+    public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000002000000002L});
+    public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x0000004000000002L});
+    public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x00000065E0000002L});
 
 }

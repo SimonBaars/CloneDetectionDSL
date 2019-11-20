@@ -1,4 +1,5 @@
-Size 6 nodes
+Project "/Users/sbaars/Documents/Kim/jhotdraw"
+Size (6 nodes & 20 tokens) | (5 nodes & 25 tokens) | (4 nodes & 30 tokens) | (3 nodes & 35 tokens) | (2 nodes & 40 tokens) | (1 nodes & 50 tokens)
 Match LLOC
 Exclude PackageDeclaration, ImportDeclaration
 Compare ReferenceType FQI

@@ -87,6 +87,15 @@ public interface CloneDetectionDSLFactory extends EFactory
   Nodes createNodes();
 
   /**
+   * Returns a new object of class '<em>Size</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Size</em>'.
+   * @generated
+   */
+  Size createSize();
+
+  /**
    * Returns a new object of class '<em>Min Size</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

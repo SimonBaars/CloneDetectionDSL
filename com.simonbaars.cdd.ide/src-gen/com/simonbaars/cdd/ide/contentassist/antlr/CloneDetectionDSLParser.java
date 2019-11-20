@@ -32,7 +32,7 @@ public class CloneDetectionDSLParser extends AbstractContentAssistParser {
 		
 		private static void init(ImmutableMap.Builder<AbstractElement, String> builder, CloneDetectionDSLGrammarAccess grammarAccess) {
 			builder.put(grammarAccess.getNodeAccess().getAlternatives_0(), "rule__Node__Alternatives_0");
-			builder.put(grammarAccess.getMinSizeAccess().getAlternatives_1(), "rule__MinSize__Alternatives_1");
+			builder.put(grammarAccess.getMinSizeAccess().getAlternatives_0(), "rule__MinSize__Alternatives_0");
 			builder.put(grammarAccess.getMatchTargetAccess().getAlternatives(), "rule__MatchTarget__Alternatives");
 			builder.put(grammarAccess.getSizeMetricAccess().getAlternatives(), "rule__SizeMetric__Alternatives");
 			builder.put(grammarAccess.getBoolOperatorAccess().getAlternatives(), "rule__BoolOperator__Alternatives");
@@ -46,9 +46,10 @@ public class CloneDetectionDSLParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getNodeAccess().getGroup_1(), "rule__Node__Group_1__0");
 			builder.put(grammarAccess.getNodesAccess().getGroup(), "rule__Nodes__Group__0");
 			builder.put(grammarAccess.getNodesAccess().getGroup_1(), "rule__Nodes__Group_1__0");
+			builder.put(grammarAccess.getSizeAccess().getGroup(), "rule__Size__Group__0");
 			builder.put(grammarAccess.getMinSizeAccess().getGroup(), "rule__MinSize__Group__0");
-			builder.put(grammarAccess.getMinSizeAccess().getGroup_1_1(), "rule__MinSize__Group_1_1__0");
-			builder.put(grammarAccess.getMinSizeAccess().getGroup_2(), "rule__MinSize__Group_2__0");
+			builder.put(grammarAccess.getMinSizeAccess().getGroup_0_1(), "rule__MinSize__Group_0_1__0");
+			builder.put(grammarAccess.getMinSizeAccess().getGroup_1(), "rule__MinSize__Group_1__0");
 			builder.put(grammarAccess.getMetricExprAccess().getGroup(), "rule__MetricExpr__Group__0");
 			builder.put(grammarAccess.getDoNotCompareAccess().getGroup(), "rule__DoNotCompare__Group__0");
 			builder.put(grammarAccess.getCompareAccess().getGroup(), "rule__Compare__Group__0");
@@ -68,10 +69,10 @@ public class CloneDetectionDSLParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getNodeAccess().getNodeAssignment_1_1(), "rule__Node__NodeAssignment_1_1");
 			builder.put(grammarAccess.getNodesAccess().getNodeAssignment_0(), "rule__Nodes__NodeAssignment_0");
 			builder.put(grammarAccess.getNodesAccess().getNodesAssignment_1_1(), "rule__Nodes__NodesAssignment_1_1");
-			builder.put(grammarAccess.getMinSizeAccess().getExprAssignment_1_0(), "rule__MinSize__ExprAssignment_1_0");
-			builder.put(grammarAccess.getMinSizeAccess().getBracketsAssignment_1_1_1(), "rule__MinSize__BracketsAssignment_1_1_1");
-			builder.put(grammarAccess.getMinSizeAccess().getOperatorAssignment_2_0(), "rule__MinSize__OperatorAssignment_2_0");
-			builder.put(grammarAccess.getMinSizeAccess().getSizeAssignment_2_1(), "rule__MinSize__SizeAssignment_2_1");
+			builder.put(grammarAccess.getMinSizeAccess().getExprAssignment_0_0(), "rule__MinSize__ExprAssignment_0_0");
+			builder.put(grammarAccess.getMinSizeAccess().getBracketsAssignment_0_1_1(), "rule__MinSize__BracketsAssignment_0_1_1");
+			builder.put(grammarAccess.getMinSizeAccess().getOperatorAssignment_1_0(), "rule__MinSize__OperatorAssignment_1_0");
+			builder.put(grammarAccess.getMinSizeAccess().getSizeAssignment_1_1(), "rule__MinSize__SizeAssignment_1_1");
 			builder.put(grammarAccess.getMetricExprAccess().getAmountAssignment_0(), "rule__MetricExpr__AmountAssignment_0");
 			builder.put(grammarAccess.getMetricExprAccess().getMetricAssignment_1(), "rule__MetricExpr__MetricAssignment_1");
 			builder.put(grammarAccess.getCompareAccess().getNodesAssignment_1(), "rule__Compare__NodesAssignment_1");

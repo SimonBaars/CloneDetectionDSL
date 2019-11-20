@@ -73,6 +73,7 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
       case CloneDetectionDSLPackage.EXCLUDE: return createExclude();
       case CloneDetectionDSLPackage.NODE: return createNode();
       case CloneDetectionDSLPackage.NODES: return createNodes();
+      case CloneDetectionDSLPackage.SIZE: return createSize();
       case CloneDetectionDSLPackage.MIN_SIZE: return createMinSize();
       case CloneDetectionDSLPackage.METRIC_EXPR: return createMetricExpr();
       case CloneDetectionDSLPackage.DO_NOT_COMPARE: return createDoNotCompare();
@@ -214,6 +215,18 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
   {
     NodesImpl nodes = new NodesImpl();
     return nodes;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Size createSize()
+  {
+    SizeImpl size = new SizeImpl();
+    return size;
   }
 
   /**

@@ -202,9 +202,9 @@ ruleCloneDetection returns [EObject current=null]
 				}
 							({true}?=>((
 								{
-									newCompositeNode(grammarAccess.getCloneDetectionAccess().getSizeMinSizeParserRuleCall_4_0());
+									newCompositeNode(grammarAccess.getCloneDetectionAccess().getSizeSizeParserRuleCall_4_0());
 								}
-								lv_size_5_0=ruleMinSize
+								lv_size_5_0=ruleSize
 								{
 									if ($current==null) {
 										$current = createModelElementForParent(grammarAccess.getCloneDetectionRule());
@@ -213,7 +213,7 @@ ruleCloneDetection returns [EObject current=null]
 										$current,
 										"size",
 										lv_size_5_0,
-										"com.simonbaars.cdd.CloneDetectionDSL.MinSize");
+										"com.simonbaars.cdd.CloneDetectionDSL.Size");
 									afterParserOrEnumRuleCall();
 								}
 							)
@@ -592,6 +592,37 @@ ruleNodes returns [EObject current=null]
 	)
 ;
 
+// Entry rule entryRuleSize
+entryRuleSize returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getSizeRule()); }
+	iv_ruleSize=ruleSize
+	{ $current=$iv_ruleSize.current; }
+	EOF;
+
+// Rule Size
+ruleSize returns [EObject current=null]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		otherlv_0='Size'
+		{
+			newLeafNode(otherlv_0, grammarAccess.getSizeAccess().getSizeKeyword_0());
+		}
+		{
+			newCompositeNode(grammarAccess.getSizeAccess().getMinSizeParserRuleCall_1());
+		}
+		this_MinSize_1=ruleMinSize
+		{
+			$current = $this_MinSize_1.current;
+			afterParserOrEnumRuleCall();
+		}
+	)
+;
+
 // Entry rule entryRuleMinSize
 entryRuleMinSize returns [EObject current=null]:
 	{ newCompositeNode(grammarAccess.getMinSizeRule()); }
@@ -608,17 +639,13 @@ ruleMinSize returns [EObject current=null]
 	leaveRule();
 }:
 	(
-		otherlv_0='Size'
-		{
-			newLeafNode(otherlv_0, grammarAccess.getMinSizeAccess().getSizeKeyword_0());
-		}
 		(
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getMinSizeAccess().getExprMetricExprParserRuleCall_1_0_0());
+						newCompositeNode(grammarAccess.getMinSizeAccess().getExprMetricExprParserRuleCall_0_0_0());
 					}
-					lv_expr_1_0=ruleMetricExpr
+					lv_expr_0_0=ruleMetricExpr
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getMinSizeRule());
@@ -626,7 +653,7 @@ ruleMinSize returns [EObject current=null]
 						set(
 							$current,
 							"expr",
-							lv_expr_1_0,
+							lv_expr_0_0,
 							"com.simonbaars.cdd.CloneDetectionDSL.MetricExpr");
 						afterParserOrEnumRuleCall();
 					}
@@ -634,16 +661,16 @@ ruleMinSize returns [EObject current=null]
 			)
 			    |
 			(
-				otherlv_2='('
+				otherlv_1='('
 				{
-					newLeafNode(otherlv_2, grammarAccess.getMinSizeAccess().getLeftParenthesisKeyword_1_1_0());
+					newLeafNode(otherlv_1, grammarAccess.getMinSizeAccess().getLeftParenthesisKeyword_0_1_0());
 				}
 				(
 					(
 						{
-							newCompositeNode(grammarAccess.getMinSizeAccess().getBracketsMinSizeParserRuleCall_1_1_1_0());
+							newCompositeNode(grammarAccess.getMinSizeAccess().getBracketsMinSizeParserRuleCall_0_1_1_0());
 						}
-						lv_brackets_3_0=ruleMinSize
+						lv_brackets_2_0=ruleMinSize
 						{
 							if ($current==null) {
 								$current = createModelElementForParent(grammarAccess.getMinSizeRule());
@@ -651,15 +678,15 @@ ruleMinSize returns [EObject current=null]
 							set(
 								$current,
 								"brackets",
-								lv_brackets_3_0,
+								lv_brackets_2_0,
 								"com.simonbaars.cdd.CloneDetectionDSL.MinSize");
 							afterParserOrEnumRuleCall();
 						}
 					)
 				)
-				otherlv_4=')'
+				otherlv_3=')'
 				{
-					newLeafNode(otherlv_4, grammarAccess.getMinSizeAccess().getRightParenthesisKeyword_1_1_2());
+					newLeafNode(otherlv_3, grammarAccess.getMinSizeAccess().getRightParenthesisKeyword_0_1_2());
 				}
 			)
 		)
@@ -667,9 +694,9 @@ ruleMinSize returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getMinSizeAccess().getOperatorBoolOperatorEnumRuleCall_2_0_0());
+						newCompositeNode(grammarAccess.getMinSizeAccess().getOperatorBoolOperatorEnumRuleCall_1_0_0());
 					}
-					lv_operator_5_0=ruleBoolOperator
+					lv_operator_4_0=ruleBoolOperator
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getMinSizeRule());
@@ -677,7 +704,7 @@ ruleMinSize returns [EObject current=null]
 						set(
 							$current,
 							"operator",
-							lv_operator_5_0,
+							lv_operator_4_0,
 							"com.simonbaars.cdd.CloneDetectionDSL.BoolOperator");
 						afterParserOrEnumRuleCall();
 					}
@@ -686,9 +713,9 @@ ruleMinSize returns [EObject current=null]
 			(
 				(
 					{
-						newCompositeNode(grammarAccess.getMinSizeAccess().getSizeMinSizeParserRuleCall_2_1_0());
+						newCompositeNode(grammarAccess.getMinSizeAccess().getSizeMinSizeParserRuleCall_1_1_0());
 					}
-					lv_size_6_0=ruleMinSize
+					lv_size_5_0=ruleMinSize
 					{
 						if ($current==null) {
 							$current = createModelElementForParent(grammarAccess.getMinSizeRule());
@@ -696,7 +723,7 @@ ruleMinSize returns [EObject current=null]
 						set(
 							$current,
 							"size",
-							lv_size_6_0,
+							lv_size_5_0,
 							"com.simonbaars.cdd.CloneDetectionDSL.MinSize");
 						afterParserOrEnumRuleCall();
 					}

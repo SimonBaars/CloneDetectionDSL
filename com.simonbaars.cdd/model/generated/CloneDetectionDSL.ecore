@@ -8,8 +8,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="root" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="match" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="exclude" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="size" eType="#//MinSize"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="size" eType="#//Size" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="notCompare" upperBound="-1"
         eType="#//DoNotCompare" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="compare" upperBound="-1"
@@ -41,7 +40,8 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="nodes" eType="#//Nodes"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MinSize">
+  <eClassifiers xsi:type="ecore:EClass" name="Size"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MinSize" eSuperTypes="#//Size">
     <eStructuralFeatures xsi:type="ecore:EReference" name="expr" eType="#//MetricExpr"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="brackets" eType="#//MinSize"

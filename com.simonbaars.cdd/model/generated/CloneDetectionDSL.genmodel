@@ -61,6 +61,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//Nodes/node"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//Nodes/nodes"/>
     </genClasses>
+    <genClasses ecoreClass="CloneDetectionDSL.ecore#//Size"/>
     <genClasses ecoreClass="CloneDetectionDSL.ecore#//MinSize">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//MinSize/expr"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CloneDetectionDSL.ecore#//MinSize/brackets"/>

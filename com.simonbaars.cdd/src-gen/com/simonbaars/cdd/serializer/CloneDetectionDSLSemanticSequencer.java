@@ -82,7 +82,7 @@ public class CloneDetectionDSLSemanticSequencer extends AbstractDelegatingSemant
 	 *         root?=SearchRoot | 
 	 *         match?=Match | 
 	 *         exclude?=Exclude | 
-	 *         size=MinSize | 
+	 *         size=Size | 
 	 *         notCompare+=DoNotCompare | 
 	 *         compare+=Compare
 	 *     )+
@@ -145,6 +145,7 @@ public class CloneDetectionDSLSemanticSequencer extends AbstractDelegatingSemant
 	
 	/**
 	 * Contexts:
+	 *     Size returns MinSize
 	 *     MinSize returns MinSize
 	 *
 	 * Constraint:
