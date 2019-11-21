@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.simonbaars.cdd.ide
+Bundle-SymbolicName: com.simonbaars.cdd.ide; singleton:=true
+Export-Package: com.simonbaars.cdd.ide.contentassist.antlr.internal,co
+ m.simonbaars.cdd.ide.contentassist.antlr
+Bundle-Name: com.simonbaars.cdd.ide
+Bundle-Version: 1.0.0.201911201746
+Require-Bundle: com.simonbaars.cdd,org.eclipse.xtext.ide,org.eclipse.x
+ text.xbase.ide,org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: My Company
+

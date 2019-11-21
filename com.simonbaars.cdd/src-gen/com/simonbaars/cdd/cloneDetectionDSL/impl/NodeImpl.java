@@ -109,7 +109,6 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public String getName()
   {
     return name;
@@ -120,7 +119,6 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setName(String newName)
   {
     String oldName = name;
@@ -134,7 +132,6 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Under getUnder()
   {
     return under;
@@ -145,7 +142,6 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setUnder(Under newUnder)
   {
     Under oldUnder = under;
@@ -159,7 +155,6 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Node getNode()
   {
     return node;
@@ -187,7 +182,6 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setNode(Node newNode)
   {
     if (newNode != node)
@@ -316,7 +310,7 @@ public class NodeImpl extends MinimalEObjectImpl.Container implements Node
   {
     if (eIsProxy()) return super.toString();
 
-    StringBuilder result = new StringBuilder(super.toString());
+    StringBuffer result = new StringBuffer(super.toString());
     result.append(" (name: ");
     result.append(name);
     result.append(", under: ");

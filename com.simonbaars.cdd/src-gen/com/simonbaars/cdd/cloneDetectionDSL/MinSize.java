@@ -28,6 +28,10 @@ public interface MinSize extends Size
   /**
    * Returns the value of the '<em><b>Expr</b></em>' containment reference.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Expr</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Expr</em>' containment reference.
    * @see #setExpr(MetricExpr)
@@ -50,6 +54,10 @@ public interface MinSize extends Size
   /**
    * Returns the value of the '<em><b>Brackets</b></em>' containment reference.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Brackets</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Brackets</em>' containment reference.
    * @see #setBrackets(MinSize)
@@ -73,6 +81,10 @@ public interface MinSize extends Size
    * Returns the value of the '<em><b>Operator</b></em>' attribute.
    * The literals are from the enumeration {@link com.simonbaars.cdd.cloneDetectionDSL.BoolOperator}.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Operator</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Operator</em>' attribute.
    * @see com.simonbaars.cdd.cloneDetectionDSL.BoolOperator
@@ -97,6 +109,10 @@ public interface MinSize extends Size
   /**
    * Returns the value of the '<em><b>Size</b></em>' containment reference.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Size</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Size</em>' containment reference.
    * @see #setSize(MinSize)

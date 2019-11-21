@@ -29,6 +29,10 @@ public interface Compare extends EObject
   /**
    * Returns the value of the '<em><b>Nodes</b></em>' containment reference.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Nodes</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Nodes</em>' containment reference.
    * @see #setNodes(Nodes)
@@ -52,6 +56,10 @@ public interface Compare extends EObject
    * Returns the value of the '<em><b>Comparison Method</b></em>' attribute.
    * The literals are from the enumeration {@link com.simonbaars.cdd.cloneDetectionDSL.Method}.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Comparison Method</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Comparison Method</em>' attribute.
    * @see com.simonbaars.cdd.cloneDetectionDSL.Method
@@ -76,6 +84,10 @@ public interface Compare extends EObject
   /**
    * Returns the value of the '<em><b>Deepest Node</b></em>' containment reference.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Deepest Node</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Deepest Node</em>' containment reference.
    * @see #setDeepestNode(Node)
@@ -98,6 +110,10 @@ public interface Compare extends EObject
   /**
    * Returns the value of the '<em><b>Perc</b></em>' attribute.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Perc</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Perc</em>' attribute.
    * @see #setPerc(String)

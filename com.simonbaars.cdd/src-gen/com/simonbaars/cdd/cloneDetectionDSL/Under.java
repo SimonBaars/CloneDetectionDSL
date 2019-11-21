@@ -43,9 +43,13 @@ public enum Under implements Enumerator
   /**
    * The '<em><b>One Level</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>One Level</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #ONE_LEVEL
-   * @model name="OneLevel" literal="-&gt;"
+   * @model name="OneLevel" literal="->"
    * @generated
    * @ordered
    */
@@ -54,9 +58,13 @@ public enum Under implements Enumerator
   /**
    * The '<em><b>Any Level</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>Any Level</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #ANY_LEVEL
-   * @model name="AnyLevel" literal="=&gt;"
+   * @model name="AnyLevel" literal="=>"
    * @generated
    * @ordered
    */
@@ -182,7 +190,6 @@ public enum Under implements Enumerator
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public int getValue()
   {
     return value;
@@ -193,7 +200,6 @@ public enum Under implements Enumerator
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public String getName()
   {
     return name;
@@ -204,7 +210,6 @@ public enum Under implements Enumerator
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public String getLiteral()
   {
     return literal;

@@ -27,6 +27,10 @@ public interface Match extends EObject
    * Returns the value of the '<em><b>Target</b></em>' attribute.
    * The literals are from the enumeration {@link com.simonbaars.cdd.cloneDetectionDSL.MatchTarget}.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Target</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Target</em>' attribute.
    * @see com.simonbaars.cdd.cloneDetectionDSL.MatchTarget

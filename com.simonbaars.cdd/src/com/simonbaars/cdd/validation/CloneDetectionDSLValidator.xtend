@@ -43,19 +43,21 @@ class CloneDetectionDSLValidator extends AbstractCloneDetectionDSLValidator {
 		}
 	}
 	
+	/* @Check
 	def checkNode(Node node){
-			try{
-				Class.forName(root+node.name);
-				return;
-			} catch( ClassNotFoundException e ) {
-				for(String pack : packages){
-					try{
-						Class.forName(root+pack+"."+node.name);
-						return;
-					} catch( ClassNotFoundException e2 ) {}
-				}
+		var cu = new CompilationUnit()
+		try{
+			Class.forName(root+node.name);
+			return;
+		} catch( ClassNotFoundException e ) {
+			for(String pack : packages){
+				try{
+					Class.forName(root+pack+"."+node.name);
+					return;
+				} catch( ClassNotFoundException e2 ) {}
 			}
-			error("This is not a correct node type!", null)
-	}
+		}
+		error("This is not a correct node type!", null)
+	}*/
 	
 }

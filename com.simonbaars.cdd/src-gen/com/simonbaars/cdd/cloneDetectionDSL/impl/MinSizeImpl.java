@@ -110,7 +110,6 @@ public class MinSizeImpl extends SizeImpl implements MinSize
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public MetricExpr getExpr()
   {
     return expr;
@@ -138,7 +137,6 @@ public class MinSizeImpl extends SizeImpl implements MinSize
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setExpr(MetricExpr newExpr)
   {
     if (newExpr != expr)
@@ -160,7 +158,6 @@ public class MinSizeImpl extends SizeImpl implements MinSize
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public MinSize getBrackets()
   {
     return brackets;
@@ -188,7 +185,6 @@ public class MinSizeImpl extends SizeImpl implements MinSize
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setBrackets(MinSize newBrackets)
   {
     if (newBrackets != brackets)
@@ -210,7 +206,6 @@ public class MinSizeImpl extends SizeImpl implements MinSize
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public BoolOperator getOperator()
   {
     return operator;
@@ -221,7 +216,6 @@ public class MinSizeImpl extends SizeImpl implements MinSize
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setOperator(BoolOperator newOperator)
   {
     BoolOperator oldOperator = operator;
@@ -235,7 +229,6 @@ public class MinSizeImpl extends SizeImpl implements MinSize
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public MinSize getSize()
   {
     return size;
@@ -263,7 +256,6 @@ public class MinSizeImpl extends SizeImpl implements MinSize
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setSize(MinSize newSize)
   {
     if (newSize != size)
@@ -406,7 +398,7 @@ public class MinSizeImpl extends SizeImpl implements MinSize
   {
     if (eIsProxy()) return super.toString();
 
-    StringBuilder result = new StringBuilder(super.toString());
+    StringBuffer result = new StringBuffer(super.toString());
     result.append(" (operator: ");
     result.append(operator);
     result.append(')');

@@ -67,7 +67,6 @@ public class SearchRootImpl extends MinimalEObjectImpl.Container implements Sear
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Nodes getNodes()
   {
     return nodes;
@@ -95,7 +94,6 @@ public class SearchRootImpl extends MinimalEObjectImpl.Container implements Sear
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setNodes(Nodes newNodes)
   {
     if (newNodes != nodes)

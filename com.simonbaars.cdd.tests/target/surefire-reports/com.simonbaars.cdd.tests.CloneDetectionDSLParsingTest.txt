@@ -1,0 +1,5 @@
+-------------------------------------------------------------------------------
+Test set: com.simonbaars.cdd.tests.CloneDetectionDSLParsingTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.523 s - in com.simonbaars.cdd.tests.CloneDetectionDSLParsingTest
+loadModel  Time elapsed: 3.472 s

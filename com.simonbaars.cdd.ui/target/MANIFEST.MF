@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: com.simonbaars.cdd.ui
+Bundle-SymbolicName: com.simonbaars.cdd.ui; singleton:=true
+Require-Bundle: com.simonbaars.cdd,com.simonbaars.cdd.ide,org.eclipse.
+ xtext.ui,org.eclipse.xtext.ui.shared,org.eclipse.xtext.ui.codetemplat
+ es.ui,org.eclipse.ui.editors;bundle-version="3.5.0",org.eclipse.ui.id
+ e;bundle-version="3.5.0",org.eclipse.ui,org.eclipse.compare,org.eclip
+ se.xtext.builder,org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtend.lib;bundle-version="2.14.0";resolution:=optional
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: My Company
+Import-Package: org.apache.log4j
+Export-Package: com.simonbaars.cdd.ui.contentassist,com.simonbaars.cdd
+ .ui.internal,com.simonbaars.cdd.ui.quickfix
+Bundle-Name: com.simonbaars.cdd.ui
+Bundle-Version: 1.0.0.201911201746
+Bundle-Activator: com.simonbaars.cdd.ui.internal.CddActivator
+

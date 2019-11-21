@@ -83,6 +83,10 @@ public enum SizeMetric implements Enumerator
   /**
    * The '<em><b>Tokens</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>Tokens</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #TOKENS
    * @model name="tokens"
@@ -94,6 +98,10 @@ public enum SizeMetric implements Enumerator
   /**
    * The '<em><b>Declarations</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>Declarations</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #DECLARATIONS
    * @model name="declarations"
@@ -105,6 +113,10 @@ public enum SizeMetric implements Enumerator
   /**
    * The '<em><b>Statements</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>Statements</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #STATEMENTS
    * @model name="statements"
@@ -116,6 +128,10 @@ public enum SizeMetric implements Enumerator
   /**
    * The '<em><b>Nodes</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>Nodes</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #NODES
    * @model name="nodes"
@@ -127,6 +143,10 @@ public enum SizeMetric implements Enumerator
   /**
    * The '<em><b>Lines</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>Lines</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #LINES
    * @model name="lines"
@@ -138,6 +158,10 @@ public enum SizeMetric implements Enumerator
   /**
    * The '<em><b>Cyclomatic complexity</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>Cyclomatic complexity</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #CYCLOMATIC_COMPLEXITY
    * @model name="cyclomatic_complexity"
@@ -274,7 +298,6 @@ public enum SizeMetric implements Enumerator
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public int getValue()
   {
     return value;
@@ -285,7 +308,6 @@ public enum SizeMetric implements Enumerator
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public String getName()
   {
     return name;
@@ -296,7 +318,6 @@ public enum SizeMetric implements Enumerator
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public String getLiteral()
   {
     return literal;

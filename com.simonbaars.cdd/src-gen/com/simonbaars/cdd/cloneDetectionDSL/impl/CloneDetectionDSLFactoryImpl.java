@@ -139,7 +139,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public CloneDetection createCloneDetection()
   {
     CloneDetectionImpl cloneDetection = new CloneDetectionImpl();
@@ -151,7 +150,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Project createProject()
   {
     ProjectImpl project = new ProjectImpl();
@@ -163,7 +161,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public LibraryPath createLibraryPath()
   {
     LibraryPathImpl libraryPath = new LibraryPathImpl();
@@ -175,7 +172,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public SearchRoot createSearchRoot()
   {
     SearchRootImpl searchRoot = new SearchRootImpl();
@@ -187,7 +183,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Match createMatch()
   {
     MatchImpl match = new MatchImpl();
@@ -199,7 +194,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Exclude createExclude()
   {
     ExcludeImpl exclude = new ExcludeImpl();
@@ -211,7 +205,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Node createNode()
   {
     NodeImpl node = new NodeImpl();
@@ -223,7 +216,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Nodes createNodes()
   {
     NodesImpl nodes = new NodesImpl();
@@ -235,7 +227,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Size createSize()
   {
     SizeImpl size = new SizeImpl();
@@ -247,7 +238,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public MinSize createMinSize()
   {
     MinSizeImpl minSize = new MinSizeImpl();
@@ -259,7 +249,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public MetricExpr createMetricExpr()
   {
     MetricExprImpl metricExpr = new MetricExprImpl();
@@ -271,7 +260,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public DoNotCompare createDoNotCompare()
   {
     DoNotCompareImpl doNotCompare = new DoNotCompareImpl();
@@ -283,7 +271,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Compare createCompare()
   {
     CompareImpl compare = new CompareImpl();
@@ -405,7 +392,6 @@ public class CloneDetectionDSLFactoryImpl extends EFactoryImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public CloneDetectionDSLPackage getCloneDetectionDSLPackage()
   {
     return (CloneDetectionDSLPackage)getEPackage();

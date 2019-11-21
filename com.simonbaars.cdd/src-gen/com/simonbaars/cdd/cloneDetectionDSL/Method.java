@@ -63,6 +63,10 @@ public enum Method implements Enumerator
   /**
    * The '<em><b>Subnodes</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>Subnodes</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #SUBNODES
    * @model name="Subnodes"
@@ -74,6 +78,10 @@ public enum Method implements Enumerator
   /**
    * The '<em><b>String Match</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>String Match</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #STRING_MATCH
    * @model name="StringMatch"
@@ -85,6 +93,10 @@ public enum Method implements Enumerator
   /**
    * The '<em><b>Complete Match</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>Complete Match</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #COMPLETE_MATCH
    * @model name="CompleteMatch"
@@ -96,6 +108,10 @@ public enum Method implements Enumerator
   /**
    * The '<em><b>FQI</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>FQI</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #FQI
    * @model
@@ -228,7 +244,6 @@ public enum Method implements Enumerator
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public int getValue()
   {
     return value;
@@ -239,7 +254,6 @@ public enum Method implements Enumerator
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public String getName()
   {
     return name;
@@ -250,7 +264,6 @@ public enum Method implements Enumerator
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public String getLiteral()
   {
     return literal;

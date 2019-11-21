@@ -27,6 +27,10 @@ public interface MetricExpr extends EObject
   /**
    * Returns the value of the '<em><b>Amount</b></em>' attribute.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Amount</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Amount</em>' attribute.
    * @see #setAmount(int)
@@ -50,6 +54,10 @@ public interface MetricExpr extends EObject
    * Returns the value of the '<em><b>Metric</b></em>' attribute.
    * The literals are from the enumeration {@link com.simonbaars.cdd.cloneDetectionDSL.SizeMetric}.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Metric</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Metric</em>' attribute.
    * @see com.simonbaars.cdd.cloneDetectionDSL.SizeMetric

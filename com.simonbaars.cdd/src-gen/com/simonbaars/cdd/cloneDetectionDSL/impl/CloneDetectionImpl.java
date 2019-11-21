@@ -185,7 +185,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Project getProject()
   {
     return project;
@@ -213,7 +212,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setProject(Project newProject)
   {
     if (newProject != project)
@@ -235,7 +233,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public boolean isRoot()
   {
     return root;
@@ -246,7 +243,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setRoot(boolean newRoot)
   {
     boolean oldRoot = root;
@@ -260,7 +256,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public boolean isMatch()
   {
     return match;
@@ -271,7 +266,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setMatch(boolean newMatch)
   {
     boolean oldMatch = match;
@@ -285,7 +279,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public boolean isExclude()
   {
     return exclude;
@@ -296,7 +289,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setExclude(boolean newExclude)
   {
     boolean oldExclude = exclude;
@@ -310,7 +302,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Size getSize()
   {
     return size;
@@ -338,7 +329,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setSize(Size newSize)
   {
     if (newSize != size)
@@ -360,7 +350,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EList<LibraryPath> getPaths()
   {
     if (paths == null)
@@ -375,7 +364,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EList<DoNotCompare> getNotCompare()
   {
     if (notCompare == null)
@@ -390,7 +378,6 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EList<Compare> getCompare()
   {
     if (compare == null)
@@ -574,7 +561,7 @@ public class CloneDetectionImpl extends MinimalEObjectImpl.Container implements 
   {
     if (eIsProxy()) return super.toString();
 
-    StringBuilder result = new StringBuilder(super.toString());
+    StringBuffer result = new StringBuffer(super.toString());
     result.append(" (root: ");
     result.append(root);
     result.append(", match: ");

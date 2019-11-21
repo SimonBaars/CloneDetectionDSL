@@ -195,7 +195,7 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
 
   /**
    * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-   *
+   * 
    * <p>This method is used to initialize {@link CloneDetectionDSLPackage#eINSTANCE} when that field is accessed.
    * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
    * <!-- begin-user-doc -->
@@ -210,8 +210,7 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
     if (isInited) return (CloneDetectionDSLPackage)EPackage.Registry.INSTANCE.getEPackage(CloneDetectionDSLPackage.eNS_URI);
 
     // Obtain or create and register package
-    Object registeredCloneDetectionDSLPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-    CloneDetectionDSLPackageImpl theCloneDetectionDSLPackage = registeredCloneDetectionDSLPackage instanceof CloneDetectionDSLPackageImpl ? (CloneDetectionDSLPackageImpl)registeredCloneDetectionDSLPackage : new CloneDetectionDSLPackageImpl();
+    CloneDetectionDSLPackageImpl theCloneDetectionDSLPackage = (CloneDetectionDSLPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof CloneDetectionDSLPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new CloneDetectionDSLPackageImpl());
 
     isInited = true;
 
@@ -224,6 +223,7 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
     // Mark meta-data to indicate it can't be changed
     theCloneDetectionDSLPackage.freeze();
 
+  
     // Update the registry and return the package
     EPackage.Registry.INSTANCE.put(CloneDetectionDSLPackage.eNS_URI, theCloneDetectionDSLPackage);
     return theCloneDetectionDSLPackage;
@@ -234,7 +234,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getCloneDetection()
   {
     return cloneDetectionEClass;
@@ -245,7 +244,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getCloneDetection_Project()
   {
     return (EReference)cloneDetectionEClass.getEStructuralFeatures().get(0);
@@ -256,7 +254,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getCloneDetection_Root()
   {
     return (EAttribute)cloneDetectionEClass.getEStructuralFeatures().get(1);
@@ -267,7 +264,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getCloneDetection_Match()
   {
     return (EAttribute)cloneDetectionEClass.getEStructuralFeatures().get(2);
@@ -278,7 +274,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getCloneDetection_Exclude()
   {
     return (EAttribute)cloneDetectionEClass.getEStructuralFeatures().get(3);
@@ -289,7 +284,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getCloneDetection_Size()
   {
     return (EReference)cloneDetectionEClass.getEStructuralFeatures().get(4);
@@ -300,7 +294,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getCloneDetection_Paths()
   {
     return (EReference)cloneDetectionEClass.getEStructuralFeatures().get(5);
@@ -311,7 +304,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getCloneDetection_NotCompare()
   {
     return (EReference)cloneDetectionEClass.getEStructuralFeatures().get(6);
@@ -322,7 +314,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getCloneDetection_Compare()
   {
     return (EReference)cloneDetectionEClass.getEStructuralFeatures().get(7);
@@ -333,7 +324,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getProject()
   {
     return projectEClass;
@@ -344,7 +334,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getProject_Path()
   {
     return (EAttribute)projectEClass.getEStructuralFeatures().get(0);
@@ -355,7 +344,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getLibraryPath()
   {
     return libraryPathEClass;
@@ -366,7 +354,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getLibraryPath_Path()
   {
     return (EAttribute)libraryPathEClass.getEStructuralFeatures().get(0);
@@ -377,7 +364,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getSearchRoot()
   {
     return searchRootEClass;
@@ -388,7 +374,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getSearchRoot_Nodes()
   {
     return (EReference)searchRootEClass.getEStructuralFeatures().get(0);
@@ -399,7 +384,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getMatch()
   {
     return matchEClass;
@@ -410,7 +394,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getMatch_Target()
   {
     return (EAttribute)matchEClass.getEStructuralFeatures().get(0);
@@ -421,7 +404,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getExclude()
   {
     return excludeEClass;
@@ -432,7 +414,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getNode()
   {
     return nodeEClass;
@@ -443,7 +424,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getNode_Name()
   {
     return (EAttribute)nodeEClass.getEStructuralFeatures().get(0);
@@ -454,7 +434,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getNode_Under()
   {
     return (EAttribute)nodeEClass.getEStructuralFeatures().get(1);
@@ -465,7 +444,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getNode_Node()
   {
     return (EReference)nodeEClass.getEStructuralFeatures().get(2);
@@ -476,7 +454,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getNodes()
   {
     return nodesEClass;
@@ -487,7 +464,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getNodes_Node()
   {
     return (EReference)nodesEClass.getEStructuralFeatures().get(0);
@@ -498,7 +474,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getNodes_Nodes()
   {
     return (EReference)nodesEClass.getEStructuralFeatures().get(1);
@@ -509,7 +484,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getSize()
   {
     return sizeEClass;
@@ -520,7 +494,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getMinSize()
   {
     return minSizeEClass;
@@ -531,7 +504,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getMinSize_Expr()
   {
     return (EReference)minSizeEClass.getEStructuralFeatures().get(0);
@@ -542,7 +514,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getMinSize_Brackets()
   {
     return (EReference)minSizeEClass.getEStructuralFeatures().get(1);
@@ -553,7 +524,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getMinSize_Operator()
   {
     return (EAttribute)minSizeEClass.getEStructuralFeatures().get(2);
@@ -564,7 +534,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getMinSize_Size()
   {
     return (EReference)minSizeEClass.getEStructuralFeatures().get(3);
@@ -575,7 +544,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getMetricExpr()
   {
     return metricExprEClass;
@@ -586,7 +554,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getMetricExpr_Amount()
   {
     return (EAttribute)metricExprEClass.getEStructuralFeatures().get(0);
@@ -597,7 +564,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getMetricExpr_Metric()
   {
     return (EAttribute)metricExprEClass.getEStructuralFeatures().get(1);
@@ -608,7 +574,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getDoNotCompare()
   {
     return doNotCompareEClass;
@@ -619,7 +584,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EClass getCompare()
   {
     return compareEClass;
@@ -630,7 +594,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getCompare_Nodes()
   {
     return (EReference)compareEClass.getEStructuralFeatures().get(0);
@@ -641,7 +604,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getCompare_ComparisonMethod()
   {
     return (EAttribute)compareEClass.getEStructuralFeatures().get(1);
@@ -652,7 +614,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EReference getCompare_DeepestNode()
   {
     return (EReference)compareEClass.getEStructuralFeatures().get(2);
@@ -663,7 +624,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EAttribute getCompare_Perc()
   {
     return (EAttribute)compareEClass.getEStructuralFeatures().get(3);
@@ -674,7 +634,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EEnum getMatchTarget()
   {
     return matchTargetEEnum;
@@ -685,7 +644,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EEnum getSizeMetric()
   {
     return sizeMetricEEnum;
@@ -696,7 +654,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EEnum getBoolOperator()
   {
     return boolOperatorEEnum;
@@ -707,7 +664,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EEnum getMethod()
   {
     return methodEEnum;
@@ -718,7 +674,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public EEnum getUnder()
   {
     return underEEnum;
@@ -729,7 +684,6 @@ public class CloneDetectionDSLPackageImpl extends EPackageImpl implements CloneD
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public CloneDetectionDSLFactory getCloneDetectionDSLFactory()
   {
     return (CloneDetectionDSLFactory)getEFactoryInstance();

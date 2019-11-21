@@ -74,7 +74,6 @@ public class LibraryPathImpl extends MinimalEObjectImpl.Container implements Lib
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public String getPath()
   {
     return path;
@@ -85,7 +84,6 @@ public class LibraryPathImpl extends MinimalEObjectImpl.Container implements Lib
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setPath(String newPath)
   {
     String oldPath = path;
@@ -170,7 +168,7 @@ public class LibraryPathImpl extends MinimalEObjectImpl.Container implements Lib
   {
     if (eIsProxy()) return super.toString();
 
-    StringBuilder result = new StringBuilder(super.toString());
+    StringBuffer result = new StringBuffer(super.toString());
     result.append(" (path: ");
     result.append(path);
     result.append(')');

@@ -77,7 +77,6 @@ public class NodesImpl extends ExcludeImpl implements Nodes
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Node getNode()
   {
     return node;
@@ -105,7 +104,6 @@ public class NodesImpl extends ExcludeImpl implements Nodes
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setNode(Node newNode)
   {
     if (newNode != node)
@@ -127,7 +125,6 @@ public class NodesImpl extends ExcludeImpl implements Nodes
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Nodes getNodes()
   {
     return nodes;
@@ -155,7 +152,6 @@ public class NodesImpl extends ExcludeImpl implements Nodes
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setNodes(Nodes newNodes)
   {
     if (newNodes != nodes)

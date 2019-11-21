@@ -35,6 +35,10 @@ public interface CloneDetection extends EObject
   /**
    * Returns the value of the '<em><b>Project</b></em>' containment reference.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Project</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Project</em>' containment reference.
    * @see #setProject(Project)
@@ -57,6 +61,10 @@ public interface CloneDetection extends EObject
   /**
    * Returns the value of the '<em><b>Root</b></em>' attribute.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Root</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Root</em>' attribute.
    * @see #setRoot(boolean)
@@ -79,6 +87,10 @@ public interface CloneDetection extends EObject
   /**
    * Returns the value of the '<em><b>Match</b></em>' attribute.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Match</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Match</em>' attribute.
    * @see #setMatch(boolean)
@@ -101,6 +113,10 @@ public interface CloneDetection extends EObject
   /**
    * Returns the value of the '<em><b>Exclude</b></em>' attribute.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Exclude</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Exclude</em>' attribute.
    * @see #setExclude(boolean)
@@ -123,6 +139,10 @@ public interface CloneDetection extends EObject
   /**
    * Returns the value of the '<em><b>Size</b></em>' containment reference.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Size</em>' containment reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Size</em>' containment reference.
    * @see #setSize(Size)
@@ -146,6 +166,10 @@ public interface CloneDetection extends EObject
    * Returns the value of the '<em><b>Paths</b></em>' containment reference list.
    * The list contents are of type {@link com.simonbaars.cdd.cloneDetectionDSL.LibraryPath}.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Paths</em>' containment reference list isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Paths</em>' containment reference list.
    * @see com.simonbaars.cdd.cloneDetectionDSL.CloneDetectionDSLPackage#getCloneDetection_Paths()
@@ -158,6 +182,10 @@ public interface CloneDetection extends EObject
    * Returns the value of the '<em><b>Not Compare</b></em>' containment reference list.
    * The list contents are of type {@link com.simonbaars.cdd.cloneDetectionDSL.DoNotCompare}.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Not Compare</em>' containment reference list isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Not Compare</em>' containment reference list.
    * @see com.simonbaars.cdd.cloneDetectionDSL.CloneDetectionDSLPackage#getCloneDetection_NotCompare()
@@ -170,6 +198,10 @@ public interface CloneDetection extends EObject
    * Returns the value of the '<em><b>Compare</b></em>' containment reference list.
    * The list contents are of type {@link com.simonbaars.cdd.cloneDetectionDSL.Compare}.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Compare</em>' containment reference list isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @return the value of the '<em>Compare</em>' containment reference list.
    * @see com.simonbaars.cdd.cloneDetectionDSL.CloneDetectionDSLPackage#getCloneDetection_Compare()

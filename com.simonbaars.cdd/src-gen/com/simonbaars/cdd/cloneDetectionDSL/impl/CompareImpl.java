@@ -122,7 +122,6 @@ public class CompareImpl extends MinimalEObjectImpl.Container implements Compare
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Nodes getNodes()
   {
     return nodes;
@@ -150,7 +149,6 @@ public class CompareImpl extends MinimalEObjectImpl.Container implements Compare
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setNodes(Nodes newNodes)
   {
     if (newNodes != nodes)
@@ -172,7 +170,6 @@ public class CompareImpl extends MinimalEObjectImpl.Container implements Compare
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Method getComparisonMethod()
   {
     return comparisonMethod;
@@ -183,7 +180,6 @@ public class CompareImpl extends MinimalEObjectImpl.Container implements Compare
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setComparisonMethod(Method newComparisonMethod)
   {
     Method oldComparisonMethod = comparisonMethod;
@@ -197,7 +193,6 @@ public class CompareImpl extends MinimalEObjectImpl.Container implements Compare
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public Node getDeepestNode()
   {
     return deepestNode;
@@ -225,7 +220,6 @@ public class CompareImpl extends MinimalEObjectImpl.Container implements Compare
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setDeepestNode(Node newDeepestNode)
   {
     if (newDeepestNode != deepestNode)
@@ -247,7 +241,6 @@ public class CompareImpl extends MinimalEObjectImpl.Container implements Compare
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public String getPerc()
   {
     return perc;
@@ -258,7 +251,6 @@ public class CompareImpl extends MinimalEObjectImpl.Container implements Compare
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setPerc(String newPerc)
   {
     String oldPerc = perc;
@@ -391,7 +383,7 @@ public class CompareImpl extends MinimalEObjectImpl.Container implements Compare
   {
     if (eIsProxy()) return super.toString();
 
-    StringBuilder result = new StringBuilder(super.toString());
+    StringBuffer result = new StringBuffer(super.toString());
     result.append(" (comparisonMethod: ");
     result.append(comparisonMethod);
     result.append(", perc: ");

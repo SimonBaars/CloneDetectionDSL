@@ -53,6 +53,10 @@ public enum MatchTarget implements Enumerator
   /**
    * The '<em><b>Subtree</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>Subtree</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #SUBTREE
    * @model name="Subtree"
@@ -64,6 +68,10 @@ public enum MatchTarget implements Enumerator
   /**
    * The '<em><b>LLOC</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>LLOC</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #LLOC
    * @model
@@ -75,6 +83,10 @@ public enum MatchTarget implements Enumerator
   /**
    * The '<em><b>SLOC</b></em>' literal value.
    * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of '<em><b>SLOC</b></em>' literal object isn't clear,
+   * there really should be more of a description here...
+   * </p>
    * <!-- end-user-doc -->
    * @see #SLOC
    * @model
@@ -205,7 +217,6 @@ public enum MatchTarget implements Enumerator
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public int getValue()
   {
     return value;
@@ -216,7 +227,6 @@ public enum MatchTarget implements Enumerator
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public String getName()
   {
     return name;
@@ -227,7 +237,6 @@ public enum MatchTarget implements Enumerator
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public String getLiteral()
   {
     return literal;

@@ -96,7 +96,6 @@ public class MetricExprImpl extends MinimalEObjectImpl.Container implements Metr
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public int getAmount()
   {
     return amount;
@@ -107,7 +106,6 @@ public class MetricExprImpl extends MinimalEObjectImpl.Container implements Metr
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setAmount(int newAmount)
   {
     int oldAmount = amount;
@@ -121,7 +119,6 @@ public class MetricExprImpl extends MinimalEObjectImpl.Container implements Metr
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public SizeMetric getMetric()
   {
     return metric;
@@ -132,7 +129,6 @@ public class MetricExprImpl extends MinimalEObjectImpl.Container implements Metr
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setMetric(SizeMetric newMetric)
   {
     SizeMetric oldMetric = metric;
@@ -227,7 +223,7 @@ public class MetricExprImpl extends MinimalEObjectImpl.Container implements Metr
   {
     if (eIsProxy()) return super.toString();
 
-    StringBuilder result = new StringBuilder(super.toString());
+    StringBuffer result = new StringBuffer(super.toString());
     result.append(" (amount: ");
     result.append(amount);
     result.append(", metric: ");

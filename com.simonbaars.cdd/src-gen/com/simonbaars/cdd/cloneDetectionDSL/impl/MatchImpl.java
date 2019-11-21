@@ -75,7 +75,6 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public MatchTarget getTarget()
   {
     return target;
@@ -86,7 +85,6 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match
    * <!-- end-user-doc -->
    * @generated
    */
-  @Override
   public void setTarget(MatchTarget newTarget)
   {
     MatchTarget oldTarget = target;
@@ -171,7 +169,7 @@ public class MatchImpl extends MinimalEObjectImpl.Container implements Match
   {
     if (eIsProxy()) return super.toString();
 
-    StringBuilder result = new StringBuilder(super.toString());
+    StringBuffer result = new StringBuffer(super.toString());
     result.append(" (target: ");
     result.append(target);
     result.append(')');
